@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\SENAC\\FogueteDeRe\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{270BACD6-4325-4DA3-93F1-614E6FCC73CA}|FogueteDeRe.csproj|e:\\senac\\foguetedere\\foguete\\missaoterraredonda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{270BACD6-4325-4DA3-93F1-614E6FCC73CA}|FogueteDeRe.csproj|solutionrelative:foguete\\missaoterraredonda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{270BACD6-4325-4DA3-93F1-614E6FCC73CA}|FogueteDeRe.csproj|e:\\senac\\foguetedere\\foguete\\nasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{270BACD6-4325-4DA3-93F1-614E6FCC73CA}|FogueteDeRe.csproj|solutionrelative:foguete\\nasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{270BACD6-4325-4DA3-93F1-614E6FCC73CA}|FogueteDeRe.csproj|e:\\senac\\foguetedere\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{270BACD6-4325-4DA3-93F1-614E6FCC73CA}|FogueteDeRe.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MissaoTerraRedonda.cs",
+              "DocumentMoniker": "E:\\SENAC\\FogueteDeRe\\Foguete\\MissaoTerraRedonda.cs",
+              "RelativeDocumentMoniker": "Foguete\\MissaoTerraRedonda.cs",
+              "ToolTip": "E:\\SENAC\\FogueteDeRe\\Foguete\\MissaoTerraRedonda.cs",
+              "RelativeToolTip": "Foguete\\MissaoTerraRedonda.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T10:16:15.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Nasa.cs",
+              "DocumentMoniker": "E:\\SENAC\\FogueteDeRe\\Foguete\\Nasa.cs",
+              "RelativeDocumentMoniker": "Foguete\\Nasa.cs",
+              "ToolTip": "E:\\SENAC\\FogueteDeRe\\Foguete\\Nasa.cs",
+              "RelativeToolTip": "Foguete\\Nasa.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T10:12:59.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\SENAC\\FogueteDeRe\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\SENAC\\FogueteDeRe\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T10:12:59.393Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

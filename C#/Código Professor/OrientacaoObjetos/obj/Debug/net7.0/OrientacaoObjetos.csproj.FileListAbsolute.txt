@@ -1,0 +1,29 @@
+C:\Users\marco.angelo\Desktop\R\OrientacaoObjetos\OrientacaoObjetos\bin\Debug\net7.0\OrientacaoObjetos.exe
+C:\Users\marco.angelo\Desktop\R\OrientacaoObjetos\OrientacaoObjetos\bin\Debug\net7.0\OrientacaoObjetos.deps.json
+C:\Users\marco.angelo\Desktop\R\OrientacaoObjetos\OrientacaoObjetos\bin\Debug\net7.0\OrientacaoObjetos.runtimeconfig.json
+C:\Users\marco.angelo\Desktop\R\OrientacaoObjetos\OrientacaoObjetos\bin\Debug\net7.0\OrientacaoObjetos.dll
+C:\Users\marco.angelo\Desktop\R\OrientacaoObjetos\OrientacaoObjetos\bin\Debug\net7.0\OrientacaoObjetos.pdb
+C:\Users\marco.angelo\Desktop\R\OrientacaoObjetos\OrientacaoObjetos\obj\Debug\net7.0\OrientacaoObjetos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco.angelo\Desktop\R\OrientacaoObjetos\OrientacaoObjetos\obj\Debug\net7.0\OrientacaoObjetos.AssemblyInfoInputs.cache
+C:\Users\marco.angelo\Desktop\R\OrientacaoObjetos\OrientacaoObjetos\obj\Debug\net7.0\OrientacaoObjetos.AssemblyInfo.cs
+C:\Users\marco.angelo\Desktop\R\OrientacaoObjetos\OrientacaoObjetos\obj\Debug\net7.0\OrientacaoObjetos.csproj.CoreCompileInputs.cache
+C:\Users\marco.angelo\Desktop\R\OrientacaoObjetos\OrientacaoObjetos\obj\Debug\net7.0\OrientacaoObjetos.dll
+C:\Users\marco.angelo\Desktop\R\OrientacaoObjetos\OrientacaoObjetos\obj\Debug\net7.0\refint\OrientacaoObjetos.dll
+C:\Users\marco.angelo\Desktop\R\OrientacaoObjetos\OrientacaoObjetos\obj\Debug\net7.0\OrientacaoObjetos.pdb
+C:\Users\marco.angelo\Desktop\R\OrientacaoObjetos\OrientacaoObjetos\obj\Debug\net7.0\OrientacaoObjetos.genruntimeconfig.cache
+C:\Users\marco.angelo\Desktop\R\OrientacaoObjetos\OrientacaoObjetos\obj\Debug\net7.0\ref\OrientacaoObjetos.dll
+C:\Users\daniel.stickel\Desktop\SENAC\Código Professor\OrientacaoObjetos\obj\Debug\net7.0\OrientacaoObjetos.csproj.AssemblyReference.cache
+C:\Users\daniel.stickel\Desktop\SENAC\Código Professor\OrientacaoObjetos\obj\Debug\net7.0\OrientacaoObjetos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daniel.stickel\Desktop\SENAC\Código Professor\OrientacaoObjetos\obj\Debug\net7.0\OrientacaoObjetos.AssemblyInfoInputs.cache
+C:\Users\daniel.stickel\Desktop\SENAC\Código Professor\OrientacaoObjetos\obj\Debug\net7.0\OrientacaoObjetos.AssemblyInfo.cs
+C:\Users\daniel.stickel\Desktop\SENAC\Código Professor\OrientacaoObjetos\obj\Debug\net7.0\OrientacaoObjetos.csproj.CoreCompileInputs.cache
+C:\Users\daniel.stickel\Desktop\SENAC\Código Professor\OrientacaoObjetos\obj\Debug\net7.0\OrientacaoObjetos.dll
+C:\Users\daniel.stickel\Desktop\SENAC\Código Professor\OrientacaoObjetos\obj\Debug\net7.0\refint\OrientacaoObjetos.dll
+C:\Users\daniel.stickel\Desktop\SENAC\Código Professor\OrientacaoObjetos\obj\Debug\net7.0\OrientacaoObjetos.pdb
+C:\Users\daniel.stickel\Desktop\SENAC\Código Professor\OrientacaoObjetos\bin\Debug\net7.0\OrientacaoObjetos.exe
+C:\Users\daniel.stickel\Desktop\SENAC\Código Professor\OrientacaoObjetos\bin\Debug\net7.0\OrientacaoObjetos.deps.json
+C:\Users\daniel.stickel\Desktop\SENAC\Código Professor\OrientacaoObjetos\bin\Debug\net7.0\OrientacaoObjetos.runtimeconfig.json
+C:\Users\daniel.stickel\Desktop\SENAC\Código Professor\OrientacaoObjetos\bin\Debug\net7.0\OrientacaoObjetos.dll
+C:\Users\daniel.stickel\Desktop\SENAC\Código Professor\OrientacaoObjetos\bin\Debug\net7.0\OrientacaoObjetos.pdb
+C:\Users\daniel.stickel\Desktop\SENAC\Código Professor\OrientacaoObjetos\obj\Debug\net7.0\OrientacaoObjetos.genruntimeconfig.cache
+C:\Users\daniel.stickel\Desktop\SENAC\Código Professor\OrientacaoObjetos\obj\Debug\net7.0\ref\OrientacaoObjetos.dll

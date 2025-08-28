@@ -1,0 +1,14 @@
+C:\Users\marco.angelo\Desktop\R\Hello.World\Hello.World.Console\bin\Debug\net6.0\Hello.World.Console.exe
+C:\Users\marco.angelo\Desktop\R\Hello.World\Hello.World.Console\bin\Debug\net6.0\Hello.World.Console.deps.json
+C:\Users\marco.angelo\Desktop\R\Hello.World\Hello.World.Console\bin\Debug\net6.0\Hello.World.Console.runtimeconfig.json
+C:\Users\marco.angelo\Desktop\R\Hello.World\Hello.World.Console\bin\Debug\net6.0\Hello.World.Console.dll
+C:\Users\marco.angelo\Desktop\R\Hello.World\Hello.World.Console\bin\Debug\net6.0\Hello.World.Console.pdb
+C:\Users\marco.angelo\Desktop\R\Hello.World\Hello.World.Console\obj\Debug\net6.0\Hello.World.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marco.angelo\Desktop\R\Hello.World\Hello.World.Console\obj\Debug\net6.0\Hello.World.Console.AssemblyInfoInputs.cache
+C:\Users\marco.angelo\Desktop\R\Hello.World\Hello.World.Console\obj\Debug\net6.0\Hello.World.Console.AssemblyInfo.cs
+C:\Users\marco.angelo\Desktop\R\Hello.World\Hello.World.Console\obj\Debug\net6.0\Hello.World.Console.csproj.CoreCompileInputs.cache
+C:\Users\marco.angelo\Desktop\R\Hello.World\Hello.World.Console\obj\Debug\net6.0\Hello.World.Console.dll
+C:\Users\marco.angelo\Desktop\R\Hello.World\Hello.World.Console\obj\Debug\net6.0\refint\Hello.World.Console.dll
+C:\Users\marco.angelo\Desktop\R\Hello.World\Hello.World.Console\obj\Debug\net6.0\Hello.World.Console.pdb
+C:\Users\marco.angelo\Desktop\R\Hello.World\Hello.World.Console\obj\Debug\net6.0\Hello.World.Console.genruntimeconfig.cache
+C:\Users\marco.angelo\Desktop\R\Hello.World\Hello.World.Console\obj\Debug\net6.0\ref\Hello.World.Console.dll

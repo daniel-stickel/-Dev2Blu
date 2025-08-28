@@ -1,0 +1,15 @@
+C:\Users\daniel.stickel\Desktop\SENAC\Orientação.Objeto\bin\Debug\net6.0\Orientação.Objeto.exe
+C:\Users\daniel.stickel\Desktop\SENAC\Orientação.Objeto\bin\Debug\net6.0\Orientação.Objeto.deps.json
+C:\Users\daniel.stickel\Desktop\SENAC\Orientação.Objeto\bin\Debug\net6.0\Orientação.Objeto.runtimeconfig.json
+C:\Users\daniel.stickel\Desktop\SENAC\Orientação.Objeto\bin\Debug\net6.0\Orientação.Objeto.dll
+C:\Users\daniel.stickel\Desktop\SENAC\Orientação.Objeto\bin\Debug\net6.0\Orientação.Objeto.pdb
+C:\Users\daniel.stickel\Desktop\SENAC\Orientação.Objeto\obj\Debug\net6.0\Orientação.Objeto.csproj.AssemblyReference.cache
+C:\Users\daniel.stickel\Desktop\SENAC\Orientação.Objeto\obj\Debug\net6.0\Orientação.Objeto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daniel.stickel\Desktop\SENAC\Orientação.Objeto\obj\Debug\net6.0\Orientação.Objeto.AssemblyInfoInputs.cache
+C:\Users\daniel.stickel\Desktop\SENAC\Orientação.Objeto\obj\Debug\net6.0\Orientação.Objeto.AssemblyInfo.cs
+C:\Users\daniel.stickel\Desktop\SENAC\Orientação.Objeto\obj\Debug\net6.0\Orientação.Objeto.csproj.CoreCompileInputs.cache
+C:\Users\daniel.stickel\Desktop\SENAC\Orientação.Objeto\obj\Debug\net6.0\Orientação.Objeto.dll
+C:\Users\daniel.stickel\Desktop\SENAC\Orientação.Objeto\obj\Debug\net6.0\refint\Orientação.Objeto.dll
+C:\Users\daniel.stickel\Desktop\SENAC\Orientação.Objeto\obj\Debug\net6.0\Orientação.Objeto.pdb
+C:\Users\daniel.stickel\Desktop\SENAC\Orientação.Objeto\obj\Debug\net6.0\Orientação.Objeto.genruntimeconfig.cache
+C:\Users\daniel.stickel\Desktop\SENAC\Orientação.Objeto\obj\Debug\net6.0\ref\Orientação.Objeto.dll

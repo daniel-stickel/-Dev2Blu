@@ -1,0 +1,15 @@
+C:\Users\daniel.stickel\Desktop\SENAC\Pilares\obj\Debug\net6.0\Pilares.csproj.AssemblyReference.cache
+C:\Users\daniel.stickel\Desktop\SENAC\Pilares\obj\Debug\net6.0\Pilares.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daniel.stickel\Desktop\SENAC\Pilares\obj\Debug\net6.0\Pilares.AssemblyInfoInputs.cache
+C:\Users\daniel.stickel\Desktop\SENAC\Pilares\obj\Debug\net6.0\Pilares.AssemblyInfo.cs
+C:\Users\daniel.stickel\Desktop\SENAC\Pilares\obj\Debug\net6.0\Pilares.csproj.CoreCompileInputs.cache
+C:\Users\daniel.stickel\Desktop\SENAC\Pilares\bin\Debug\net6.0\Pilares.exe
+C:\Users\daniel.stickel\Desktop\SENAC\Pilares\bin\Debug\net6.0\Pilares.deps.json
+C:\Users\daniel.stickel\Desktop\SENAC\Pilares\bin\Debug\net6.0\Pilares.runtimeconfig.json
+C:\Users\daniel.stickel\Desktop\SENAC\Pilares\bin\Debug\net6.0\Pilares.dll
+C:\Users\daniel.stickel\Desktop\SENAC\Pilares\bin\Debug\net6.0\Pilares.pdb
+C:\Users\daniel.stickel\Desktop\SENAC\Pilares\obj\Debug\net6.0\Pilares.dll
+C:\Users\daniel.stickel\Desktop\SENAC\Pilares\obj\Debug\net6.0\refint\Pilares.dll
+C:\Users\daniel.stickel\Desktop\SENAC\Pilares\obj\Debug\net6.0\Pilares.pdb
+C:\Users\daniel.stickel\Desktop\SENAC\Pilares\obj\Debug\net6.0\Pilares.genruntimeconfig.cache
+C:\Users\daniel.stickel\Desktop\SENAC\Pilares\obj\Debug\net6.0\ref\Pilares.dll

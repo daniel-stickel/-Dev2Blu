@@ -1,0 +1,5 @@
+C:\Users\daniel.stickel\Desktop\SENAC\FogueteDeRe\obj\Debug\net6.0\FogueteDeRe.csproj.AssemblyReference.cache
+C:\Users\daniel.stickel\Desktop\SENAC\FogueteDeRe\obj\Debug\net6.0\FogueteDeRe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daniel.stickel\Desktop\SENAC\FogueteDeRe\obj\Debug\net6.0\FogueteDeRe.AssemblyInfoInputs.cache
+C:\Users\daniel.stickel\Desktop\SENAC\FogueteDeRe\obj\Debug\net6.0\FogueteDeRe.AssemblyInfo.cs
+C:\Users\daniel.stickel\Desktop\SENAC\FogueteDeRe\obj\Debug\net6.0\FogueteDeRe.csproj.CoreCompileInputs.cache
