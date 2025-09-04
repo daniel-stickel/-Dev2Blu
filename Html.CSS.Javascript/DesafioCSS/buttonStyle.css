@@ -1,0 +1,16 @@
+
+
+.enviar {
+ font-size: 8;
+ color: green;
+}
+
+.editar {
+font-size: 9;
+color: rgb(222, 245, 13);
+}
+
+.excluir {
+font-size: 10;
+color: red;
+}

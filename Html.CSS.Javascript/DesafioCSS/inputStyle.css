@@ -1,0 +1,17 @@
+* {
+    background-color: grey;
+    margin: 0;
+}
+
+form {
+    display:inline-block;
+}
+
+fieldset {
+    display: block;
+}
+
+label {
+    color: blueviolet;
+    font-size: medium;
+}
