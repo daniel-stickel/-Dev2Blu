@@ -1,6 +1,6 @@
-create database locadora;
+create database MinhaLocadora;
 
-use locadora;
+use MinhaLocadora;
 
 create table genero(
 id INT not null auto_increment primary key,
@@ -24,8 +24,8 @@ Nome varchar(50) not null unique
 
 create table modelo(
 Id int primary key not null auto_increment,
-Marca_Id int not null auto_increment,
-Categoria_Id int not null auto_increment,
+Marca_Id int not null ,
+Categoria_Id int not null ,
 Nome varchar(255),
 CONSTRAINT FK_MODELO_MARCA foreign key (Marca_Id) references marca(Id),
 CONSTRAINT FK_MODELO_CATEGORIA foreign key (Categoria_Id) references categoria(Id)
@@ -45,20 +45,21 @@ Valor Decimal(10,2) not null,
 Disponivel tinyint(1) not null,
 Km int(10),
 constraint FK_CARRO_MODELO foreign key (Modelo_Id) references modelo(Id),
-constraint FK_CARRO_RESERVA foreign key (Reserva_Id) references reserva(Id)
+constraint FK_CARRO_FILIAL foreign key (Filial_Id) references filial(Id)
 );
+
 
 create table reserva(
 Id int primary key not null auto_increment,
 Pacote_Id int not null,
 Carro_Id int not null,
-Carro_Filial_Id int not null,
 DataRetirada datetime,
 DataDevolucao datetime,
-constraint FK_RESERVA_PACOTE foreign key (Pacote_Id) references pacote(Id),
 constraint FK_RESERVA_CARRO foreign key (Carro_Id) references carro(Id),
-constraint FK_RESERVA_CARRO foreign key (Carro_Filial_Id) references carro(Filial_Id)
+constraint FK_RESERVA_PACOTE foreign key (Pacote_Id) references pacote(Id)
 );
+
+
 
 create table reserva_servico(
 Reserva_id int primary key not null,
@@ -129,7 +130,47 @@ constraint PK_CONTRATO_RESERVA foreign key (Reserva_Id) references reserva(Id),
 constraint PK_CONTRATO_PESSOA foreign key (Pessoa_Id) references pessoa(Id)
 );
 
+create table pacote_servico(
+Pacote_Id int,
+Servico_Id int,
+primary key(Pacote_id, Servico_Id),
+foreign key(Pacote_Id) references pacote(Id),
+foreign key(Servico_id) references servico(Id)
+);
 
+create table teste(
+Id int primary key,
+Nome varchar(30)
+);
+
+alter table teste add Coluna varchar(50); -- adicionando uma coluna a uma tabéla
+
+alter table teste modify Coluna text;  -- modificando o tipo de uma coluna 
+
+alter table teste drop column Coluna; -- apagando uma coluna 
+
+alter table servico modify descricao text;
+
+create table teste2(
+Id int primary key,
+Teste2_id int
+);
+
+alter table teste add teste2_Id int; -- adicionando uma coluna a uma tabela
+
+alter table teste add constraint FK_TESTE_TESTE2 foreign key (teste2_id) references teste2(id); -- adicionando uma coluna estrangeira a tabela
+
+alter table teste2 drop column teste2_Id; -- apagando uma coluna
+
+drop table teste2; -- apagando uma tabela
+
+alter table teste drop foreign key FK_TESTE_TESTE2;  -- apagando uma coluna estrangeira de uma tabéla 
+
+drop table teste2;
+
+drop table teste; --apagando uma tabela
+
+alter table servico change column descrevendo descricao varchar(255); --alterando o nome de uma coluna
 
 
 
