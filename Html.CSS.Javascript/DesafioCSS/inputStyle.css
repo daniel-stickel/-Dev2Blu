@@ -3,8 +3,8 @@
     margin: 0;
 }
 
-form {
-    display:inline-block;
+label {
+    display:block;
 }
 
 fieldset {
