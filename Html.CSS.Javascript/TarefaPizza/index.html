@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha pizzaria</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body >
+    <form method="post" action="" >
+        <br>
+        <h1 class="center">Pedido de Pizza</h1>
+        <br>
+            <div class="center">
+                <label for="txtNome" class="underline">Digite seu Nome</label>
+                <input type="text" class="nome" id="txtNome" placeholder="João da Silva">
+                <label for="txtTelefone" class="underline">Digite seu Telefone</label>
+                <input type="tel" class="telefone" id="txtTelefone" placeholder="00 0000-0000">
+                <label for="txtRua" class="underline">Digite o nome da Rua para Entrega</label>
+                <input type="text" class="rua" id="txtRua" placeholder="Rua Fulano de Tal">
+            </div>
+        <br>
+        <div class="opcoes center underline">
+            <h2 >Escolha uma das Opções</h2>
+            <input type="radio" name="residencia" id="rCasa" value="Casa">
+            <label for="rCasa">Casa</label>
+            <input type="radio" name="residencia" id="rApartamento" value="Apartamento">
+            <label for="rApartamento">Apartamento</label>
+            <label for="txtNumero">Número</label>
+            <input type="text" class="numero" id="txtNumero">
+        </div>
+        
+        <div class="underline center">
+            <h2 class="opcoes">Tamanho da Pizza</h2>
+            <br>
+            <div>
+                <input type="radio" name="tamanho" id="r25cm" value="25cm">
+                <label for="r25cm"> 25 Centimetros</label>
+                <input type="radio" name="tamanho" id="r38cm" value="38cm">
+                <label for="r38cm">38 Centimetros</label>
+                <input type="radio" name="tamanho" id="r52cm" value="52cm">
+                <label for="r52cm">52 Centimetros</label>
+                <input type="radio" name="tamanho" id=" r68cm" value="68cm">
+                <label for="r68cm">68 Centimetros</label>
+                <input type="checkbox" name="broto" id="checkBroto" value="brotoOk">
+                <label for="checkBroto">Incluir broto</label>
+            </div>
+        </div>
+        
+        <div class="center underline">
+            <h2 for="opSabores">Selecione os Sabores Desejados</h2>
+            <select name="selecionarSabores" id="opSabores">
+                <option value="" hidden required>Todos os Sabores</option>
+                <option value="opCalabresa">Calabresa</option>
+                <option value="opMuçarela">Muçarela</option>
+                <option value="opPortuguesa">Portuguesa</option>
+                <option value="opMarguerita">Marguerita</option>
+                <option value="opFrangoCatupiry">Frango com Catupiry</option>
+                <option value="opQuatroQueijos">Quatro Quejos</option>
+                <option value="opNapolitana">Napolitana</option>
+                <option value="opCamarao">Camarão </option>
+                <option value="opPalmito">Palmito</option>
+                <option value="opBrocolis">Brócolis</option>
+                <option value="opBrocolisBacon">Brócolis com Bacon</option>
+                <option value="opChampignon">Champignon</option>
+                <option value="opAlhoOleo">Alho e Óleo</option>
+                <option value="opModaCasa">Moda da Casa</option>
+                <option value="opTomateSeco">Tomate Seco com Rúcula</option>
+            </select>
+
+            <select name="saborVagano" id="opVegano">
+                <option value="" hidden required>Sabores Veganos</option>
+                <option value="opCapinVerde">Capin Verde</option>
+                <option value="opCapinAmarelo">Capin Amarelo</option>
+                <option value="opCapinVermelho">Capin Vermelho</option>
+                <option value="opCapinVerdeAmarelo">Capin Verde com Amarelo</option>
+                <option value="opCapinVerdeVermelho">Capin Verde com Vermelho</option>
+                <option value="opCapinAmareloVermelho">Capin Amarelo com Vermelho</option>
+            </select>
+            <br>
+            <input type="checkbox" name="bordaRecheada" id="checkBordaRecheada" value="bordaRecheadaOk">
+            <label for="checkBordaRecheada">Borda Recheada</label>
+        </div>
+        <div class="center underline">
+            <h2>Recheio da Borda</h2>
+            <input type="radio" name="saborBorda" id="rCatupiry" value="catupiry">
+            <label for="rCatupiry">Catupiry</label>
+            <input type="radio" name="saborBorda" id="rCheddar" value="cheddar">
+            <label for="rCheddar">Cheddar</label>
+            <input type="radio" name="saborBorda" id="rRequeijao" value="requeijao">
+            <label for="rRequeijao">Requijão</label>
+            <input type="radio" name="saborBorda" id="rtradicional" value="tradicional">
+            <label for="rtradicional">Tradicional</label>
+        </div>
+        
+        <div class="center underline" >
+            <h2>ReFrigerante</h2>
+            <input type="radio" name="cocaCola2" id="rCocaCola2" value="refriCocaCola2">
+            <label for="rCocaCola">CocaCola 2 Litros</label>
+            <input type="radio" name="CocaCola0,6" id="rCocaCola0,6" value="refriCocaCola0,6">
+            <label for="rCocaCola">CocaCola 600 ml</label>
+            <input type="radio" name="guarana2" id="rGuarana2" value="refriGuarana2">
+            <label for="rGuarana">Guaraná 2 Litros</label>
+            <input type="radio" name="guarana" id="rGuarana" value="refriGuarana">
+            <label for="rGuarana">Guaraná 600ml</label>
+            <input type="radio" name="laranjinha" id="rLaranjinha" value="refriLaranjinha">
+            <label for="rLaranjinha">Larajinha 2 Litros </label>
+            <input type="radio" name="laranjinha" id="rLaranjinha" value="refriLaranjinha">
+            <label for="rLaranjinha">Larajinha 600 ml </label>
+        </div>
+        <br><br>
+        <div class="center underline">
+            <button type="submit" class="enviar">Pedir a Pizza</button>
+            <button type="reset" class="reset">Refazer Pedido</button>
+        </div>
+
+        <br><br>
+    </form>
+</body>
+
+</html>

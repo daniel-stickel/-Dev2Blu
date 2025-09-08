@@ -1,0 +1,43 @@
+body {
+    background-image: url(documentos/imagemPizza.jpg);
+    background-size: contain;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1, 6vw;
+}
+
+form {
+    background-color: rgb(236, 69, 69);
+    width: 1150px;
+    border-radius: 40px;
+}
+
+.center {
+    text-align: center;
+}
+
+input {
+    border-radius: 9cqmax;
+    height: 0, 5vw;
+    font-size: 15px;
+}
+
+button {
+    width: 400px;
+}
+
+.enviar {
+    color: green;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
