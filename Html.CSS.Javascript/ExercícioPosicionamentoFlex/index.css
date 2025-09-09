@@ -1,11 +1,78 @@
-.quadrado_verde {
+body {
+    background-color: blanchedalmond;
+}
 
+header {
+    width: 100vw;
+    height: 5vw;
+    background-color: rgb(51, 43, 43);
+}
+
+a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 1.7vw;
+}
+
+.quadrado_verde {
+    width: 250px;
+    height: 250px;
+    background-color: green;
 }
 
 .quadrado_roxo {
-
+    width: 250px;
+    height: 250px;
+    background-color: rgb(114, 18, 109);
 }
 
 .quadrado_amarelo {
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+}
+
+.centralizar {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; Centraliza */
+    justify-content: space-around;
+    height: 98vh;
+
+}
+
+.centralizar_header {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; Centraliza altura */
+    justify-content: space-around;
+    height: 10vh;
+}
+
+.retangulo_vertical {
+    background-color: chartreuse;
+    font-size: 2vw;
+    color: #070a08;
+}
+
+/* 
+.vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4vw;
+    height: 100vw;
+    background-color: #35c481;
+}
+
+.lateral {
+    display: flex;
+    justify-content: flex-start;
+} */
+
+.direction {
+    transform: rotate(-90deg);
+    transform-origin: center;
     
+
 }
