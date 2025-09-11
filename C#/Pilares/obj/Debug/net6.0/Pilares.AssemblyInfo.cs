@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pilares")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2035a09806bd5d2577cad3631fd2c712a0d4076")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pilares")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pilares")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

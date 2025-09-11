@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(243, 234, 239);
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    width: 98vw;
+    height: 5vw;
+    border-radius: 1vw 1vw 0vw 0vw;
+}
+
+main {
+    background-color: aliceblue;
+    width: 97vw;
+    height: 53vw;
+    margin: 0.8vw;
+}
+
+footer {background-color: blue;
+width: 98vw;
+height: 5vw;
+border-radius: 0vw 0vw 1vw 1vw;
+}
+
+img {
+    height: 4vw;
+    padding-left: 30px;
+    padding-top: 0.5vw;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
