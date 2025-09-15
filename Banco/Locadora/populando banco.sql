@@ -1,0 +1,463 @@
+-- Inserindo Gêneros
+INSERT INTO genero (nome) VALUES 
+('Masculino'), 
+('Feminino'), 
+('Não Informado');
+
+-- Inserindo Estados (26 estados + 1 Distrito Federal)
+INSERT INTO estado (Nome) VALUES 
+('AC'), ('AL'), ('AP'), ('AM'), ('BA'), ('CE'), ('DF'), ('ES'), ('GO'), 
+('MA'), ('MT'), ('MS'), ('MG'), ('PA'), ('PB'), ('PR'), ('PE'), ('PI'), 
+('RJ'), ('RN'), ('RS'), ('RO'), ('RR'), ('SC'), ('SP'), ('SE'), ('TO');
+
+-- Inserindo Marcas de Veículos
+INSERT INTO marca (Nome) VALUES 
+('Fiat'), 
+('Volkswagen'), 
+('Chevrolet'), 
+('Hyundai'), 
+('Toyota'), 
+('Jeep'), 
+('Renault'), 
+('Honda'), 
+('Nissan'), 
+('Caoa Chery');
+
+-- Inserindo Categorias de Veículos
+INSERT INTO categoria (Nome) VALUES 
+('Hatch Compacto'), 
+('Sedan Compacto'), 
+('Hatch Médio'), 
+('Sedan Médio'), 
+('SUV Compacto'), 
+('SUV Médio'), 
+('Picape'), 
+('Minivan');
+
+-- Inserindo Serviços Adicionais
+INSERT INTO servico (Nome, Descricao) VALUES 
+('Cadeira de Bebê', 'Cadeira de segurança para crianças conforme a legislação de trânsito.'), 
+('GPS', 'Navegador GPS com mapas do Brasil atualizados.'), 
+('Seguro Total', 'Cobertura completa para o veículo, incluindo danos a terceiros, roubo e furto.'), 
+('Condutor Adicional', 'Permissão para um segundo motorista cadastrado dirigir o veículo.');
+
+-- Inserindo Pacotes de Locação
+INSERT INTO pacote (Nome, Valor) VALUES 
+('Básico', 150.00), 
+('Intermediário', 220.50), 
+('Completo', 310.75);
+
+
+
+
+-- Inserindo Modelos de Veículos, associando Marca e Categoria
+-- Marca_Id: 1=Fiat, 2=VW, 3=Chevrolet, 4=Hyundai, 5=Toyota, 6=Jeep, 7=Renault
+-- Categoria_Id: 1=Hatch Compacto, 2=Sedan Compacto, 5=SUV Compacto, 7=Picape
+INSERT INTO modelo (Marca_Id, Categoria_Id, Nome) VALUES
+(1, 1, 'Mobi'), (1, 1, 'Argo'), (1, 2, 'Cronos'), (1, 7, 'Toro'),
+(2, 1, 'Polo'), (2, 2, 'Virtus'), (2, 5, 'T-Cross'), (2, 7, 'Saveiro'),
+(3, 1, 'Onix'), (3, 2, 'Onix Plus'), (3, 5, 'Tracker'), (3, 7, 'Montana'),
+(4, 1, 'HB20'), (4, 2, 'HB20S'), (4, 5, 'Creta'),
+(6, 5, 'Renegade'), (6, 6, 'Compass'),
+(7, 1, 'Kwid'), (7, 5, 'Duster');
+
+-- Inserindo algumas Filiais
+-- Usando os IDs das cidades que acabamos de inserir. Ex: 25=São Paulo, 19=Rio de Janeiro, 24=Florianópolis, 13=Belo Horizonte
+INSERT INTO filial (Cidade_Id, CodigoFilial, Nome, Endereco, Telefone, Email, CEP) VALUES
+(25, 101, 'Localiza Aeroporto Guarulhos', 'Rodovia Hélio Smidt, s/nº - Aeroporto, Guarulhos', '1124448888', 'gru@localiza.com', '07190100'),
+(19, 201, 'Movida Aeroporto S. Dumont', 'Praça Sen. Salgado Filho, s/n - Centro, Rio de Janeiro', '2138146056', 'sdu@movida.com.br', '20021340'),
+(24, 301, 'Unidas Centro Florianópolis', 'Av. Hercílio Luz, 500 - Centro, Florianópolis', '4832259000', 'fln_centro@unidas.com.br', '88020000'),
+(13, 401, 'Foco Aluguel Confins', 'Rodovia LMG-800, KM 7,9 - Lagoa Santa', '3136898700', 'cnf@focoaluguel.com', '33400000'),
+(37, 302, 'Localiza Blumenau', 'R. 7 de Setembro, 1213 - Centro, Blumenau', '4733268844', 'blumenau@localiza.com', '89010200');
+
+-- Inserindo as relações Pacote <-> Serviço
+INSERT INTO pacote_servico (Pacote_Id, Servico_Id) VALUES
+(1, 3), -- Pacote Básico vem com Seguro Total
+(2, 3), -- Pacote Intermediário vem com Seguro Total
+(2, 2), -- Pacote Intermediário vem com GPS
+(3, 1), -- Pacote Completo vem com Cadeira de Bebê
+(3, 2), -- Pacote Completo vem com GPS
+(3, 3), -- Pacote Completo vem com Seguro Total
+(3, 4); -- Pacote Completo vem com Condutor Adicional
+
+-- Inserindo os 50 carros na base de dados
+INSERT INTO carro (Filial_Id, Modelo_Id, Placa, Capacidade_Mala, Capacidade_Pessoa, Motor, Ano, TipoCambio, Valor, Disponivel, Km) VALUES
+-- Lote 1 - Filial 1 (Guarulhos)
+(1, 9, 'RGS1A23', 300, 5, '1.0 Turbo', 2024, 'Automatico', 145.90, 1, 25000),
+(1, 15, 'FRD4B56', 410, 5, '1.6', 2023, 'Automatico', 199.90, 1, 32000),
+(1, 1, 'GHT7C89', 290, 5, '1.0', 2022, 'Manual', 95.00, 1, 45000),
+(1, 7, 'JKL0D12', 437, 5, '1.3 Turbo', 2025, 'Automatico', 280.50, 1, 8000),
+(1, 12, 'MNO3E45', 937, 5, '1.3 Turbo', 2024, 'Automatico', 215.00, 1, 15000),
+(1, 5, 'PQR6F78', 313, 5, '1.0 Turbo', 2023, 'Manual', 120.80, 1, 28000),
+(1, 17, 'STU9G01', 580, 5, '2.0', 2024, 'Automatico', 350.00, 1, 19000),
+(1, 2, 'VWX2H34', 300, 5, '1.0', 2022, 'Manual', 110.00, 1, 55000),
+(1, 10, 'YZA5I67', 521, 5, '1.0 Turbo', 2025, 'Automatico', 160.20, 1, 5000),
+(1, 4, 'BCD8J90', 925, 5, '2.0 Diesel', 2023, 'Automatico', 410.70, 1, 38000),
+
+-- Lote 2 - Filial 2 (Rio de Janeiro)
+(2, 11, 'EFG1K23', 357, 5, '1.0 Turbo', 2024, 'Automatico', 185.00, 1, 21000),
+(2, 16, 'HIJ4L56', 470, 5, '1.3 Turbo', 2023, 'Automatico', 295.50, 1, 33000),
+(2, 3, 'KLM7M89', 510, 5, '1.6', 2022, 'Manual', 130.00, 1, 48000),
+(2, 8, 'NOP0N12', 683, 2, '1.6', 2025, 'Manual', 150.00, 1, 9500),
+(2, 13, 'QRS3O45', 300, 5, '1.0', 2024, 'Manual', 105.50, 1, 12000),
+(2, 6, 'TUV6P78', 525, 5, '1.0 Turbo', 2023, 'Automatico', 155.90, 1, 29000),
+(2, 18, 'WXY9Q01', 300, 5, '1.0', 2022, 'Manual', 99.00, 1, 58000),
+(2, 19, 'ZAB2R34', 437, 5, '1.6', 2024, 'Automatico', 240.00, 1, 17500),
+(2, 1, 'CDE5S67', 290, 5, '1.0', 2023, 'Manual', 98.00, 1, 23000),
+(2, 5, 'FGH8T90', 313, 5, '1.0 Turbo', 2025, 'Manual', 125.00, 1, 6000),
+
+-- Lote 3 - Filial 3 (Florianópolis)
+(3, 9, 'IJK1U23', 300, 5, '1.0 Turbo', 2024, 'Automatico', 148.90, 1, 24000),
+(3, 15, 'LMN4V56', 410, 5, '1.6', 2023, 'Automatico', 205.90, 1, 31000),
+(3, 1, 'OPQ7W89', 290, 5, '1.0', 2022, 'Manual', 97.00, 1, 46000),
+(3, 7, 'RST0X12', 437, 5, '1.3 Turbo', 2025, 'Automatico', 285.50, 1, 7000),
+(3, 12, 'UVW3Y45', 937, 5, '1.3 Turbo', 2024, 'Automatico', 220.00, 1, 16000),
+(3, 5, 'XYZ6Z78', 313, 5, '1.0 Turbo', 2023, 'Manual', 123.80, 1, 27000),
+(3, 17, 'ABC9A01', 580, 5, '2.0', 2024, 'Automatico', 355.00, 1, 18000),
+(3, 2, 'DEF2B34', 300, 5, '1.0', 2022, 'Manual', 112.00, 1, 56000),
+(3, 10, 'GHI5C67', 521, 5, '1.0 Turbo', 2025, 'Automatico', 163.20, 1, 4000),
+(3, 4, 'JKL8D90', 925, 5, '2.0 Diesel', 2023, 'Automatico', 415.70, 1, 37000),
+
+-- Lote 4 - Filial 4 (Belo Horizonte)
+(4, 11, 'MNO1E23', 357, 5, '1.0 Turbo', 2024, 'Automatico', 188.00, 1, 20000),
+(4, 16, 'PQR4F56', 470, 5, '1.3 Turbo', 2023, 'Automatico', 299.50, 1, 32000),
+(4, 3, 'STU7G89', 510, 5, '1.6', 2022, 'Manual', 133.00, 1, 47000),
+(4, 8, 'VWX0H12', 683, 2, '1.6', 2025, 'Manual', 153.00, 1, 9000),
+(4, 13, 'YZA3I45', 300, 5, '1.0', 2024, 'Manual', 108.50, 1, 11000),
+(4, 6, 'BCD6J78', 525, 5, '1.0 Turbo', 2023, 'Automatico', 158.90, 1, 28000),
+(4, 18, 'EFG9K01', 300, 5, '1.0', 2022, 'Manual', 102.00, 1, 57000),
+(4, 19, 'HIJ2L34', 437, 5, '1.6', 2024, 'Automatico', 243.00, 1, 16500),
+(4, 1, 'KLM5M67', 290, 5, '1.0', 2023, 'Manual', 101.00, 1, 22000),
+(4, 5, 'NOP8N90', 313, 5, '1.0 Turbo', 2025, 'Manual', 128.00, 1, 5500),
+
+-- Lote 5 - Filial 5 (Blumenau)
+(5, 9, 'QRS1O23', 300, 5, '1.0 Turbo', 2024, 'Automatico', 147.90, 1, 26000),
+(5, 15, 'TUV4P56', 410, 5, '1.6', 2023, 'Automatico', 202.90, 1, 34000),
+(5, 1, 'WXY7Q89', 290, 5, '1.0', 2022, 'Manual', 99.00, 1, 47000),
+(5, 7, 'ZAB0R12', 437, 5, '1.3 Turbo', 2025, 'Automatico', 288.50, 1, 6000),
+(5, 12, 'CDE3S45', 937, 5, '1.3 Turbo', 2024, 'Automatico', 223.00, 1, 17000);
+
+-- Inserindo Pessoas (Lote 1 de 4)
+INSERT INTO pessoa (Genero_Id, Cidade_Id, Nome, CPF, CNH, Endereco, Telefone, Email, CEP, Senha) VALUES
+(1, 25, 'João da Silva', '11122233344', '12345678901', 'Rua das Flores, 123', '11987654321', 'joao.silva@email.com', '01001000', 'senha123'),
+(2, 19, 'Maria Oliveira', '22233344455', '23456789012', 'Avenida Brasil, 456', '21987654322', 'maria.oliveira@email.com', '20040030', 'senha123'),
+(1, 13, 'Carlos Pereira', '33344455566', '34567890123', 'Praça da Liberdade, 789', '31987654323', 'carlos.pereira@email.com', '30140010', 'senha123'),
+(2, 5, 'Ana Costa', '44455566677', '45678901234', 'Ladeira do Pelourinho, 101', '71987654324', 'ana.costa@email.com', '40025010', 'senha123'),
+(1, 7, 'Paulo Santos', '55566677788', '56789012345', 'Eixo Monumental, 202', '61987654325', 'paulo.santos@email.com', '70070000', 'senha123'),
+(2, 16, 'Sofia Almeida', '66677788899', '67890123456', 'Rua XV de Novembro, 303', '41987654326', 'sofia.almeida@email.com', '80020310', 'senha123'),
+(1, 21, 'Lucas Ferreira', '77788899900', '78901234567', 'Avenida Ipiranga, 404', '51987654327', 'lucas.ferreira@email.com', '90160090', 'senha123'),
+(2, 24, 'Laura Gomes', '88899900011', '89012345678', 'Ponte Hercílio Luz, 505', '48987654328', 'laura.gomes@email.com', '88010000', 'senha123'),
+(1, 17, 'Matheus Rodrigues', '99900011122', '90123456789', 'Avenida Boa Viagem, 606', '81987654329', 'matheus.rodrigues@email.com', '51011000', 'senha123'),
+(2, 9, 'Isabela Martins', '00011122233', '01234567890', 'Parque Flamboyant, 707', '62987654330', 'isabela.martins@email.com', '74810180', 'senha123'),
+(1, 37, 'Davi Souza', '12312312311', '11223344556', 'Rua Alberto Stein, 199', '47988776655', 'davi.souza@email.com', '89036200', 'senha123'),
+(2, 28, 'Beatriz Lima', '32132132122', '22334455667', 'Rua das Palmeiras, 45', '11977665544', 'beatriz.lima@email.com', '13025142', 'senha123'),
+(1, 32, 'Arthur Azevedo', '45645645633', '33445566778', 'Avenida Atlântica, 1700', '22966554433', 'arthur.azevedo@email.com', '22021000', 'senha123'),
+(2, 33, 'Julia Cardoso', '65465465444', '44556677889', 'Rua da Matriz, 88', '31955443322', 'julia.cardoso@email.com', '35400000', 'senha123'),
+(1, 39, 'Bernardo Rocha', '78978978955', '55667788990', 'Rua das Cataratas, 1245', '45944332211', 'bernardo.rocha@email.com', '85853000', 'senha123'),
+(2, 40, 'Manuela Barbosa', '98798798766', '66778899001', 'Avenida Tiradentes, 200', '44933221100', 'manuela.barbosa@email.com', '87013260', 'senha123'),
+(1, 36, 'Heitor Pinto', '14725836977', '77889900112', 'Travessa dos Ventos, 33', '51922110099', 'heitor.pinto@email.com', '95670000', 'senha123'),
+(2, 41, 'Valentina Teixeira', '25836914788', '88990011223', 'Estrada do Vinho, 555', '54911009988', 'valentina.teixeira@email.com', '95700000', 'senha123'),
+(1, 31, 'Theo Dias', '36914725899', '99001122334', 'Alameda das Acácias, 77', '19999887766', 'theo.dias@email.com', '13025150', 'senha123'),
+(2, 1, 'Helena Nogueira', '15926347800', '00112233445', 'Rua do Comércio, 90', '68988776655', 'helena.nogueira@email.com', '69900084', 'senha123'),
+(1, 2, 'Miguel Monteiro', '26347815911', '12121212121', 'Avenida da Paz, 1111', '82977665544', 'miguel.monteiro@email.com', '57020440', 'senha123'),
+(2, 3, 'Alice Cunha', '47815926322', '23232323232', 'Rua Cândido Mendes, 1255', '96966554433', 'alice.cunha@email.com', '68900070', 'senha123'),
+(1, 4, 'Davi Moreira', '15947826333', '34343434343', 'Avenida Eduardo Ribeiro, 520', '92955443322', 'davi.moreira@email.com', '69005060', 'senha123'),
+(2, 6, 'Laura Carvalho', '26315947844', '45454545454', 'Avenida Beira Mar, 3211', '85944332211', 'laura.carvalho@email.com', '60165121', 'senha123'),
+(1, 8, 'Gabriel Mendes', '47826315955', '56565656565', 'Rua Sete de Setembro, 200', '27933221100', 'gabriel.mendes@email.com', '29015030', 'senha123'),
+(2, 10, 'Sophia Barros', '15947826366', '67676767676', 'Avenida Litorânea, s/n', '98922110099', 'sophia.barros@email.com', '65076000', 'senha123'),
+(1, 11, 'Pedro Ribeiro', '26315947877', '78787878787', 'Parque Mãe Bonifácia, 100', '65911009988', 'pedro.ribeiro@email.com', '78043405', 'senha123'),
+(2, 12, 'Lívia Castro', '47826315988', '89898989898', 'Avenida Afonso Pena, 4296', '67999887766', 'livia.castro@email.com', '79020001', 'senha123'),
+(1, 14, 'Lucas Martins', '15947826399', '90909090909', 'Estação das Docas, Blvd. Castilhos', '91988776655', 'lucas.martins2@email.com', '66010020', 'senha123'),
+(2, 15, 'Giulia Fernandes', '26315947800', '01010101010', 'Praia de Tambaú, 1234', '83977665544', 'giulia.fernandes@email.com', '58039000', 'senha123'),
+(1, 18, 'Enzo Cavalcanti', '98765432101', '10987654321', 'Avenida Frei Serafim, 2280', '86966554433', 'enzo.cavalcanti@email.com', '64000160', 'senha123'),
+(2, 20, 'Maria Clara Pinto', '87654321098', '21098765432', 'Praia de Ponta Negra, 500', '84955443322', 'maria.pinto@email.com', '59090002', 'senha123'),
+(1, 22, 'Benjamin Correia', '76543210987', '32109876543', 'Avenida Sete de Setembro, 830', '69944332211', 'benjamin.correia@email.com', '76801083', 'senha123'),
+(2, 23, 'Yasmin Fogaça', '65432109876', '43210987654', 'Centro Cívico, s/n', '95933221100', 'yasmin.fogaca@email.com', '69301130', 'senha123'),
+(1, 26, 'Guilherme Peixoto', '54321098765', '54321098765', 'Avenida Ivo do Prado, 398', '79922110099', 'guilherme.peixoto@email.com', '49015000', 'senha123'),
+(2, 27, 'Esther Araujo', '43210987654', '65432109876', 'Praça dos Girassóis, 10', '63911009988', 'esther.araujo@email.com', '77001002', 'senha123'),
+(1, 29, 'Lorenzo Jesus', '32109876543', '76543210987', 'Rodovia Anhanguera, km 310', '16999887766', 'lorenzo.jesus@email.com', '14095220', 'senha123'),
+(2, 30, 'Lavínia Freitas', '21098765432', '87654321098', 'Avenida Paulista, 900', '11988776655', 'lavinia.freitas@email.com', '01310100', 'senha123'),
+(1, 34, 'Nicolas Macedo', '10987654321', '98765432109', 'Rua Direita, 22', '31977665544', 'nicolas.macedo@email.com', '35420000', 'senha123'),
+(2, 35, 'Sarah Campos', '12345678910', '11223344555', 'Av. Afonso Pena, 1500', '67966554433', 'sarah.campos@email.com', '79002071', 'senha123'),
+(1, 38, 'Anthony da Mota', '23456789101', '22334455666', 'Rua XV de Novembro, 788', '51955443322', 'anthony.mota@email.com', '90020005', 'senha123'),
+(2, 37, 'Isis da Rocha', '34567891012', '33445566777', 'Alameda Rio Branco, 256', '47944332211', 'isis.rocha@email.com', '89010300', 'senha123'),
+(1, 36, 'Bryan da Cunha', '45678910123', '44556677888', 'Avenida Borges de Medeiros, 2030', '54933221100', 'bryan.cunha@email.com', '95670000', 'senha123'),
+(2, 25, 'Melissa da Paz', '56789101234', '55667788999', 'Rua Augusta, 1500', '11922110099', 'melissa.paz@email.com', '01305100', 'senha123'),
+(1, 19, 'Emanuel Viana', '67891012345', '66778899000', 'Rua do Lavradio, 71', '21911009988', 'emanuel.viana@email.com', '20230070', 'senha123'),
+(2, 13, 'Elisa Pereira', '78910123456', '77889900111', 'Rua da Bahia, 1120', '31999887766', 'elisa.pereira@email.com', '30160011', 'senha123'),
+(1, 5, 'Ryan Gonçalves', '89101234567', '88990011222', 'Avenida Sete de Setembro, 300', '71988776655', 'ryan.goncalves@email.com', '40060001', 'senha123'),
+(2, 7, 'Isadora Ribeiro', '91012345678', '99001122333', 'Setor Hoteleiro Sul, Quadra 5', '61977665544', 'isadora.ribeiro@email.com', '70322915', 'senha123'),
+(3, 25, 'Alex Souza', '10123456789', '00112233444', 'Avenida Ipiranga, 200', '11966554433', 'alex.souza@email.com', '01040000', 'senha123');
+
+-- Inserindo Pessoas (Lote 2 de 4)
+INSERT INTO pessoa (Genero_Id, Cidade_Id, Nome, CPF, CNH, Endereco, Telefone, Email, CEP, Senha) VALUES
+(1, 16, 'Murilo Costela', '11133344455', '11122233344', 'Rua das Araucárias, 314', '41912345678', 'murilo.costela@email.com', '80010010', 'senha456'),
+(2, 21, 'Rafaela Azevedo', '22244455566', '22233344455', 'Avenida Goethe, 99', '51923456789', 'rafaela.azevedo@email.com', '90430100', 'senha456'),
+(1, 24, 'Felipe Castro', '33355566677', '33344455566', 'Avenida Beira Mar Norte, 2000', '48934567890', 'felipe.castro@email.com', '88015000', 'senha456'),
+(2, 17, 'Cecília Dias', '44466677788', '44455566677', 'Rua da Aurora, 1259', '81945678901', 'cecilia.dias@email.com', '50050000', 'senha456'),
+(1, 9, 'Samuel Farias', '55577788899', '55566677788', 'Avenida T-63, 1296', '62956789012', 'samuel.farias@email.com', '74230100', 'senha456'),
+(2, 37, 'Rebeca Justo', '66688899900', '66677788899', 'Rua Curt Hering, 33', '47967890123', 'rebeca.justo@email.com', '89010100', 'senha456'),
+(1, 28, 'Breno Ramos', '77799900011', '77788899900', 'Avenida Norte Sul, 777', '19978901234', 'breno.ramos@email.com', '13025131', 'senha456'),
+(2, 32, 'Mariana Neves', '88800011122', '88899900011', 'Rua Francisco Otaviano, 67', '21989012345', 'mariana.neves@email.com', '22080040', 'senha456'),
+(1, 33, 'Vinicius Moraes', '99911122233', '99900011122', 'Praça Minas Gerais, 42', '31990123456', 'vinicius.moraes@email.com', '35400000', 'senha456'),
+(2, 39, 'Larissa Borges', '00022233344', '00011122233', 'Avenida Juscelino Kubitscheck, 100', '45901234567', 'larissa.borges@email.com', '85864000', 'senha456'),
+(1, 40, 'Leonardo Barros', '10198765432', '10101010101', 'Avenida Colombo, 5790', '44912345678', 'leonardo.barros@email.com', '87020900', 'senha456'),
+(2, 36, 'Ana Luiza Santos', '20287654321', '20202020202', 'Rua Coberta, 100', '54923456789', 'analuiza.santos@email.com', '95670000', 'senha456'),
+(1, 41, 'Eduardo Lima', '30376543210', '30303030303', 'Via Trento, 1500', '54934567890', 'eduardo.lima@email.com', '95700000', 'senha456'),
+(2, 31, 'Clara Ferreira', '40465432109', '40404040404', 'Largo do Rosário, 20', '19945678901', 'clara.ferreira@email.com', '13010111', 'senha456'),
+(1, 1, 'Francisco Gomes', '50554321098', '50505050505', 'Travessa da Catedral, 50', '68956789012', 'francisco.gomes@email.com', '69900161', 'senha456'),
+(2, 2, 'Letícia Rodrigues', '60643210987', '60606060606', 'Rua Sá e Albuquerque, 467', '82967890123', 'leticia.rodrigues@email.com', '57025000', 'senha456'),
+(1, 3, 'Daniel Martins', '70732109876', '70707070707', 'Avenida FAB, 84', '96978901234', 'daniel.martins@email.com', '68900015', 'senha456'),
+(2, 4, 'Amanda Souza', '80821098765', '80808080808', 'Rua Henrique Martins, 323', '92989012345', 'amanda.souza@email.com', '69010170', 'senha456'),
+(1, 6, 'Gustavo Azevedo', '90910987654', '90909090909', 'Rua dos Tabajaras, 658', '85990123456', 'gustavo.azevedo@email.com', '60060510', 'senha456'),
+(2, 8, 'Vanessa Cardoso', '01098765432', '01010101011', 'Rua General Osório, 123', '27901234567', 'vanessa.cardoso@email.com', '29010040', 'senha456'),
+(1, 10, 'Cauã Rocha', '11287654321', '12121212122', 'Avenida dos Holandeses, 1', '98912345678', 'caua.rocha@email.com', '65075670', 'senha456'),
+(2, 11, 'Luana Barbosa', '22376543210', '23232323233', 'Avenida Historiador Rubens de Mendonça, 4000', '65923456789', 'luana.barbosa@email.com', '78049000', 'senha456'),
+(1, 12, 'Erick Pinto', '33465432109', '34343434344', 'Rua 14 de Julho, 2160', '67934567890', 'erick.pinto@email.com', '79002330', 'senha456'),
+(2, 14, 'Mirella Teixeira', '44554321098', '45454545455', 'Avenida Presidente Vargas, 100', '91945678901', 'mirella.teixeira@email.com', '66017000', 'senha456'),
+(1, 15, 'Fernando Dias', '55643210987', '56565656566', 'Avenida Almirante Tamandaré, 200', '83956789012', 'fernando.dias@email.com', '58038000', 'senha456'),
+(2, 18, 'Isabelly Nogueira', '66732109876', '67676767677', 'Rua Lisandro Nogueira, 1556', '86967890123', 'isabelly.nogueira@email.com', '64000210', 'senha456'),
+(1, 20, 'Rodrigo Monteiro', '77821098765', '78787878788', 'Rua Pedro Fonseca Filho, 1020', '84978901234', 'rodrigo.monteiro@email.com', '59063370', 'senha456'),
+(2, 22, 'Catarina Cunha', '88910987654', '89898989899', 'Rua Almirante Barroso, 432', '69989012345', 'catarina.cunha@email.com', '76801080', 'senha456'),
+(1, 23, 'Otávio Moreira', '99098765432', '90909090900', 'Avenida Capitão Ene Garcez, 678', '95990123456', 'otavio.moreira@email.com', '69304000', 'senha456'),
+(2, 26, 'Evelyn Carvalho', '01234567890', '01234567891', 'Calçadão da João Pessoa, 101', '79901234567', 'evelyn.carvalho@email.com', '49010010', 'senha456'),
+(1, 27, 'Vicente Mendes', '12345678901', '12345678902', 'Avenida JK, Quadra 102 Sul', '63912345678', 'vicente.mendes@email.com', '77020020', 'senha456'),
+(2, 29, 'Stella Barros', '23456789012', '23456789013', 'Avenida 9 de Julho, 1500', '16923456789', 'stella.barros@email.com', '14015120', 'senha456'),
+(1, 30, 'Benjamin Ribeiro', '34567890123', '34567890124', 'Rua Frei Caneca, 569', '11934567890', 'benjamin.ribeiro2@email.com', '01307001', 'senha456'),
+(2, 34, 'Marina Castro', '45678901234', '45678901235', 'Largo do Coimbra, 45', '31945678901', 'marina.castro@email.com', '35420000', 'senha456'),
+(1, 35, 'Joaquim Fernandes', '56789012345', '56789012346', 'Rua 25 de Dezembro, 262', '67956789012', 'joaquim.fernandes@email.com', '79002060', 'senha456'),
+(2, 38, 'Luiza Cavalcanti', '67890123456', '67890123457', 'Rua dos Andradas, 1560', '51967890123', 'luiza.cavalcanti@email.com', '90020011', 'senha456'),
+(1, 37, 'André Pinto', '78901234567', '78901234568', 'Rua Paulo Zimmermann, 100', '47978901234', 'andre.pinto@email.com', '89010170', 'senha456'),
+(2, 36, 'Alícia da Rocha', '89012345678', '89012345679', 'Avenida das Hortênsias, 2100', '54989012345', 'alicia.rocha@email.com', '95670000', 'senha456'),
+(1, 25, 'Davi da Cunha', '90123456789', '90123456780', 'Praça da Sé, 1', '11990123456', 'davi.cunha@email.com', '01001000', 'senha456'),
+(2, 19, 'Heloísa da Paz', '01234567899', '01234567892', 'Arcos da Lapa, s/n', '21901234567', 'heloisa.paz@email.com', '20230050', 'senha456'),
+(1, 13, 'Levi Viana', '12345678998', '12345678903', 'Rua Sapucaí, 383', '31912345678', 'levi.viana@email.com', '30150241', 'senha456'),
+(2, 5, 'Carolina Pereira', '23456789987', '23456789014', 'Farol da Barra, s/n', '71923456789', 'carolina.pereira@email.com', '40140650', 'senha456'),
+(1, 7, 'Noah Gonçalves', '34567899876', '34567890125', 'Ponte JK, Lago Sul', '61934567890', 'noah.goncalves@email.com', '70200002', 'senha456'),
+(2, 25, 'Gabriela Ribeiro', '45678998765', '45678901236', 'Parque Ibirapuera, Portão 3', '11945678901', 'gabriela.ribeiro@email.com', '04094000', 'senha456'),
+(1, 19, 'Henry Souza', '56789987654', '56789012347', 'Pão de Açúcar, Urca', '21956789012', 'henry.souza@email.com', '22290000', 'senha456'),
+(2, 13, 'Liz Oliveira', '67899876543', '67890123458', 'Mercado Central, Av. Augusto de Lima, 744', '31967890123', 'liz.oliveira@email.com', '30190922', 'senha456'),
+(1, 5, 'José Almeida', '78998765432', '78901234569', 'Elevador Lacerda, Praça Cairu', '71978901234', 'jose.almeida@email.com', '40015010', 'senha456'),
+(2, 7, 'Vitória Ferreira', '89987654321', '89012345670', 'Congresso Nacional, Praça dos Três Poderes', '61989012345', 'vitoria.ferreira@email.com', '70160900', 'senha456'),
+(3, 25, 'Kai Gomes', '99876543210', '90123456781', 'MASP, Av. Paulista, 1578', '11990123456', 'kai.gomes@email.com', '01310200', 'senha456');
+
+-- Inserindo Pessoas (Lote 3 de 4)
+INSERT INTO pessoa (Genero_Id, Cidade_Id, Nome, CPF, CNH, Endereco, Telefone, Email, CEP, Senha) VALUES
+(1, 16, 'Nathan Oliveira', '11144455566', '11133344455', 'Rua 24 Horas, 10', '41911223344', 'nathan.oliveira@email.com', '80060000', 'senha789'),
+(2, 21, 'Agatha Pereira', '22255566677', '22244455566', 'Parque da Redenção, s/n', '51922334455', 'agatha.pereira@email.com', '90040000', 'senha789'),
+(1, 24, 'Isaac Costa', '33366677788', '33355566677', 'Jurerê Internacional, Av. dos Búzios', '48933445566', 'isaac.costa@email.com', '88053300', 'senha789'),
+(2, 17, 'Heloísa Santos', '44477788899', '44466677788', 'Marco Zero, Praça Rio Branco', '81944556677', 'heloisa.santos@email.com', '50030903', 'senha789'),
+(1, 9, 'Caio Almeida', '55588899900', '55577788899', 'Centro Cultural Oscar Niemeyer, Av. Dep. Jamel Cecílio', '62955667788', 'caio.almeida@email.com', '74891130', 'senha789'),
+(2, 37, 'Ana Júlia Ferreira', '66699900011', '66688899900', 'Parque Vila Germânica, Rua Alberto Stein', '47966778899', 'anajulia.ferreira@email.com', '89036200', 'senha789'),
+(1, 28, 'Otávio Gomes', '77700011122', '77799900011', 'Lagoa do Taquaral, Portão 1', '19977889900', 'otavio.gomes@email.com', '13087000', 'senha789'),
+(2, 32, 'Lara Rodrigues', '88811122233', '88800011122', 'Mirante do Leblon, Praça Atahualpa', '21988990011', 'lara.rodrigues@email.com', '22441090', 'senha789'),
+(1, 33, 'Lucca Martins', '99922233344', '99911122233', 'Igreja São Francisco de Assis, Largo de Coimbra', '31999001122', 'lucca.martins@email.com', '35400000', 'senha789'),
+(2, 39, 'Milena Souza', '00033344455', '00022233344', 'Templo Budista, Rua Dr. Faria Sobrinho', '45900112233', 'milena.souza@email.com', '85862500', 'senha789'),
+(1, 40, 'Davi Lucca Azevedo', '10298765432', '10203040506', 'Catedral Basílica Menor de Maringá', '44911223344', 'davilucca.azevedo@email.com', '87010530', 'senha789'),
+(2, 36, 'Maria Eduarda Cardoso', '20387654321', '20304050607', 'Palácio dos Festivais, Av. Borges de Medeiros', '54922334455', 'mariaeduarda.cardoso@email.com', '95670000', 'senha789'),
+(1, 41, 'Théo Rocha', '30476543210', '30405060708', 'Ponte dos Arcos, RS-444', '54933445566', 'theo.rocha@email.com', '95700000', 'senha789'),
+(2, 31, 'Giovanna Barbosa', '40565432109', '40506070809', 'Mercado Municipal de Campinas', '19944556677', 'giovanna.barbosa@email.com', '13010070', 'senha789'),
+(1, 1, 'Calebe Pinto', '50654321098', '50607080901', 'Parque da Maternidade', '68955667788', 'calebe.pinto@email.com', '69900710', 'senha789'),
+(2, 2, 'Emanuelly Teixeira', '60743210987', '60708090102', 'Memorial à República, Av. da Paz', '82966778899', 'emanuelly.teixeira@email.com', '57025005', 'senha789'),
+(1, 3, 'Ian Dias', '70832109876', '70809010203', 'Fortaleza de São José de Macapá', '96977889900', 'ian.dias@email.com', '68900068', 'senha789'),
+(2, 4, 'Maria Alice Nogueira', '80921098765', '80901020304', 'Teatro Amazonas, Praça São Sebastião', '92988990011', 'mariaalice.nogueira@email.com', '69010001', 'senha789'),
+(1, 6, 'Gael Monteiro', '91010987654', '91012030405', 'Centro Dragão do Mar de Arte e Cultura', '85999001122', 'gael.monteiro@email.com', '60060170', 'senha789'),
+(2, 8, 'Maria Cecília Cunha', '02198765432', '02123040506', 'Convento da Penha, Vila Velha', '27900112233', 'mariacecilia.cunha@email.com', '29100010', 'senha789'),
+(1, 10, 'Yuri Moreira', '13287654321', '13234050607', 'Palácio dos Leões, Av. Dom Pedro II', '98911223344', 'yuri.moreira@email.com', '65010904', 'senha789'),
+(2, 11, 'Ana Clara Carvalho', '24376543210', '24345060708', 'Chapada dos Guimarães, Parque Nacional', '65922334455', 'anaclara.carvalho@email.com', '78195000', 'senha789'),
+(1, 12, 'Augusto Mendes', '35465432109', '35456070809', 'Parque das Nações Indígenas', '67933445566', 'augusto.mendes@email.com', '79021440', 'senha789'),
+(2, 14, 'Maria Vitória Barros', '46554321098', '46567080901', 'Ver-o-Peso, Av. Castilhos França', '91944556677', 'mariavitoria.barros@email.com', '66013030', 'senha789'),
+(1, 15, 'Enrico Ribeiro', '57643210987', '57678090102', 'Farol do Cabo Branco', '83955667788', 'enrico.ribeiro@email.com', '58045000', 'senha789'),
+(2, 18, 'Ana Liz Castro', '68732109876', '68789010203', 'Parque Encontro dos Rios', '86966778899', 'analiz.castro@email.com', '64218000', 'senha789'),
+(1, 20, 'Luiz Otávio Fernandes', '79821098765', '79890120304', 'Forte dos Reis Magos', '84977889900', 'luizotavio.fernandes@email.com', '59010000', 'senha789'),
+(2, 22, 'Cecília Cavalcanti', '80910987654', '80901230405', 'Estrada de Ferro Madeira-Mamoré', '69988990011', 'cecilia.cavalcanti@email.com', '76801155', 'senha789'),
+(1, 23, 'João Miguel Pinto', '91098765432', '91012340506', 'Monte Roraima, Fronteira', '95999001122', 'joaomiguel.pinto@email.com', '69355000', 'senha789'),
+(2, 26, 'Maria Luiza da Rocha', '02109876543', '02123450607', 'Cânion do Xingó, Canindé', '79900112233', 'marialuiza.rocha@email.com', '49820000', 'senha789'),
+(1, 27, 'João Pedro da Cunha', '13210987654', '13234560708', 'Jalapão, Parque Estadual', '63911223344', 'joaopedro.cunha@email.com', '77593000', 'senha789'),
+(2, 29, 'Helena da Paz', '24321098765', '24345670809', 'Teatro Pedro II, Rua Álvares Cabral', '16922334455', 'helena.paz@email.com', '14010080', 'senha789'),
+(1, 30, 'Arthur Viana', '35432109876', '35456780901', 'Beco do Batman, Vila Madalena', '11933445566', 'arthur.viana@email.com', '05436040', 'senha789'),
+(2, 34, 'Marina Pereira', '46543210987', '46567890102', 'Santuário do Caraça, Catas Altas', '31944556677', 'marina.pereira@email.com', '35969000', 'senha789'),
+(1, 35, 'Bento Gonçalves', '57654321098', '57678901203', 'Bonito, Gruta do Lago Azul', '67955667788', 'bento.goncalves@email.com', '79290000', 'senha789'),
+(2, 38, 'Maitê Ribeiro', '68765432109', '68789012304', 'Mercado Público de Porto Alegre', '51966778899', 'maite.ribeiro@email.com', '90020080', 'senha789'),
+(1, 37, 'Samuel da Mota', '79876543210', '79890123405', 'Oktoberfest, Parque Vila Germânica', '47977889900', 'samuel.mota@email.com', '89036200', 'senha789'),
+(2, 36, 'Luna Fogaça', '80987654321', '80901234506', 'Lago Negro, Rua A. J. Renner', '54988990011', 'luna.fogaca@email.com', '95670000', 'senha789'),
+(1, 25, 'José Peixoto', '91098765432', '91012345607', 'Pinacoteca, Praça da Luz', '11999001122', 'jose.peixoto@email.com', '01120010', 'senha789'),
+(2, 19, 'Antonella Araujo', '02109876543', '02123456708', 'Jardim Botânico, Rua Jardim Botânico', '21900112233', 'antonella.araujo@email.com', '22460000', 'senha789'),
+(1, 13, 'Ravi Jesus', '13210987654', '13234567809', 'Inhotim, Brumadinho', '31911223344', 'ravi.jesus@email.com', '35460000', 'senha789'),
+(2, 5, 'Clarice Freitas', '24321098765', '24345678901', 'Morro de São Paulo, Cairu', '75922334455', 'clarice.freitas@email.com', '45420000', 'senha789'),
+(1, 7, 'Francisco Macedo', '35432109876', '35456789012', 'Catedral Metropolitana, Esplanada dos Ministérios', '61933445566', 'francisco.macedo@email.com', '70050000', 'senha789'),
+(2, 25, 'Lorena Campos', '46543210987', '46567890123', 'Avenida Faria Lima, 4440', '11944556677', 'lorena.campos@email.com', '04538132', 'senha789'),
+(1, 19, 'Benício da Mota', '57654321098', '57678901234', 'Museu do Amanhã, Praça Mauá', '21955667788', 'benicio.mota@email.com', '20081240', 'senha789'),
+(2, 13, 'Olívia da Rocha', '68765432109', '68789012345', 'Mineirão, Av. Antônio Abrahão Caram', '31966778899', 'olivia.rocha@email.com', '31275000', 'senha789'),
+(1, 5, 'Vicente da Cunha', '79876543210', '79890123456', 'Praia do Forte, Mata de São João', '71977889900', 'vicente.cunha@email.com', '48280000', 'senha789'),
+(2, 7, 'Ayla Fogaça', '80987654321', '80901234567', 'Torre de TV, Eixo Monumental', '61988990011', 'ayla.fogaca@email.com', '70070701', 'senha789'),
+(3, 25, 'Noah Peixoto', '91098765432', '91012345678', 'Liberdade, Rua Galvão Bueno', '11999001122', 'noah.peixoto@email.com', '01506000', 'senha789');
+
+-- Inserindo Pessoas (Lote 4 de 4)
+INSERT INTO pessoa (Genero_Id, Cidade_Id, Nome, CPF, CNH, Endereco, Telefone, Email, CEP, Senha) VALUES
+(1, 16, 'Benjamin Lima', '22255566678', '22255566678', 'Jardim Botânico de Curitiba', '41912121212', 'benjamin.lima@email.com', '80210000', 'senhaabc'),
+(2, 21, 'Isabelly Ferreira', '33366677789', '33366677789', 'Fundação Iberê Camargo', '51923232323', 'isabelly.ferreira@email.com', '90810170', 'senhaabc'),
+(1, 24, 'Erick Gomes', '44477788890', '44477788890', 'Praia Mole, SC-406', '48934343434', 'erick.gomes@email.com', '88061700', 'senhaabc'),
+(2, 17, 'Allana Rodrigues', '55588899901', '55588899901', 'Instituto Ricardo Brennand', '81945454545', 'allana.rodrigues@email.com', '50741520', 'senhaabc'),
+(1, 9, 'Enzo Martins', '66699900012', '66699900012', 'Autódromo de Goiânia', '62956565656', 'enzo.martins3@email.com', '74615015', 'senhaabc'),
+(2, 37, 'Maria Alice Souza', '77700011123', '77700011123', 'Museu da Cerveja, Blumenau', '47967676767', 'mariaalice.souza@email.com', '89010140', 'senhaabc'),
+(1, 28, 'Miguel Azevedo', '88811122234', '88811122234', 'Observatório de Campinas', '19978787878', 'miguel.azevedo@email.com', '13083970', 'senhaabc'),
+(2, 32, 'Valentina Cardoso', '99922233345', '99922233345', 'Forte de Copacabana', '21989898989', 'valentina.cardoso@email.com', '22070002', 'senhaabc'),
+(1, 33, 'Davi Rocha', '00033344456', '00033344456', 'Museu da Inconfidência', '31990909090', 'davi.rocha@email.com', '35400000', 'senhaabc'),
+(2, 39, 'Helena Barbosa', '11144455567', '11144455567', 'Usina de Itaipu, Foz do Iguaçu', '45901010101', 'helena.barbosa@email.com', '85856970', 'senhaabc'),
+(1, 40, 'Arthur Pinto', '21398765432', '21398765432', 'Parque do Ingá, Maringá', '44912121212', 'arthur.pinto@email.com', '87013320', 'senhaabc'),
+(2, 36, 'Laura Teixeira', '32487654321', '32487654321', 'Rua Torta, Gramado', '54923232323', 'laura.teixeira@email.com', '95670000', 'senhaabc'),
+(1, 41, 'Heitor Dias', '43576543210', '43576543210', 'Caminhos de Pedra, Bento Gonçalves', '54934343434', 'heitor.dias@email.com', '95700000', 'senhaabc'),
+(2, 31, 'Alice Nogueira', '54665432109', '54665432109', 'Bosque dos Jequitibás, Campinas', '19945454545', 'alice.nogueira2@email.com', '13026070', 'senhaabc'),
+(1, 1, 'Theo Monteiro', '65754321098', '65754321098', 'Novo Mercado Velho, Rio Branco', '68956565656', 'theo.monteiro2@email.com', '69908440', 'senhaabc'),
+(2, 2, 'Manuela Cunha', '76843210987', '76843210987', 'Praia de Pajuçara, Maceió', '82967676767', 'manuela.cunha@email.com', '57030170', 'senhaabc'),
+(1, 3, 'Gael Moreira', '87932109876', '87932109876', 'Marco Zero do Equador, Macapá', '96978787878', 'gael.moreira2@email.com', '68903451', 'senhaabc'),
+(2, 4, 'Sophia Carvalho', '98021098765', '98021098765', 'Ponta Negra, Manaus', '92989898989', 'sophia.carvalho2@email.com', '69037000', 'senhaabc'),
+(1, 6, 'Bernardo Mendes', '09110987654', '09110987654', 'Praia do Futuro, Fortaleza', '85990909090', 'bernardo.mendes@email.com', '60182475', 'senhaabc'),
+(2, 8, 'Júlia Barros', '10298765432', '10298765432', 'Terceira Ponte, Vitória', '27901010101', 'julia.barros2@email.com', '29050945', 'senhaabc'),
+(1, 10, 'Lorenzo Ribeiro', '21387654321', '21387654321', 'Lençóis Maranhenses, Barreirinhas', '98912121212', 'lorenzo.ribeiro@email.com', '65590000', 'senhaabc'),
+(2, 11, 'Sarah Castro', '32476543210', '32476543210', 'Pantanal, Poconé', '65923232323', 'sarah.castro@email.com', '78175000', 'senhaabc'),
+(1, 12, 'Davi Lucas Fernandes', '43565432109', '43565432109', 'Buraco das Araras, Jardim', '67934343434', 'davilucas.fernandes@email.com', '79240000', 'senhaabc'),
+(2, 14, 'Isis Cavalcanti', '54654321098', '54654321098', 'Ilha de Marajó, Soure', '91945454545', 'isis.cavalcanti@email.com', '68870000', 'senhaabc'),
+(1, 15, 'Guilherme Pinto', '65743210987', '65743210987', 'Areia Vermelha, Cabedelo', '83956565656', 'guilherme.pinto2@email.com', '58100001', 'senhaabc'),
+(2, 18, 'Yasmin da Rocha', '76832109876', '76832109876', 'Delta do Parnaíba, Parnaíba', '86967676767', 'yasmin.rocha@email.com', '64200970', 'senhaabc'),
+(1, 20, 'João Guilherme da Cunha', '87921098765', '87921098765', 'Pipa, Tibau do Sul', '84978787878', 'joaog.cunha@email.com', '59178000', 'senhaabc'),
+(2, 22, 'Maria Fernanda da Paz', '98010987654', '98010987654', 'Vale do Guaporé, Costa Marques', '69989898989', 'mariaf.paz@email.com', '76937000', 'senhaabc'),
+(1, 23, 'Nicolas Viana', '09198765432', '09198765432', 'Serra do Tepequém, Amajari', '95990909090', 'nicolas.viana@email.com', '69343000', 'senhaabc'),
+(2, 26, 'Maria Clara Pereira', '10209876543', '10209876543', 'Praia do Saco, Estância', '79901010101', 'mariac.pereira@email.com', '49200000', 'senhaabc'),
+(1, 27, 'Pedro Henrique Gonçalves', '21310987654', '21310987654', 'Ilha do Bananal, Formoso do Araguaia', '63912121212', 'pedroh.goncalves@email.com', '77470000', 'senhaabc'),
+(2, 29, 'Ana Beatriz Ribeiro', '32421098765', '32421098765', 'Cervejaria Pinguim, Ribeirão Preto', '16923232323', 'anab.ribeiro@email.com', '14010070', 'senhaabc'),
+(1, 30, 'Lucas Gabriel Souza', '43532109876', '43532109876', 'Mercado Municipal de São Paulo', '11934343434', 'lucasg.souza@email.com', '01021200', 'senhaabc'),
+(2, 34, 'Mariana Oliveira', '54643210987', '54643210987', 'Serra do Cipó, Santana do Riacho', '31945454545', 'mariana.oliveira2@email.com', '35845000', 'senhaabc'),
+(1, 35, 'Matheus Almeida', '65754321098', '65754321098', 'Estrada Parque Pantanal, Corumbá', '67956565656', 'matheus.almeida2@email.com', '79300003', 'senhaabc'),
+(2, 38, 'Beatriz Ferreira', '76865432109', '76865432109', 'Cânion Itaimbezinho, Cambará do Sul', '51967676767', 'beatriz.ferreira2@email.com', '95480000', 'senhaabc'),
+(1, 37, 'Felipe Gomes', '87976543210', '87976543210', 'Pomerode, a cidade mais alemã', '47978787878', 'felipe.gomes2@email.com', '89107000', 'senhaabc'),
+(2, 36, 'Lívia Rodrigues', '98087654321', '98087654321', 'Cascata do Caracol, Canela', '54989898989', 'livia.rodrigues2@email.com', '95680000', 'senhaabc'),
+(1, 25, 'Samuel Martins', '09198765432', '09198765432', 'Estádio do Morumbi, São Paulo', '11990909090', 'samuel.martins4@email.com', '05653070', 'senhaabc'),
+(2, 19, 'Letícia Souza', '10209876543', '10209876543', 'Cristo Redentor, Rio de Janeiro', '21901010101', 'leticia.souza2@email.com', '22241330', 'senhaabc'),
+(1, 13, 'Bryan Azevedo', '21310987654', '21310987654', 'Praça Sete, Belo Horizonte', '31912121212', 'bryan.azevedo@email.com', '30130008', 'senhaabc'),
+(2, 5, 'Melissa Cardoso', '32421098765', '32421098765', 'Igreja do Bonfim, Salvador', '71923232323', 'melissa.cardoso@email.com', '40415475', 'senhaabc'),
+(1, 7, 'Enzo Gabriel Rocha', '43532109876', '43532109876', 'Palácio da Alvorada, Brasília', '61934343434', 'enzog.rocha@email.com', '70150000', 'senhaabc'),
+(2, 25, 'Catarina Barbosa', '54643210987', '54643210987', 'Theatro Municipal, São Paulo', '11945454545', 'catarina.barbosa@email.com', '01011000', 'senhaabc'),
+(1, 19, 'Igor Pinto', '65754321098', '65754321098', 'Maracanã, Rio de Janeiro', '21956565656', 'igor.pinto@email.com', '20541940', 'senhaabc'),
+(2, 13, 'Mirella Teixeira', '76865432109', '76865432109', 'Feira Hippie, Belo Horizonte', '31967676767', 'mirella.teixeira2@email.com', '30140105', 'senhaabc'),
+(1, 5, 'Anthony Dias', '87976543210', '87976543210', 'Mercado Modelo, Salvador', '71978787878', 'anthony.dias@email.com', '40015020', 'senhaabc'),
+(2, 7, 'Esther Nogueira', '98087654321', '98087654321', 'Memorial JK, Brasília', '61989898989', 'esther.nogueira@email.com', '70070300', 'senhaabc'),
+(3, 25, 'Taylor Monteiro', '09198765432', '09198765432', 'Allianz Parque, São Paulo', '11990909090', 'taylor.monteiro@email.com', '05001200', 'senhaabc');
+
+-- Seção 1: Inserindo as 100 Reservas
+INSERT INTO reserva (Pacote_Id, Carro_Id, DataRetirada, DataDevolucao) VALUES
+-- 40 Reservas Passadas (Finalizadas)
+(1, 1, '2025-07-10 10:00:00', '2025-07-15 10:00:00'), (2, 2, '2025-07-11 14:00:00', '2025-07-18 14:00:00'),
+(3, 3, '2025-07-12 09:00:00', '2025-07-20 09:00:00'), (1, 4, '2025-07-14 11:00:00', '2025-07-19 11:00:00'),
+(2, 5, '2025-07-15 16:00:00', '2025-07-22 16:00:00'), (1, 6, '2025-08-01 10:00:00', '2025-08-05 10:00:00'),
+(2, 7, '2025-08-02 12:00:00', '2025-08-09 12:00:00'), (3, 8, '2025-08-03 08:00:00', '2025-08-11 08:00:00'),
+(1, 9, '2025-08-05 15:00:00', '2025-08-10 15:00:00'), (2, 10, '2025-08-06 18:00:00', '2025-08-13 18:00:00'),
+(1, 11, '2025-07-20 10:00:00', '2025-07-25 10:00:00'), (2, 12, '2025-07-21 14:00:00', '2025-07-28 14:00:00'),
+(3, 13, '2025-07-22 09:00:00', '2025-07-30 09:00:00'), (1, 14, '2025-07-24 11:00:00', '2025-07-29 11:00:00'),
+(2, 15, '2025-07-25 16:00:00', '2025-08-01 16:00:00'), (1, 16, '2025-08-11 10:00:00', '2025-08-15 10:00:00'),
+(2, 17, '2025-08-12 12:00:00', '2025-08-19 12:00:00'), (3, 18, '2025-08-13 08:00:00', '2025-08-21 08:00:00'),
+(1, 19, '2025-08-15 15:00:00', '2025-08-20 15:00:00'), (2, 20, '2025-08-16 18:00:00', '2025-08-23 18:00:00'),
+(1, 21, '2025-06-10 10:00:00', '2025-06-15 10:00:00'), (2, 22, '2025-06-11 14:00:00', '2025-06-18 14:00:00'),
+(3, 23, '2025-06-12 09:00:00', '2025-06-20 09:00:00'), (1, 24, '2025-06-14 11:00:00', '2025-06-19 11:00:00'),
+(2, 25, '2025-06-15 16:00:00', '2025-06-22 16:00:00'), (1, 26, '2025-05-01 10:00:00', '2025-05-05 10:00:00'),
+(2, 27, '2025-05-02 12:00:00', '2025-05-09 12:00:00'), (3, 28, '2025-05-03 08:00:00', '2025-05-11 08:00:00'),
+(1, 29, '2025-05-05 15:00:00', '2025-05-10 15:00:00'), (2, 30, '2025-05-06 18:00:00', '2025-05-13 18:00:00'),
+(1, 31, '2025-08-20 10:00:00', '2025-08-25 10:00:00'), (2, 32, '2025-08-21 14:00:00', '2025-08-28 14:00:00'),
+(3, 33, '2025-08-22 09:00:00', '2025-08-30 09:00:00'), (1, 34, '2025-08-24 11:00:00', '2025-08-29 11:00:00'),
+(2, 35, '2025-08-25 16:00:00', '2025-09-01 16:00:00'), (1, 36, '2025-09-01 10:00:00', '2025-09-05 10:00:00'),
+(2, 37, '2025-09-02 12:00:00', '2025-09-09 12:00:00'), (3, 38, '2025-09-03 08:00:00', '2025-09-11 08:00:00'),
+(1, 39, '2025-09-05 15:00:00', '2025-09-10 15:00:00'), (2, 40, '2025-09-06 18:00:00', '2025-09-13 18:00:00'),
+
+-- 10 Reservas Atuais (Em Aberto)
+(3, 41, '2025-09-12 10:00:00', '2025-09-19 10:00:00'), (1, 42, '2025-09-13 14:00:00', '2025-09-20 14:00:00'),
+(2, 43, '2025-09-11 09:00:00', '2025-09-18 09:00:00'), (1, 44, '2025-09-14 11:00:00', '2025-09-21 11:00:00'),
+(3, 45, '2025-09-10 16:00:00', '2025-09-17 16:00:00'), (2, 46, '2025-09-12 10:00:00', '2025-09-22 10:00:00'),
+(1, 47, '2025-09-13 12:00:00', '2025-09-23 12:00:00'), (3, 48, '2025-09-14 08:00:00', '2025-09-24 08:00:00'),
+(2, 49, '2025-09-15 15:00:00', '2025-09-25 15:00:00'), (1, 50, '2025-09-15 18:00:00', '2025-09-26 18:00:00'),
+
+-- 50 Reservas Futuras (Pendentes)
+(1, 1, '2025-10-10 10:00:00', '2025-10-15 10:00:00'), (2, 2, '2025-10-11 14:00:00', '2025-10-18 14:00:00'),
+(3, 3, '2025-10-12 09:00:00', '2025-10-20 09:00:00'), (1, 4, '2025-10-14 11:00:00', '2025-10-19 11:00:00'),
+(2, 5, '2025-10-15 16:00:00', '2025-10-22 16:00:00'), (1, 6, '2025-11-01 10:00:00', '2025-11-05 10:00:00'),
+(2, 7, '2025-11-02 12:00:00', '2025-11-09 12:00:00'), (3, 8, '2025-11-03 08:00:00', '2025-11-11 08:00:00'),
+(1, 9, '2025-11-05 15:00:00', '2025-11-10 15:00:00'), (2, 10, '2025-11-06 18:00:00', '2025-11-13 18:00:00'),
+(3, 11, '2025-12-01 09:00:00', '2025-12-08 09:00:00'), (1, 12, '2025-12-02 11:00:00', '2025-12-07 11:00:00'),
+(2, 13, '2025-12-03 14:00:00', '2025-12-10 14:00:00'), (1, 14, '2025-12-04 16:00:00', '2025-12-09 16:00:00'),
+(3, 15, '2025-12-05 10:00:00', '2025-12-12 10:00:00'), (2, 16, '2025-10-20 10:00:00', '2025-10-25 10:00:00'),
+(1, 17, '2025-10-21 12:00:00', '2025-10-26 12:00:00'), (3, 18, '2025-10-22 14:00:00', '2025-10-29 14:00:00'),
+(2, 19, '2025-10-23 16:00:00', '2025-10-28 16:00:00'), (1, 20, '2025-10-24 18:00:00', '2025-10-31 18:00:00'),
+(1, 21, '2025-11-10 10:00:00', '2025-11-15 10:00:00'), (2, 22, '2025-11-11 14:00:00', '2025-11-18 14:00:00'),
+(3, 23, '2025-11-12 09:00:00', '2025-11-20 09:00:00'), (1, 24, '2025-11-14 11:00:00', '2025-11-19 11:00:00'),
+(2, 25, '2025-11-15 16:00:00', '2025-11-22 16:00:00'), (1, 26, '2025-12-10 10:00:00', '2025-12-15 10:00:00'),
+(2, 27, '2025-12-11 12:00:00', '2025-12-18 12:00:00'), (3, 28, '2025-12-12 08:00:00', '2025-12-20 08:00:00'),
+(1, 29, '2025-12-13 15:00:00', '2025-12-18 15:00:00'), (2, 30, '2025-12-14 18:00:00', '2025-12-21 18:00:00'),
+(3, 31, '2025-10-15 10:00:00', '2025-10-20 10:00:00'), (1, 32, '2025-10-16 14:00:00', '2025-10-23 14:00:00'),
+(2, 33, '2025-10-17 09:00:00', '2025-10-25 09:00:00'), (3, 34, '2025-10-18 11:00:00', '2025-10-24 11:00:00'),
+(1, 35, '2025-10-19 16:00:00', '2025-10-26 16:00:00'), (2, 36, '2025-11-15 10:00:00', '2025-11-20 10:00:00'),
+(3, 37, '2025-11-16 12:00:00', '2025-11-23 12:00:00'), (1, 38, '2025-11-17 08:00:00', '2025-11-25 08:00:00'),
+(2, 39, '2025-11-18 15:00:00', '2025-11-24 15:00:00'), (3, 40, '2025-11-19 18:00:00', '2025-11-26 18:00:00'),
+(1, 41, '2025-12-15 10:00:00', '2025-12-20 10:00:00'), (2, 42, '2025-12-16 14:00:00', '2025-12-23 14:00:00'),
+(3, 43, '2025-12-17 09:00:00', '2025-12-25 09:00:00'), (1, 44, '2025-12-18 11:00:00', '2025-12-24 11:00:00'),
+(2, 45, '2025-12-19 16:00:00', '2025-12-26 16:00:00'), (3, 46, '2026-01-10 10:00:00', '2026-01-15 10:00:00'),
+(1, 47, '2026-01-11 12:00:00', '2026-01-16 12:00:00'), (2, 48, '2026-01-12 08:00:00', '2026-01-20 08:00:00'),
+(3, 49, '2026-01-13 15:00:00', '2026-01-18 15:00:00'), (1, 50, '2026-01-14 18:00:00', '2026-01-21 18:00:00');
+
+-- Seção 2: Inserindo os 100 Contratos vinculados às reservas
+-- O Id da Reserva corresponde à ordem da inserção acima (1 a 100)
+-- O Id da Pessoa é um valor aleatório de 1 a 200
+INSERT INTO contrato (Reserva_Id, Pessoa_Id, DataContrato, Concluido) VALUES
+(1, 1, '2025-07-10 10:00:00', 'Finalizado'), (2, 2, '2025-07-11 14:00:00', 'Finalizado'),
+(3, 3, '2025-07-12 09:00:00', 'Finalizado'), (4, 4, '2025-07-14 11:00:00', 'Finalizado'),
+(5, 5, '2025-07-15 16:00:00', 'Finalizado'), (6, 6, '2025-08-01 10:00:00', 'Finalizado'),
+(7, 7, '2025-08-02 12:00:00', 'Finalizado'), (8, 8, '2025-08-03 08:00:00', 'Finalizado'),
+(9, 9, '2025-08-05 15:00:00', 'Finalizado'), (10, 10, '2025-08-06 18:00:00', 'Finalizado'),
+(11, 111, '2025-07-20 10:00:00', 'Finalizado'), (12, 112, '2025-07-21 14:00:00', 'Finalizado'),
+(13, 113, '2025-07-22 09:00:00', 'Finalizado'), (14, 114, '2025-07-24 11:00:00', 'Finalizado'),
+(15, 115, '2025-07-25 16:00:00', 'Finalizado'), (16, 116, '2025-08-11 10:00:00', 'Finalizado'),
+(17, 117, '2025-08-12 12:00:00', 'Finalizado'), (18, 118, '2025-08-13 08:00:00', 'Finalizado'),
+(19, 119, '2025-08-15 15:00:00', 'Finalizado'), (20, 120, '2025-08-16 18:00:00', 'Finalizado'),
+(21, 21, '2025-06-10 10:00:00', 'Finalizado'), (22, 22, '2025-06-11 14:00:00', 'Finalizado'),
+(23, 23, '2025-06-12 09:00:00', 'Finalizado'), (24, 24, '2025-06-14 11:00:00', 'Finalizado'),
+(25, 25, '2025-06-15 16:00:00', 'Finalizado'), (26, 26, '2025-05-01 10:00:00', 'Finalizado'),
+(27, 27, '2025-05-02 12:00:00', 'Finalizado'), (28, 28, '2025-05-03 08:00:00', 'Finalizado'),
+(29, 29, '2025-05-05 15:00:00', 'Finalizado'), (30, 30, '2025-05-06 18:00:00', 'Finalizado'),
+(31, 131, '2025-08-20 10:00:00', 'Finalizado'), (32, 132, '2025-08-21 14:00:00', 'Finalizado'),
+(33, 133, '2025-08-22 09:00:00', 'Finalizado'), (34, 134, '2025-08-24 11:00:00', 'Finalizado'),
+(35, 135, '2025-08-25 16:00:00', 'Finalizado'), (36, 136, '2025-09-01 10:00:00', 'Finalizado'),
+(37, 137, '2025-09-02 12:00:00', 'Finalizado'), (38, 138, '2025-09-03 08:00:00', 'Finalizado'),
+(39, 139, '2025-09-05 15:00:00', 'Finalizado'), (40, 140, '2025-09-06 18:00:00', 'Finalizado'),
+(41, 41, '2025-09-12 10:00:00', 'Aberto'), (42, 42, '2025-09-13 14:00:00', 'Aberto'),
+(43, 43, '2025-09-11 09:00:00', 'Aberto'), (44, 44, '2025-09-14 11:00:00', 'Aberto'),
+(45, 45, '2025-09-10 16:00:00', 'Aberto'), (46, 46, '2025-09-12 10:00:00', 'Aberto'),
+(47, 47, '2025-09-13 12:00:00', 'Aberto'), (48, 48, '2025-09-14 08:00:00', 'Aberto'),
+(49, 49, '2025-09-15 15:00:00', 'Aberto'), (50, 50, '2025-09-15 18:00:00', 'Aberto'),
+(51, 151, '2025-10-10 10:00:00', 'Pendente'), (52, 152, '2025-10-11 14:00:00', 'Pendente'),
+(53, 153, '2025-10-12 09:00:00', 'Pendente'), (54, 154, '2025-10-14 11:00:00', 'Pendente'),
+(55, 155, '2025-10-15 16:00:00', 'Pendente'), (56, 156, '2025-11-01 10:00:00', 'Pendente'),
+(57, 157, '2025-11-02 12:00:00', 'Pendente'), (58, 158, '2025-11-03 08:00:00', 'Pendente'),
+(59, 159, '2025-11-05 15:00:00', 'Pendente'), (60, 160, '2025-11-06 18:00:00', 'Pendente'),
+(61, 61, '2025-12-01 09:00:00', 'Pendente'), (62, 62, '2025-12-02 11:00:00', 'Pendente'),
+(63, 63, '2025-12-03 14:00:00', 'Pendente'), (64, 64, '2025-12-04 16:00:00', 'Pendente'),
+(65, 65, '2025-12-05 10:00:00', 'Pendente'), (66, 66, '2025-10-20 10:00:00', 'Pendente'),
+(67, 67, '2025-10-21 12:00:00', 'Pendente'), (68, 68, '2025-10-22 14:00:00', 'Pendente'),
+(69, 69, '2025-10-23 16:00:00', 'Pendente'), (70, 70, '2025-10-24 18:00:00', 'Pendente'),
+(71, 171, '2025-11-10 10:00:00', 'Pendente'), (72, 172, '2025-11-11 14:00:00', 'Pendente'),
+(73, 173, '2025-11-12 09:00:00', 'Pendente'), (74, 174, '2025-11-14 11:00:00', 'Pendente'),
+(75, 175, '2025-11-15 16:00:00', 'Pendente'), (76, 176, '2025-12-10 10:00:00', 'Pendente'),
+(77, 177, '2025-12-11 12:00:00', 'Pendente'), (78, 178, '2025-12-12 08:00:00', 'Pendente'),
+(79, 179, '2025-12-13 15:00:00', 'Pendente'), (80, 180, '2025-12-14 18:00:00', 'Pendente'),
+(81, 81, '2025-10-15 10:00:00', 'Pendente'), (82, 82, '2025-10-16 14:00:00', 'Pendente'),
+(83, 83, '2025-10-17 09:00:00', 'Pendente'), (84, 84, '2025-10-18 11:00:00', 'Pendente'),
+(85, 85, '2025-10-19 16:00:00', 'Pendente'), (86, 86, '2025-11-15 10:00:00', 'Pendente'),
+(87, 87, '2025-11-16 12:00:00', 'Pendente'), (88, 88, '2025-11-17 08:00:00', 'Pendente'),
+(89, 89, '2025-11-18 15:00:00', 'Pendente'), (90, 90, '2025-11-19 18:00:00', 'Pendente'),
+(91, 191, '2025-12-15 10:00:00', 'Pendente'), (92, 192, '2025-12-16 14:00:00', 'Pendente'),
+(93, 193, '2025-12-17 09:00:00', 'Pendente'), (94, 194, '2025-12-18 11:00:00', 'Pendente'),
+(95, 195, '2025-12-19 16:00:00', 'Pendente'), (96, 196, '2026-01-10 10:00:00', 'Pendente'),
+(97, 197, '2026-01-11 12:00:00', 'Pendente'), (98, 198, '2026-01-12 08:00:00', 'Pendente'),
+(99, 199, '2026-01-13 15:00:00', 'Pendente'), (100, 200, '2026-01-14 18:00:00', 'Pendente');
+
+
+-- Seção 3: Atualizando o status dos carros que estão atualmente alugados (reservas em aberto)
+UPDATE carro SET Disponivel = 0 WHERE Id IN (41, 42, 43, 44, 45, 46, 47, 48, 49, 50);

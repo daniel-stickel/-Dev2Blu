@@ -27,25 +27,25 @@ function InstrSwitch() {
     switch (dia) {
         case 1:
             alert("Domingo")
-        break;
+            break;
         case 2:
             alert("Segunda Feira")
-        break;
+            break;
         case 3:
             alert("Terça Feira")
-        break;
+            break;
         case 4:
             alert("Quarta Feira")
-        break;
+            break;
         case 5:
             alert("Quinta Feira")
-        break;
+            break;
         case 6:
             alert("Sexta Feira")
-        break;
+            break;
         case 7:
             alert("Sábado")
-        break;
+            break;
         default:
             alert("Dia Inválido")
     }
@@ -54,18 +54,52 @@ function InstrSwitch() {
 /*Array*/
 
 function arraySoma() {
-    let entrada = [5];
+    let entrada = [];
     let soma = 0;
 
-    for(let i = 0; i < 5; i++) {
-         let entrada = parseInt(prompt(`Digite o ${i+1}° número para soma`));
+    for (let i = 0; i < 5; i++) {
+        let entrada = parseInt(prompt(`Digite o ${i + 1}° número para soma`));
         soma = soma + entrada;
     }
     alert(`total da soma é ${soma}`);
 }
 
 function arrayMaiorMenor() {
-    let valor = [10];
-    let menorValor = null;
-    let maiorValor = null;
+    let valores = [];
+
+    for (let i = 0; i < 10; i++) {
+        let valorDigitado = parseInt(prompt(`Digite o ${i + 1}º número`));
+        valores.push(valorDigitado);
+    }
+
+    if (valores.length > 0) {
+        let maiorValor = valores[0];
+        let menorValor = valores[0];
+
+        for (let i = 1; i < valores.length; i++) {
+
+            maiorValor = valores[i];
+        }
+        if (valores[i] < menorValor) {
+            menorValor = valores[i];
+        }
+    }
+
+    alert(`O menor valor é ${menorValor}\n` +
+        `O maior valor é ${maiorValor}`);
+}
+function arrayOrdemIversa() {
+    let nomes = [];
+    let nomesInversos;
+
+    for(let i = 0; i < 5; i++) {
+        nomes[i] = prompt("Digite um nome:");
+    }
+
+    nomesInversos = nomes.slice().reverse();
+    alert(nomesInversos)
+    /*for(let i = nomes.length -1; i >=0; i--) {
+        alert(nomes[i]);
+    }*/
+   
 }
