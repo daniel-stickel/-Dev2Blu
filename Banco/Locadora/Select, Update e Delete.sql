@@ -1,31 +1,40 @@
 use minhalocadora;
+use locadoraminha;
 
-alter table carro add status_carro enum ('Ativo', 'Inativo') default "Ativo" not null;
-alter table categoria add status_categoria enum ('Ativo', 'Inativo') default 'Ativo' not null;
-alter table cidade add status_cidade enum ('Ativo', 'Inativo') default 'Ativo' not null;
-alter table estado add status_estado enum ('Ativo', 'Inativo') default 'Ativo' not null;
-alter table filial add status_filial enum ('Ativo', 'Inativo') default 'Ativo' not null;
-alter table genero add status_genero enum ('Ativo', 'Inativo') default 'Ativo' not null;
-alter table marca add status_marca enum ('Ativo', 'Inativo') default 'Ativo' not null;
-alter table modelo add status_modelo enum ('Ativo', 'Inativo') default 'Ativo' not null;
-alter table pacote add status_pacote enum ('Ativo', 'Inativo') default 'Ativo' not null;
+alter table carro add Status_Carro enum ('Ativo', 'Inativo') default "Ativo" not null;
+alter table categoria add Status_Categoria enum ('Ativo', 'Inativo') default 'Ativo' not null;
+alter table cidade add Status_Cidade enum ('Ativo', 'Inativo') default 'Ativo' not null;
+alter table estado add Status_Estado enum ('Ativo', 'Inativo') default 'Ativo' not null;
+alter table filial add Status_Filial enum ('Ativo', 'Inativo') default 'Ativo' not null;
+alter table genero add Status_Genero enum ('Ativo', 'Inativo') default 'Ativo' not null;
+alter table marca add Status_Marca enum ('Ativo', 'Inativo') default 'Ativo' not null;
+alter table modelo add Status_Modelo enum ('Ativo', 'Inativo') default 'Ativo' not null;
+alter table pacote add Status_Pacote enum ('Ativo', 'Inativo') default 'Ativo' not null;
+alter table pessoa add Status_Pessoa enum ('Ativo', 'Inativo') default 'Ativo' not null;
+alter table reserva add Status_Reserva enum ('Ativo', 'Inativo') default 'Ativo' not null;
+alter table servico add Status_Servico enum ('Ativo', 'Inativo') default 'Ativo' not null;
+
+ALTER TABLE `locadoraminha`.`carro` 
+CHANGE COLUMN `Status_carro` `Status_Carro` ENUM('Ativo', 'Inativo') NOT NULL DEFAULT 'Ativo' ;
+
 
 
 # Modulo Carro
 
-# Post - Create
-insert into carro (Id, filial_Id, modelo_Id, Placa, Capacidade_Mala, Capacidade_Pessoa, Motor, Ano, TipoCambio, Valor, Disponivel, Km)
-value (210, 210, 20, "PHL4F06", 210, 5, "1600", 1986, "Manual", 30000.00, 1, 50000);
+# Post - Create   
+INSERT INTO carro (Filial_Id, Modelo_Id, Placa, Capacidade_Mala, Capacidade_Pessoa, Motor, Ano, TipoCambio, Valor, Disponivel, Km)
+VALUES (1, 2, 'PHL4F06', 210, 5, '1600', 1986, 'Manual', 3000.00, 1, 50000);
 
 #Get - Read
 select * from carro;
 
 #Put - UpDate
-update carro set filial_Id = 210, modelo_Id = 210, Placa = "KJE8123", Capacidade_Mala = 48, Capacidade_Pessoa = 5, Motor = 1.8, Ano = 2011, TipoCambio = 1,
+update carro set filial_Id = 5, Placa = "KJE8123", Capacidade_Mala = 48, Capacidade_Pessoa = 5, Motor = 1.8, Ano = 2011, TipoCambio = 1,
  Valor = 30000.00, Disponivel = 0, Km = 60000 where id = 1; 
  
  #Delete - Delete
- delete from carro where Id = 1;
+ update carro set Status_Carro = 'Inativo' where Id = 51;
+ 
 
 # Modulo Categora 
 
@@ -33,114 +42,171 @@ update carro set filial_Id = 210, modelo_Id = 210, Placa = "KJE8123", Capacidade
 insert into categoria (Id, Nome) value (null, "Mega Master");
 
 # Get - Read
-select * From categoria;
+select * from categoria;
+
+# Put - UpDate
+update categoria set Status_Categoria = 'Inativo' where id = 9;
 
 # Delete - delete 
-update carro set statusCarro = "inativo" where = Id = 1;
-
-# Vai precisar criar uma coluna para todos as tabelas do banco para poder deletar === statusNomedatabela
+update carro set status_Carro = "Inativo" where  Id = 9;
 
 
+# Modulo cidade
 
-insert into 
+# Post - Create
+insert into cidade (Id, Nome, Estado_Id, Status_Cidade)
+values (null, 'Cidade Teste', 24, 'Ativo'); 
 
-# Modulo - CLIENTE 
-
-#POST - CREATE
-INSERT INTO CLIENTE (Id, Nome, Email, Telefone) VALUES (null, "Tiago", "tiago@dsa.com", "47988989898");
-
-#GET - READ
-SELECT * FROM CLIENTE;
-
-#PUT - UPDATE
-UPDATE CLIENTE SET Nome = "T", Email = "t@t.com", Telefone = "8489498" WHERE Id = 1;
-
-#DELETE - DELETE
-DELETE FROM CLIENTE WHERE Id = 1;
-
-
-select * from categoria; 
-
+# Get - Read
 select * from cidade;
 
+# Put - UpDate
+update cidade set nome = "Floripa" where id = 24;
+
+# Delete - Delete
+update cidade set status_cidade = 'Inativo' where Id = 4;
+
+
+# Modulo - Estado
+
+# Post - Create 
+insert into estado (Id, Nome, Status_Estado)
+values (null, "TE", 'Ativo'); 
+
+# Get - Read 
 select * from estado;
 
-select * from filial;
+# Put - UpDate
+update estado set Nome = "KW" where Nome = "TE";
 
-select * from genero;
-
-select * from marca;
-
-select * from modelo;
-
-select * from pacote;
-
-select * from pacote_servico;
-
-select * from pessoa;
-
-select * from reserva;
+#Delete - Delete
+update estado set Status_estado = 'Inativo' where Nome = "TE";
 
 
-select * from  reserva_servico;
+#Modulo Filial
 
-select * from servico;
+# Post - Create
+insert into filial (Id, Cidade_Id, CodigoFilial, Nome, Endereco, Telefone, Email, CEP, Status_Filial)
+values (null, 23, 501, "locadora", "R. da Fulano de Tal", "4712345678", "email@email.com", 8905101, 'Inativo' );
 
-# Modulo - CLIENTE 
+# Get - Read
+select * from filial; 
 
-#POST - CREATE
-INSERT INTO CLIENTE (Id, Nome, Email, Telefone) VALUES (null, "Tiago", "tiago@dsa.com", "47988989898");
+# Put - UpDate
+update filial set Status_Filial = 'Ativo' where Id = 6;
 
-#GET - READ
-SELECT * FROM CLIENTE;
-
-#PUT - UPDATE
-UPDATE CLIENTE SET Nome = "T", Email = "t@t.com", Telefone = "8489498" WHERE Id = 1;
-
-#DELETE - DELETE
-DELETE FROM CLIENTE WHERE Id = 1;
-
-# Modulo - Peca 
-#POST - CREATE
-INSERT INTO PECA (Id, Descricao, Preco) VALUES (null, "Junta de cabeçote", 55.20);
-
-#GET - READ
-SELECT * FROM PECA;
-
-#PUT - UPDATE
-UPDATE PECA SET Descricao = "T", Preco = 32.50 WHERE Id = 1;
-
-#DELETE - DELETE
-DELETE FROM PECA WHERE Id = 1;
+#Delete - Delete
+update filial set Status_Filial = 'Inativo' where Id = 6;
 
 
-# Modulo - Mecanico 
-#POST - CREATE
-INSERT INTO MECANICO (Id, Nome) VALUES (null, "Tiago");
+# Modulo Genero
 
-#GET - READ
-SELECT * FROM MECANICO;
-
-#PUT - UPDATE
-UPDATE MECANICO SET Nome = "T" WHERE Id = 1;
-
-#DELETE - DELETE
-DELETE FROM MECANICO WHERE Id = 1;
-
-
-# Modulo da OS 
-
-#POST - Create
-INSERT INTO ORDEM_SERVICO (Id, Descricao, DataOrdem, Valor, ClienteId, MecanicoId)
-VALUES (null, "Veio trocar o oleo", "2025-09-17", 55.50, 2, 2);
-
-#for 
-# peça 2
-INSERT INTO ORDEM_SERVICO_PECA (OrdemServicoId, PecaId, Quantidade, Preco)
-VALUES ((SELECT MAX(Id) FROM ORDEM_SERVICO), 2, 5, 55.00);
-
-# peça 3
-INSERT INTO ORDEM_SERVICO_PECA (OrdemServicoId, PecaId, Quantidade, Preco)
-VALUES ((SELECT MAX(Id) FROM ORDEM_SERVICO), 3, 5, 55.00);
+ #Post - Create
+insert into genero(Id, nome, Status_Genero)
+values(null, "Travesti", 'Ativo');  
  
+ #Get - Read
+ select * from genero;
+ 
+ #Put - UpDate
+ update genero set nome = "Traveco" where id = (SELECT MAX(Id) FROM FILIAL);
+ 
+ #Delete - Delete
+update genero set Status_Genero = 'Inativo' where id = 4;
+
+
+# Modulo Genero
+
+#Post - Create
+ insert into marca (Id, Nome, Status_Marca) values (null, "Corgel do Brasil", 'Inativo');
+ 
+#Get - Read
+select * from marca;
+  
+#Put - UpDate
+update marca set Status_Marca = "Ativo" where id = 12;
+   
+#Delete - Delete
+update marca set Status_Marca = "Inativo" where id = 12;
+
+ 
+ # Modulo Modelo
+
+ #Post - Create
+ insert into modelo (Id, Marca_Id, Categoria_Id, Nome, Status_Modelo)
+ VALUES (null, 7, 5, "Compas", 'Inativo');
+ 
+ 
+#Get - Read
+select * from modelo;
+  
+#Put - UpDate
+update modelo set Status_Modelo = "Ativo" where id = 20;
+   
+#Delete - Delete
+update modelo set Status_Modelo = "Inativo" where id = 20; 
+  
+
+# Modulo Pacote
+
+#Post - Create
+ insert into pacote (Id, Nome, Valor, Status_Pacote) 
+ VALUES (null, "Mafioso", 500.00, 'Inativo');
+ 
+#Get - Read
+select * from pacote;
+  
+#Put - UpDate
+update pacote set Status_Pacote = 'Ativo' where id = 4;
+   
+#Delete - Delete
+update pacote set Status_Pacote = 'Inativo' where id = 4;
+
+
+#Modulo Pessoa
+
+#Post - Create
+ insert into pessoa (Id, Genero_Id, Cidade_Id, Nome, CPF, CNH, Endereco, Telefone, Email, CEP, Senha, Status_Pessoa) VALUES
+(null, 1, 25, 'Zequinha da Silva', '11122233888', '12345678888', 'Rua Flores, 188', '11987654888', 'zequinha@email.com', '01001000', 'senha123', 'Inativo');
+ 
+#Get - Read
+select * from pessoa;
+  
+#Put - UpDate
+update pessoa set Status_Pessoa = 'Ativo' where id = 4;
+   
+#Delete - Delete
+update pessoa set Status_Pessoa = 'Inativo' where id = 4;
+
+
+#Modulo reserva
+
+#Post - Create
+insert into reserva (Id, Pacote_Id, Carro_Id, DataRetirada, DataDevolucao, Pessoa_Id, Valor_Total, Status_ReservaServico, Data_Reserva, Status_Reserva) VALUES
+(null, 1, 1, '2025-07-10 10:00:00', '2025-07-15 10:00:00', 121, 625.00, 'Finalizado', '2025-10-09 10:00:00', 'Inativo'); 
+
+#Get - Read
+select * from reserva;
+  
+#Put - UpDate
+update reserva set Status_Reserva = 'Ativo' where id = 21;
+   
+#Delete - Delete
+update reserva set Status_Reserva = 'Inativo' where id = 21;
+
+
+#Modulo Servico
+
+#Post - Create
+insert into servico (Id, Nome, Descricao, Valor, Status_Servico) VALUES 
+(null, 'Máquina de Choque', "Acessório de segurança forçada", 0.00, 'Inativo');
+
+#Get - Read
+select * from servico;
+  
+#Put - UpDate
+update servico set Status_Servico = 'Ativo' where id = 5;
+   
+#Delete - Delete
+update servico set Status_servico = 'Inativo' where id = 5;
 

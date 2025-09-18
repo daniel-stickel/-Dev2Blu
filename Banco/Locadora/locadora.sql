@@ -1,6 +1,7 @@
 create database MinhaLocadora;
 
 use MinhaLocadora;
+use locadoraminha;
 
 create table genero(
 id INT not null auto_increment primary key,
@@ -58,6 +59,7 @@ DataDevolucao datetime,
 constraint FK_RESERVA_CARRO foreign key (Carro_Id) references carro(Id),
 constraint FK_RESERVA_PACOTE foreign key (Pacote_Id) references pacote(Id)
 );
+
 
 
 
@@ -120,15 +122,7 @@ constraint FK_PESSOA_CIDADE foreign key (Cidade_Id) references cidade(Id),
 constraint FK_PESSOA_GENERO foreign key (Genero_Id) references genero(Id)
 );
 
-create table contrato(
-Id int primary key auto_increment not null,
-Reserva_Id int not null unique,
-Pessoa_Id int not null,
-DataContrato datetime not null,
-Concluido ENUM('Finalizado', 'Aberto', 'Pendente') not null,
-constraint PK_CONTRATO_RESERVA foreign key (Reserva_Id) references reserva(Id),
-constraint PK_CONTRATO_PESSOA foreign key (Pessoa_Id) references pessoa(Id)
-);
+
 
 create table pacote_servico(
 Pacote_Id int,
@@ -137,6 +131,21 @@ primary key(Pacote_id, Servico_Id),
 foreign key(Pacote_Id) references pacote(Id),
 foreign key(Servico_id) references servico(Id)
 );
+
+# Adicionando colunas que ficarão pendentes
+
+# Tabela servico
+alter table servico add column Valor decimal(10,2);
+
+# Tabela reserva
+alter table reserva
+add column Pessoa_Id int not null,
+add column Valor_Total decimal(10,2),
+add column Status_Reserva enum('Aberto', 'Pendente', 'Finalizado'),
+add column Data_Reserva datetime,
+add constraint FK_RESERVA_PESSOA foreign key (Pessoa_Id) references pessoa(Id);
+
+
 
 create table teste(
 Id int primary key,
