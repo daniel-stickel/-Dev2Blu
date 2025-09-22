@@ -1,0 +1,359 @@
+DDl => linguagem de definição de dados => cria um banco de dados, uma tabela, alterar o banco de dados {
+
+Comandos DDL são por exemplo; create database, create table
+
+create database cadastro
+default character set utf8
+default collate utf8_general_ci; =>ja cria o banco com os parametros brasileiro (bnt2 usando acento por exemplo).
+
+constrant {
+
+drop database meubanco; => apaga o banco de dados.
+
+not null => obrigatório.
+
+enum('M','F'), => nesse caso é um char que pode receber f ou m.
+
+decimal (5,2) => nesse caso aceitaria 5 números e 2 casas depois do ponto.SEMPRE USAR PONTO PARA PREENCHER OS DADOS.
+
+default 'Brasil' => se não preencher o campo nesse caso sera Brasil.
+
+alter table => altera a tabela.
+
+drop column => apaga a coluna
+
+add column profissao varchar(10) after nome; => adiciona a coluna profissão depois da coluna nome. E quando for adicionar a coluna antes de todas as outras se usa o "add" no lugar do "after". Exe;
+
+alter table pessoas 
+add column profissao varchar(10) after nome;
+
+Para modificar algum parametro se usa o modify como por exemplo;
+
+alter table pessoas
+modify column profissao varchar(20) not null default ''; => que nesse caso está modifincando o varchar para 20 e para not null que só é possivel usando o default.
+
+para modificar o nome da coluna deve se usar o name da coluna
+tem que se usar o change por exemplo;
+
+alter table pessoas 
+change column profissao prof varchar(20);
+
+Para mudar o nome da tabela usase o rename como por exemplo;
+
+alter table pessoas
+rename to gafanhotos; => tabela pessoas mudada para o nome de gafanhotos.
+
+}
+ 
+create table if not exists cursos => cria uma tabela se o nome não existir.
+
+Para adicionar uma primary key seguir esse exemplo:
+
+alter table cursos
+add primary key (idcurso);
+
+para apagar a tabela inteira por exemplo;
+
+drop table if exists cursos; => apagaria a tabela cursos se exitir.
+ 
+}
+
+
+
+
+
+
+
+DML => Manipulação => inclui novos dados, excluir e manipular dados e alterar composição da tabela  {
+
+Comandos DML são por exemplo; insert into,
+
+
+update modifica a os dados da coluna exe:
+
+update cursos
+set nome = 'HTML5'
+where idcursos = '1'; => modifica a coluna nome do idnome que é a chave primaria 1.
+
+update cursos
+set nome = 'PHP', ano = '2015'
+where idcurso = '4'; => nesse caso a moficação sera no campo nome mudando o  dado para PHP e no campo ano para 2015.
+
+ update cursos
+ set ano = '2050', carga = '800'
+ where ano = '2018'; => modifica todos os dados dos campos que estão como 2018 para 2050, lembrando que temque desmarcar a opção em Edit/Preferences/SQL Editor desativando a opção safe Updates(...   sendo a ultima opção de baixo.
+
+ update cursos
+ set ano = '2018', carga = '800'
+ where ano = '2050'
+ limit 1; Usando o limit 1 ele vai mudar apenas o primeiro dado do ano que está como 2050 para 2018.
+
+delete from cursos
+where idcurso ='8';=> apaga por completo todos os itens da linha idcurso 8 sendo que a coluna idcurso é a chave primária.
+
+truncate cursos; => apaga somente os dados, diferente do drop table que apaga a tabela por inteiro.
+
+}
+
+
+
+
+
+DQL => solicitações => Faz a solicitação o famoso SELECT
+
+
+SELECT*********
+
+SELECT * FROM cadastro.cursos
+order by nome desc;   => seleciona a tabéla cursos em coloca em ordem decrescente 
+
+SELECT * FROM cadastro.cursos
+order by nome asc; =>coloca em ordem crescente
+
+select nome, carga, ano from cursos
+order by ano, nome; => Vai selecionar os campos nome, carga e ano e vai colocar na ordem de primeiro o ano e depois o nome
+
+select nome, descricao from cadastro.cursos 
+where ano <= "2016"
+order by nome; => seleciona os campos nome e descrição menores ou igual a 2016
+
+OBS: PODE USAR TODOS OS OPERADORES LÓGICOS(=,!,<,>,<=,>=,and,or).
+
+select nome, ano from cadastro.cursos 
+where ano between 2014 and 2016; => Seleciona os campos nome e ano e apresenta os anos entre 2014 e 2016.
+
+select * from cadastro.cursos 
+where carga > 35 and totaulas < 30; => Seleciona os campos carga maior que 35 e seleciona totalaulas menor que 30.
+
+select * from cadastro.cursos 
+where carga > 35 or totaulas < 30; Seleciona os campos carga e totalaulas e apresenta os dois campos que estejam dentro decarga maior  que 35 e todos os campos totalaulas menores que 30.
+
+
+
+
+	
+
+DCL => controle => tipo de acesso, comandos, etc..
+
+DTL => Transações => tem seus quatros principios. {
+
+Durabilidade => todo dado que é colocado, manipullado ou aterado tem que permanecer durável.
+
+Isolamento => as mudanças não podem interferir umas as outras.
+
+Concistencia => o dado tem que ser imutável até que seja modilficado.
+
+Atomicidade => toda transação tem mque ser atõmica, tem que acontecer tudo de uma vez.
+
+} 
+
+describe = descreva pessoas
+
+Banco de dados contem tabéla, tabéla contem registro, e registro são compostos por campos
+
+
+tipos primitivos {
+numeros = inteiro, reais e lógico
+
+Data/Tempo =  Date, DateTime, TimeStamp, Time e Year 
+
+Literais = caracteres, texto, binario e coleção
+
+Espacial =  Geometry, Point, Polygon MultiPolygon }
+
+
+
+
+todo comentario em SQL se usa entre aspas simples ''
+
+todo comentário de definição dentro de aspas simples.
+
+id tem que ser único e geralmente será a chave primaria.
+
+
+
+
+
+linha é mesma coisa que registro ou tupla
+
+e o que está em coluna é campo
+
+result set é o resultado de uma intrução.
+
+
+
+Exportando Banco de Dados link para ajudar melhor https://youtu.be/w6OYS_M7hTM
+
+gerando uma copia de segurança clicando no menu seperior Server/Data export/ selecione a tabela e clicando 2 vezes vai aparecer o que você quer salvar
+
+Dump Atruture and data salva a estrutura e os dados
+
+Dump Data only salva só exporta os dados
+
+Dump Struture Only salva só a estrutura sem os dados.
+
+USANDO MySQL no console =>  https://youtu.be/OaPMvrA0cA4
+
+
+Para exportar o banco de dados no MySql é só clicar na casinha de baixo do logo no canto direito 
+
+Rápido exporta tudo e Personalizado da opçãoe de exportar
+
+CHAVE ESTRANGEIRA É REPETIÇÃO DE UMA CAMPO IGUAL EM OUTRA TABÉLA, também é o quando estou chamando um campo primário de uma outra tabéla
+
+
+**** AGREGAÇÂO
+
+
+select * from cadastro.cursos
+where nome like 'P%'; => A palavra like e o sinal de % seleciona todos os nomes que começam com a letra P exe:
+
+
+=> O like na palavra significa parecido e não gostar
+
+=> E o sinal de % substitui nenhum ou varios caracteres ajudando a selecionar, por exemplo se colocar o sinal de % no inicio, ele vai susbistituir o caractere e selecionar pelas letras depois do sinal de %, exe;
+
+select * from cadastro.cursos
+where nome like '%a'; seleciona todos os nomes em que a segunda letra do nome seja "a".
+
+select * from cadastro.cursos
+where nome like '%A%'; => neste modelo vai ser selecionado no campo nome qualquer nome que tenha a letra a, não importando sua possição
+
+select * from cadastro.cursos
+where nome not like '%A%'; =>adicionando a palavra not vai ser selecionado campos onde não tenha a letra a.
+
+select * from cadastro.cursos
+where nome like 'PH%P'; => Vai selecionar o que começa com PH e termina com P.
+
+select * from cadastro.cursos
+where nome like 'PH%P_'; => O _ no final depois de % faz com que exija que tenha mais um caractere depois do P
+
+select * from cadastro.gafanhotos
+where nome like '%silva%'; Vai selecionar um nome que tenha silva em qualquer lugar do campo nome.
+
+select distinct nacionalidade from cadastro.gafanhotos; => A palavra distinct seleciona apenas os paises do campo nacionalidade sem que se repita os paises, mostrando apenas os paises cadastrados.
+
+select distinct nacionalidade from cadastro.gafanhotos
+order by nacionalidade; => seleciona os paises sem repetir e clasifica em ordem alfabetica.
+
+select count(*) from cadastro.cursos; => A palavra count neste caso serve para contar quantos cursos tem dentro do campo curso apresentado só o contagem final.
+
+select max(carga) from cadastro.cursos; => O comando max(carga) vai selecionar o valor mais alto do campo carga.
+
+select min(carga) from cadastro.cursos; => O comando min(carga) vai selecionar o valor minimo do campo carga.
+
+select sum(totaulas) from cadastro.cursos where ano = '2016'; O comando sum faz uma somatória nesse caso do total de aulas do ano de 2016.
+
+select avg(totaulas) from cadastro.cursos where ano = '2016'; => O comando avg faz uma média nesse caso do campo total de aulas do ano de 2016.
+
+Distinct => Vai selecionar somente um resultado de cada ao invés de vários resultados iguais, Ex:
+
+se você tiver uma tabela onde vai querer selecionar os bairros ao invés de repetir os nomes, ele vai selecionar apenas os bairros apenas uma vêz.
+
+Group By => além de destinguir ele pode agregar mais funções como o exemplo abaixo em que agrupa e conta
+
+select carga, count(*) from cadastro.cursos where totaulas > 20
+group by carga; => nesse exemplo ele seleciona a carga e também conta quantos cursos com totaulas acima de 20(*** se foce usando o distinct iso não seria possível, por que o distinct mostra apenas um valor).
+
+select ano, count(*) from cadastro.cursos
+group by ano
+having count(ano) >= 5
+order by count(*) desc;
+
+=> o having para o group by e igual ao usar o where, e só pode trabalhar com o campo que foi agrupado, onde nesse exemplo seria o campo ano.
+
+select carga, count(*) from cadastro.cursos
+where ano > 2015
+group by carga
+having carga > (select avg(carga) from cadastro.cursos); => nesse exemplo está sendo usado dois select sendo que ele está selecionando a carga, contando os cursos vai exibir ano acima de 2015, e a carga acima da média que é o que esta fazendo o select que está dentro do parenteses. 
+
+Modelos Relácionais 
+
+Modelos Relácionais => é o que da relacão a mais de uma tabéla 
+
+ Toda entidade possui uma coleção de atributos definitivos, os atributos vão compor os dados, que compõe cada um dos elementos dessas entidades
+
+ O que une duas entidades (entidade = tabélas) é um relacioanamento 
+ 
+
+Cardianlidade => pode ser simples, multipla, nula, minima ou máxima.
+ 
+ex: 	muitos para muitos,
+	um para um,
+	um para muitos,
+	muitos para um
+
+Chave estrangeira => é a chave primária de uma outra tabéla, exemplo quando uma tabéla chamar outra tabela, ele vai chamar pela primária de outra tabéla  
+
+Chave primária => é a chave que tem que ser unica dentro de uma tabéla e que não possa ter outra igual, como por exemplo o CPF ou uma código de barra de um produto
+
+****Join***
+
+Join é uma junção de duas tabélas( o join só usa para apresentar oou seja, ele só vai unir as tabélas quando chamado). 
+
+Engine=InnoDB => É uma maquina de criação de tabélas, ela pode ser MyISAM, InnoDB ou XtraDB (da mais antiga para a mais velha)
+
+No caso o MySQl já considera a engine InnoDB se não for declarar
+
+****Criando uma FOREIGN KEY****
+
+foreign key => adiciona uma chave estrangeira igual ao exemplo abaixo
+
+ alter table cadastro.gafanhotos 
+ add foreign key (cursopreferido)
+ references cadastro.cursos(idcurso);
+
+ => nesse caso adiciona a tabéla gafanhotos uma  chave estrangeira que relaciona a campo idcurso da tabéla cursos. Nesse caso o campo na tabéla precisa estar como MUL que significa multipla por usar uma chave estrangeira.
+
+ update cadastro.gafanhotos set cursopreferido = '6' where id  = '1'; 
+
+=> vai relacionar o campo curso 6 da tabéla cursos ao nome id 1 da tabéla cursos. Isso graças ao foreign key no exemplo anterior que está acima
+
+ delete from cadastro.cursos where idcurso = '6';
+
+ => isso não dara certo por que já exite a relação entre a tabéla cursos e a tabela gafanhoto. o curso só podera ser apagado caso não tenha nenhuma relação com outra tabéla.
+
+Join ou Inner join são iguais
+
+select gafanhotos.nome, gafanhotos.cursopreferido, cursos.nome, cursos.ano
+from cadastro.gafanhotos join cadastro.cursos; 
+
+=> Nesse caso está juntando as tabelas e apresentando os nomes dos alunos mostrando o curso preferido, nome do curso e o ano.
+
+select gafanhotos.nome, gafanhotos.cursopreferido, cursos.nome, cursos.ano
+from cadastro.gafanhotos join cadastro.cursos
+on cadastro.cursos.idcurso = cadastro.gafanhotos.cursopreferido; ===>>>>
+
+=> Essa última linha é quase que obrigatória para filtrar que se  usa sempre que usar um JOIN. Essa união de tabélas é feita atravez da chave primaria de uma tabela mais a chave estrangeira(que é a chave primaria da tabéla que deseja unir. 
+
+=> Neste caso ele vai apresentar somente os nomes que tem todos os campos chamados preenchidos.
+
+select gafanhotos.nome, cursos.nome, cursos.ano
+from cadastro.gafanhotos inner join cadastro.cursos
+on cadastro.cursos.idcurso = cadastro.gafanhotos.cursopreferido
+order by gafanhotos.nome;
+
+=> Para apresentar em ordem alfabética neste caso pelo campo nome.
+
+Aula sobre JOIN e INNER JOIN https://www.cursoemvideo.com/curso/mysql/aulas/banco-de-dados/modulos/chaves-estrangeiras-e-join/
+
+***OUTER JOIN ****
+
+** left join ou left outer join sempre vai dar preferencia para a tabéla da esquerda, por exemplo:
+
+
+select gafanhotos.nome, cursos.nome, cursos.ano
+from cadastro.gafanhotos left outer join cadastro.cursos
+on cadastro.cursos.idcurso = cadastro.gafanhotos.cursopreferido;
+
+=> neste caso ele da preferencia e apresenta a tabéla da esquerda.
+
+
+
+
+
+
+
+
+
+

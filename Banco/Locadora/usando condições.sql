@@ -1,3 +1,5 @@
+use locadoraminha;
+
 select * from clientes where estado = "SC";
 
 select * from clientes where estado = "SC" and cidade  = "Florianópolis";
@@ -84,3 +86,24 @@ select *
 from reserva R 
 inner join pessoa P 
 on R.Carro_Id like P.Id where P.Cidade_Id = 24;
+
+select * 
+from reserva R
+join pacote P
+on R.Pacote_Id like P.Id where Nome = 'basico';
+
+select * 
+from reserva R
+inner join carro C 
+on R.Carro_Id = C.Id where valor > 100 and valor < 500;
+
+select * 
+from pacote P 
+join pacote_Servico PS
+on P.Id = PS.Pacote_Id order by Nome asc;
+
+select * 
+from servico S
+left join pacote_servico PS
+on S.Id like PS.Servico_Id order by Pacote_Id > 1 or Status_Servico != 'Inativo';
+
