@@ -80,4 +80,51 @@ INSERT INTO Pagamentos (PedidoID,DataPagamento,Valor,Metodo) VALUES
 (2,'2024-03-18',1200.00,'Pix'),
 (3,'2024-03-21',2120.00,'Boleto');
 
+select count(*) from pedidos;
+
+select distinct ClienteID from pedidos;
+
+select count(*) from pedidos;
+
+SELECT IP.ProdutoId, P.Nome, SUM(IP.Quantidade*IP.PrecoUnit) AS ValorTotal
+  FROM ItensPedido IP
+  JOIN Produtos P
+    ON IP.ProdutoId = P.ProdutoId
+  GROUP BY Ip.ProdutoId
+  HAVING ValorTotal > 3000
+  ORDER BY ValorTotal DESC
+  LIMIT 2;
+  
+  SELECT *, Quantidade*PrecoUnit AS ValorTotal
+  FROM ItensPedido;
+  
+SELECT SUM(Quantidade*PrecoUnit) AS Faturamento,
+       SUM(Quantidade*PrecoUnit)*0.94 AS FaturamentoLiquido,
+       GROUP_CONCAT(PedidoId) AS Pedidos,
+       ROUND(AVG(Quantidade*PrecoUnit), 2) AS TicketMedio,
+       MAX(Quantidade*PrecoUnit) AS TicketMaximo,
+       MIN(Quantidade*PrecoUnit) AS TicketMinimo
+  FROM ItensPedido;
+  
+  SELECT ProdutoId, 
+         SUM(Quantidade*PrecoUnit) AS Faturamento,
+         COUNT(DISTINCT PedidoId) AS QtdPedidos,
+         AVG(Quantidade*PrecoUnit) AS TicketMedio
+    FROM ItensPedido
+  GROUP BY ProdutoId;
+  
+  
+
+  SELECT IP.ProdutoId, P.Nome, SUM(IP.Quantidade*IP.PrecoUnit) AS ValorTotal
+  FROM ItensPedido IP
+  JOIN Produtos P
+    ON IP.ProdutoId = P.ProdutoId
+  GROUP BY Ip.ProdutoId
+  ORDER BY ValorTotal DESC
+  LIMIT 2;    
+
+
+
+
+
 

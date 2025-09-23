@@ -107,3 +107,6 @@ from servico S
 left join pacote_servico PS
 on S.Id like PS.Servico_Id order by Pacote_Id > 1 or Status_Servico != 'Inativo';
 
+
+
+
