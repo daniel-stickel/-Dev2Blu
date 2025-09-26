@@ -2,6 +2,7 @@
 const btnIncrementar = document.getElementById('btnIncrementar');
 const btnDecrementar = document.getElementById('btnDecrementar');
 const divContadores = document.getElementById('divContadores');
+const btnResetar = document.getElementById('btnResetar');
 
 const clickBotaoExemplo01 = function () {
     alert('Bolinha!')
@@ -33,6 +34,12 @@ const clickBtnDecrementar = () => {
     }
 }
 
+const clickBtnResetar = () => {
+    let contadores = document.getElementsByClassName('contador');
+
+    
+}
+
 const adicionarContador = () => {
     let contadorBase = document.getElementsByClassName('contador')[0];
     let contadorNovo = contadorBase.cloneNode();
@@ -42,5 +49,6 @@ const adicionarContador = () => {
 }
 
 //btnExemplo01.addEventListener('click', clickBotaoExemplo01)
-btnIncrementar.addEventListener('click', clickBtnIncrementar)
-btnDecrementar.addEventListener('click', clickBtnDecrementar)
+btnIncrementar.addEventListener('click', clickBtnIncrementar);
+btnDecrementar.addEventListener('click', clickBtnDecrementar);
+btnResetar.addEventListener('click', clickBtnResetar);
