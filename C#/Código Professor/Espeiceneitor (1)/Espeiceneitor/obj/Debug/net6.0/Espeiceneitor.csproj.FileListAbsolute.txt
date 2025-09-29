@@ -20,3 +20,11 @@ C:\Users\daniel.stickel\Desktop\SENAC\Código Professor\Espeiceneitor (1)\Espeic
 C:\Users\daniel.stickel\Desktop\SENAC\Código Professor\Espeiceneitor (1)\Espeiceneitor\obj\Debug\net6.0\Espeiceneitor.dll
 C:\Users\daniel.stickel\Desktop\SENAC\Código Professor\Espeiceneitor (1)\Espeiceneitor\obj\Debug\net6.0\refint\Espeiceneitor.dll
 C:\Users\daniel.stickel\Desktop\SENAC\Código Professor\Espeiceneitor (1)\Espeiceneitor\obj\Debug\net6.0\Espeiceneitor.pdb
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Código Professor\Espeiceneitor (1)\Espeiceneitor\obj\Debug\net6.0\Espeiceneitor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Código Professor\Espeiceneitor (1)\Espeiceneitor\obj\Debug\net6.0\Espeiceneitor.AssemblyInfoInputs.cache
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Código Professor\Espeiceneitor (1)\Espeiceneitor\obj\Debug\net6.0\Espeiceneitor.AssemblyInfo.cs
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Código Professor\Espeiceneitor (1)\Espeiceneitor\obj\Debug\net6.0\Espeiceneitor.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Código Professor\Espeiceneitor (1)\Espeiceneitor\obj\Debug\net6.0\Espeiceneitor.sourcelink.json
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Código Professor\Espeiceneitor (1)\Espeiceneitor\obj\Debug\net6.0\Espeiceneitor.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Código Professor\Espeiceneitor (1)\Espeiceneitor\obj\Debug\net6.0\refint\Espeiceneitor.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Código Professor\Espeiceneitor (1)\Espeiceneitor\obj\Debug\net6.0\Espeiceneitor.pdb

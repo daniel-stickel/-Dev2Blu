@@ -1,0 +1,15 @@
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto espacial\bin\Debug\net6.0\Projeto espacial.exe
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto espacial\bin\Debug\net6.0\Projeto espacial.deps.json
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto espacial\bin\Debug\net6.0\Projeto espacial.runtimeconfig.json
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto espacial\bin\Debug\net6.0\Projeto espacial.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto espacial\bin\Debug\net6.0\Projeto espacial.pdb
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto espacial\obj\Debug\net6.0\Projeto espacial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto espacial\obj\Debug\net6.0\Projeto espacial.AssemblyInfoInputs.cache
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto espacial\obj\Debug\net6.0\Projeto espacial.AssemblyInfo.cs
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto espacial\obj\Debug\net6.0\Projeto espacial.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto espacial\obj\Debug\net6.0\Projeto espacial.sourcelink.json
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto espacial\obj\Debug\net6.0\Projeto espacial.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto espacial\obj\Debug\net6.0\refint\Projeto espacial.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto espacial\obj\Debug\net6.0\Projeto espacial.pdb
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto espacial\obj\Debug\net6.0\Projeto espacial.genruntimeconfig.cache
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto espacial\obj\Debug\net6.0\ref\Projeto espacial.dll

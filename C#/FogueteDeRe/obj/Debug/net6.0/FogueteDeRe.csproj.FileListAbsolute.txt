@@ -3,3 +3,8 @@ C:\Users\daniel.stickel\Desktop\SENAC\FogueteDeRe\obj\Debug\net6.0\FogueteDeRe.G
 C:\Users\daniel.stickel\Desktop\SENAC\FogueteDeRe\obj\Debug\net6.0\FogueteDeRe.AssemblyInfoInputs.cache
 C:\Users\daniel.stickel\Desktop\SENAC\FogueteDeRe\obj\Debug\net6.0\FogueteDeRe.AssemblyInfo.cs
 C:\Users\daniel.stickel\Desktop\SENAC\FogueteDeRe\obj\Debug\net6.0\FogueteDeRe.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\FogueteDeRe\obj\Debug\net6.0\FogueteDeRe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\FogueteDeRe\obj\Debug\net6.0\FogueteDeRe.AssemblyInfoInputs.cache
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\FogueteDeRe\obj\Debug\net6.0\FogueteDeRe.AssemblyInfo.cs
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\FogueteDeRe\obj\Debug\net6.0\FogueteDeRe.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\FogueteDeRe\obj\Debug\net6.0\FogueteDeRe.sourcelink.json

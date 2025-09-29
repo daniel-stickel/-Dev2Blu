@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Espeiceneitor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2035a09806bd5d2577cad3631fd2c712a0d4076")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93d2a28605c089f3d27c863663a9f07fa08c0bf0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Espeiceneitor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Espeiceneitor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

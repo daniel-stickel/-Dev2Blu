@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\SENAC\\FogueteDeRe\\",
+  "WorkspaceRootPath": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\FogueteDeRe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{270BACD6-4325-4DA3-93F1-614E6FCC73CA}|FogueteDeRe.csproj|e:\\senac\\foguetedere\\foguete\\missaoterraredonda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{270BACD6-4325-4DA3-93F1-614E6FCC73CA}|FogueteDeRe.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\c#\\foguetedere\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{270BACD6-4325-4DA3-93F1-614E6FCC73CA}|FogueteDeRe.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{270BACD6-4325-4DA3-93F1-614E6FCC73CA}|FogueteDeRe.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\c#\\foguetedere\\foguete\\missaoterraredonda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{270BACD6-4325-4DA3-93F1-614E6FCC73CA}|FogueteDeRe.csproj|solutionrelative:foguete\\missaoterraredonda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{270BACD6-4325-4DA3-93F1-614E6FCC73CA}|FogueteDeRe.csproj|e:\\senac\\foguetedere\\foguete\\nasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{270BACD6-4325-4DA3-93F1-614E6FCC73CA}|FogueteDeRe.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\c#\\foguetedere\\foguete\\nasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{270BACD6-4325-4DA3-93F1-614E6FCC73CA}|FogueteDeRe.csproj|solutionrelative:foguete\\nasa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{270BACD6-4325-4DA3-93F1-614E6FCC73CA}|FogueteDeRe.csproj|e:\\senac\\foguetedere\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{270BACD6-4325-4DA3-93F1-614E6FCC73CA}|FogueteDeRe.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +22,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MissaoTerraRedonda.cs",
-              "DocumentMoniker": "E:\\SENAC\\FogueteDeRe\\Foguete\\MissaoTerraRedonda.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\FogueteDeRe\\Foguete\\MissaoTerraRedonda.cs",
               "RelativeDocumentMoniker": "Foguete\\MissaoTerraRedonda.cs",
-              "ToolTip": "E:\\SENAC\\FogueteDeRe\\Foguete\\MissaoTerraRedonda.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\FogueteDeRe\\Foguete\\MissaoTerraRedonda.cs",
               "RelativeToolTip": "Foguete\\MissaoTerraRedonda.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T10:16:15.72Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Nasa.cs",
-              "DocumentMoniker": "E:\\SENAC\\FogueteDeRe\\Foguete\\Nasa.cs",
-              "RelativeDocumentMoniker": "Foguete\\Nasa.cs",
-              "ToolTip": "E:\\SENAC\\FogueteDeRe\\Foguete\\Nasa.cs",
-              "RelativeToolTip": "Foguete\\Nasa.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAwwB4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-16T10:12:59.102Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-16T10:16:15.72Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Nasa.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\FogueteDeRe\\Foguete\\Nasa.cs",
+              "RelativeDocumentMoniker": "Foguete\\Nasa.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\FogueteDeRe\\Foguete\\Nasa.cs",
+              "RelativeToolTip": "Foguete\\Nasa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T10:12:59.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\SENAC\\FogueteDeRe\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\FogueteDeRe\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "E:\\SENAC\\FogueteDeRe\\Program.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\FogueteDeRe\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-16T10:12:59.393Z",
               "EditorCaption": ""
