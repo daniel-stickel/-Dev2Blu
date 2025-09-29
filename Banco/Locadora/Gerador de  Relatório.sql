@@ -14,14 +14,14 @@ select C.Nome as cidade,
     join genero G 
     on P.genero_Id = G.Id
     group by C.Nome, G.Nome
-    order by cidade;	#Informa quantidade de genero por cidade
+    order by cidade;	#Informa por cidade a quantidade de clientes por gênero 
 
 select G.Nome as GeneroMaisReservado, count(P.Genero_Id) as Quantidade
 	from genero G
     join pessoa P
 	on P.Genero_Id = G.Id
     group by P.Genero_Id
-    order by Quantidade desc; # Informa a quantidade por gênero
+    order by Quantidade desc; # Informa de reserva a quantidade por gênero
     
 select E.Nome as Estado, count(P.Id) as QuantidadeClienteEstado
     from pessoa P 
@@ -39,10 +39,10 @@ select C.Nome as Cidade, E.Nome as estados, count(P.Id) as QuantidadeClientes
     join estado E 
     on C.estado_Id = E.Id
     group by C.Nome, E.Nome
-    order by QuantidadeClientes, Cidade
+    order by QuantidadeClientes desc, Cidade
     limit 10;	# Top 10 cidades que mais tem clientes
     
-select G.Nome as Genero, sum(R.Valor_Total) as ValorTotalReservas, avg(R.Valor_Total) as GastoMedioReserva
+select G.Nome as Genero, sum(R.Valor_Total) as ValorTotalReservas, round(avg(R.Valor_Total),2) as GastoMedioReserva
     from reserva R 
     join Pessoa P 
     on R.Pessoa_Id = P.Id
