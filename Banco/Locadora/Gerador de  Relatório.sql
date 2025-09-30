@@ -7,7 +7,7 @@ on P.Genero_Id like G.Id;
     
 select C.Nome as cidade,
     G.Nome as Genero,
-    count(P.Id) as QuantidaClientes
+    count(P.Id) as QuantidadeClientes
     from pessoa P 
     join cidade C 
     on P.Cidade_Id like C.Id
