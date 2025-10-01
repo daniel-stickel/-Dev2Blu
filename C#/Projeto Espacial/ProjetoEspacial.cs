@@ -12,6 +12,7 @@ namespace Projeto_espacial
     {
         public static void ExecutarProjeto()
         {
+            Console.Clear();
             Console.WriteLine("Menu Projeto espacial:\n" +
                               "1 - Cadastrar Astronautas\n" +
                               "2 - Cadstrar Missao\n" +

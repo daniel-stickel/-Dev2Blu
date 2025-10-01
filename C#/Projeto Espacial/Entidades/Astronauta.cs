@@ -30,5 +30,11 @@ namespace Projeto_espacial.Entidades
             _Astronautas.Add(this);
         }
 
+        public static List<Astronauta> Astronautas()
+        {
+            var entrada = new List<Astronauta>();
+            entrada.AddRange(_Astronautas);
+            return _Astronautas;
+        }
     }
 }
