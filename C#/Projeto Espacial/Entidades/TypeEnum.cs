@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projeto_espacial.Entidades
 {
-    public class Enum
+    public class TypeEnum
     {
         public enum StatusMissao
         {

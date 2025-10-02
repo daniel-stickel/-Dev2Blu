@@ -11,47 +11,58 @@ namespace Projeto_espacial.OperacoesMenu
     {
         public static void CadastrandoMIssao()
         {
-
-            bool continuar = false;
-
+            bool continuar = true; 
             do
             {
                 Console.Clear();
-                Console.WriteLine("-------Cadastrando Missão-------");
+                Console.WriteLine("-------Cadastrando Missão-------\n");
+                
 
+                string nome = Util.ConsoleUtil.RecebeString("Informe o nome para a Missão\n");
+
+                int nave;
+
+                while (true)
+                {
+                    nave = Util.ConsoleUtil.RecebeInt("Escolha a Nave para a Missão\r\n" +
+                                                      "Digite 1 para  Vostok1\n" +
+                                                      "Digite 2 para  Onibus Espacial\n" +
+                                                      "Digite 3 para Space Dragon\n" +
+                                                      "Digite 4 para StarShip\n");
+
+                    if (nave >= 1 && nave <= 4)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Opção inválida. Digite um número entre 1 e 4.");
+                    }
+                }
+
+                int duracao = Util.ConsoleUtil.RecebeInt("Informe o tempo necessário em dias para a Missão\n");
+                string destino = Util.ConsoleUtil.RecebeString("Informe o Destino da Missão\n");
+                string detalhes = Util.ConsoleUtil.RecebeString("Informe detalhes da Missão\n");
+
+                var missao = new Missao(nome, (TypeEnum.Nave)nave, duracao, destino, detalhes);
+                Missao._Missoes.Add(missao);
+
+                Console.WriteLine($"\nMissão {nome} que vai usar a nave {(TypeEnum.Nave)nave}" +
+                                  $" com duração de {duracao} dias\n" +
+                                  $" Destino à {destino}\n" +
+                                  $" com os seguintes objetios {detalhes}\n" +
+                                  "" +
+                                  "\n------ CADASTRADA COM SUCESSO ------");
+                Thread.Sleep(3000);
+                Console.WriteLine("\nPressione qualquer tecla para cadastrar uma nova missão ou ESC para sair.");
+                
                 if (Console.ReadKey().Key == ConsoleKey.Escape)
                 {
                     continuar = false;
                 }
-                else
-                {
-                    string nome = Util.ConsoleUtil.RecebeString("Informe o nome para a Missão");
-                    int Nave = Util.ConsoleUtil.RecebeInt("Escolha a Nave para a Missão\n" +
-                                                                          "Digite 1 para  Vostok1\n" +
-                                                                          "Digite 2 para  Onibus Espacial\n" +
-                                                                          "Digite 3 para Space Dragon\n" +
-                                                                          "Digite 4 para StarShip");
-                    int duracao = Util.ConsoleUtil.RecebeInt("Informe o tempo necessário para a Missão");
-                    string destino = Util.ConsoleUtil.RecebeString("Informe o Destino da Missão");
-                    string detalhes = Util.ConsoleUtil.RecebeString("Informe detalhes da Missão");
-
-                    var missao = new Missao(nome, duracao, destino, detalhes);
-                    missao.CreateMissao();
-
-                    Console.WriteLine($"Missão {nome} que vai usar a nave {Nave}" +
-                                      $" com duração de {duracao} dias\n" +
-                                      $" Destino à {destino}\n" +
-                                      $" com os seguintes objetios {detalhes}\n" +
-                                      ""+
-                                      "------ CADASTRADA COM SUCESSO ------");
-
-                    continuar = true;
-                };
 
             } while (continuar);
             Projeto_espacial.ProjetoEspacial.ExecutarProjeto();
-
         }
-
     }
 }

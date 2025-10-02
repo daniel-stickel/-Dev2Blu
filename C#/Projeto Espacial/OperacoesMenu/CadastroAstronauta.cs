@@ -45,7 +45,6 @@ namespace Projeto_espacial.CasdastrarAstronauta
                         Console.WriteLine("Digite Qualquer tecla para cadastrar mais um Astronauta, ou ESC para voltar para o menu principal");
 
                         continuar = true;
-
                     }
                 }
 

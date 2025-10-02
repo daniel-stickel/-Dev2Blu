@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Projeto espacial")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89504663839c9a63fecc82a9536fdc160c0b1a9f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Projeto espacial")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Projeto espacial")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

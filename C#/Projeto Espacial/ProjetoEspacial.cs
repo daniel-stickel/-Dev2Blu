@@ -1,4 +1,5 @@
 ﻿using Projeto_espacial.CasdastrarAstronauta;
+using Projeto_espacial.Entidades;
 using Projeto_espacial.OperacoesMenu;
 using System;
 using System.Collections.Generic;
@@ -15,8 +16,9 @@ namespace Projeto_espacial
             Console.Clear();
             Console.WriteLine("Menu Projeto espacial:\n" +
                               "1 - Cadastrar Astronautas\n" +
-                              "2 - Cadstrar Missao\n" +
-                              "3 - Realizar Lançamento\n" +
+                              "2 - Cadastro de Nova Missão\n" +
+                              "3 - Lista de Astronautas\n" +
+                              "4 - Apresentar Missões\n" +
                               "4 - Atualização de lançamentos\n" +
                               "5 - Atualizar Resultado da Missão");
 
@@ -28,26 +30,34 @@ namespace Projeto_espacial
                     case "1":
                         CadastroAstronauta.CadAstronauta();
                         break;
-                        case "2":
+                    case "2":
                         CriarMissao.CadastrandoMIssao();
                         break;
-                        case "3":
-                        RealizarLancamento.Lancamento();
+                    case "3":
+                        ListaAstronautas.ListandoAstronautas();
                         break;
-                       /* case "3":
-                        AtualizarMIssao.AtualizarResultadoMissao();
-                        break;*/
+                    case "4":
+                        ApresentarMIssoes.ApresentarMissão();
+                        break;
+                        /* case "5":
+                         NaveEspacial.NaveAstronautas();
+                         break;
+                         case "3":
+                         AtualizarMIssao.AtualizarResultadoMissao();
+                         break;*/
 
                 }
 
             }
-            catch (Exception erro) 
+            catch (Exception erro)
             {
-            
+
             }
 
 
         }
+
+
 
     }
 }
