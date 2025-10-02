@@ -16,7 +16,7 @@ namespace Projeto_espacial.Util
 
         public static int RecebeInt(string mensagem)
         {
-            int.TryParse(RecebeString(mensagem, out int entrada);
+            int.TryParse(RecebeString(mensagem), out int entrada);
             return entrada;
         }
 
