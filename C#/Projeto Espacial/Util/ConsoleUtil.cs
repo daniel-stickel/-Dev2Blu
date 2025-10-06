@@ -39,14 +39,6 @@ namespace Projeto_espacial.Util
             }
         }
 
-        //public static int ValidarNave(string mensagem)
-        //{
-        //    RecebeInt(mensagem);
 
-        //    if (RecebeInt(mensagem) == 0 || RecebeInt(mensagem) >= 5)
-        //    {
-        //        return RecebeInt(mensagem);
-        //    }
-        //}
     }
 }

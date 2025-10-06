@@ -44,10 +44,10 @@ namespace Projeto_espacial.OperacoesMenu
                 string destino = Util.ConsoleUtil.RecebeString("Informe o Destino da Missão\n");
                 string detalhes = Util.ConsoleUtil.RecebeString("Informe detalhes da Missão\n");
 
-                var missao = new Missao(nome, (TypeEnum.Nave)nave, duracao, destino, detalhes);
+                var missao = new Missao(nome, (EnumType.Nave)nave, duracao, destino, detalhes);
                 Missao._Missoes.Add(missao);
 
-                Console.WriteLine($"\nMissão {nome} que vai usar a nave {(TypeEnum.Nave)nave}" +
+                Console.WriteLine($"\nMissão {nome} que vai usar a nave {(EnumType.Nave)nave}" +
                                   $" com duração de {duracao} dias\n" +
                                   $" Destino à {destino}\n" +
                                   $" com os seguintes objetios {detalhes}\n" +

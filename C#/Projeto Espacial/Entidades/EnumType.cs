@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projeto_espacial.Entidades
 {
-    public class TypeEnum
+    public class EnumType
     {
         public enum StatusMissao
         {
@@ -16,28 +16,27 @@ namespace Projeto_espacial.Entidades
             Falha
         }
 
-        public enum Tripulantes 
+        public enum TipoTripulacao
         {
-            Solo = 1,
-            Transporte = 4,
-            Comercial = 5,
-            Exploracao = 6
+            Solo,
+            Transporte,
+            Comercial,
+            Exploracao
         }
 
-        public enum Carga
-        {
-            CargaPequena,
-            CargaMedia,
-            Suprimentos,
-            CargaGrande
-        }
-
-        public enum Nave
-        {
+        public enum Nave {
             Vostok1,
             OnibusEspacial,
             SpaceDragon,
-            StarShip,
+            StarShip 
+        }
+
+        public enum Carga { 
+            CargaPequena,
+            CargaMedia,
+            Suprimentos,
+            CargaGrande 
         }
     }
+
 }

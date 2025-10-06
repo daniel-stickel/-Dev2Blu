@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Projeto_espacial.Entidades.TypeEnum;
+using static Projeto_espacial.Entidades.EnumType;
 
 namespace Projeto_espacial.Entidades
 {

@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "J:\\SENAC\\Exercicio2\\",
+  "WorkspaceRootPath": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\Exercicio2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C66F402-CCB1-421D-9F02-F4F31E099446}|Exercicio2\\Exercicio2.csproj|j:\\senac\\exercicio2\\exercicio2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C66F402-CCB1-421D-9F02-F4F31E099446}|Exercicio2\\Exercicio2.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\c#\\exercicio2\\exercicio2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C66F402-CCB1-421D-9F02-F4F31E099446}|Exercicio2\\Exercicio2.csproj|solutionrelative:exercicio2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "J:\\SENAC\\Exercicio2\\Exercicio2\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\Exercicio2\\Exercicio2\\Program.cs",
               "RelativeDocumentMoniker": "Exercicio2\\Program.cs",
-              "ToolTip": "J:\\SENAC\\Exercicio2\\Exercicio2\\Program.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\Exercicio2\\Exercicio2\\Program.cs",
               "RelativeToolTip": "Exercicio2\\Program.cs",
-              "ViewState": "AgIAANcAAAAAAAAAAAAAAHoBAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHoBAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-30T14:58:00.982Z",
               "EditorCaption": ""
