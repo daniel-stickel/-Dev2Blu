@@ -16,15 +16,17 @@ namespace Projeto_espacial.Entidades
         private const int comercial = 5;
         private const int exploracao = 6;
 
+
+
         public List<NaveEspacial> NaveEspaciais = new List<NaveEspacial>()
         {
-            new NaveEspacial(Nave.Vostok1, tripulantes, Carga.CargaPequena),
-            new NaveEspacial(Nave.OnibusEspacial, Tripulantes.Exploracao, Carga.CargaMedia),
-            new NaveEspacial(Nave.SpaceDragon, Tripulantes.Comercial, Carga.Suprimentos),
-            new NaveEspacial(Nave.StarShip, Tripulantes.Transporte, Carga.CargaGrande)
+            /* new NaveEspacial(Nave.Vostok1, tripulantes, Carga.CargaPequena),
+             new NaveEspacial(Nave.OnibusEspacial, Tripulantes.Exploracao, Carga.CargaMedia),
+             new NaveEspacial(Nave.SpaceDragon, Tripulantes.Comercial, Carga.Suprimentos),
+             new NaveEspacial(Nave.StarShip, Tripulantes.Transporte, Carga.CargaGrande)*/
         };
 
-        public string Tripulantes { get; set; }
+        public string Tripulcao { get; set; }
         public Nave Nave { get; set; }
         public Carga Carga { get; set; }
 
@@ -37,12 +39,7 @@ namespace Projeto_espacial.Entidades
             Carga = carga;
         }
 
-        //CargaPequena,
-        //CargaMedia,
-        //Suprimentos,
-        //CargaGrande
 
-        //precisa organizar se a nave for ex vortok1 ele adiciona tantos astronautas e especifica o tipo de carga
 
         public void ConfiguracaoNave()
         {
@@ -50,21 +47,63 @@ namespace Projeto_espacial.Entidades
             switch (Nave)
             {
                 case Nave.Vostok1:
-                     == solo && Carga.Suprimentos;
+                    for (int i = 0; i < solo; i++)
+                    {
+
+                    }
+                    Console.WriteLine($"Nave com capacidade para apenas {solo}, e carga {Carga.CargaPequena}.");
                     break;
                 case Nave.OnibusEspacial:
-                    == exploracao && Carga.CargaPequena;
+                    Console.WriteLine($"Nave com capacidade para apenas {exploracao}, e carga {Carga.CargaPequena}");
                     break;
                 case Nave.SpaceDragon:
-                    == comercial && transporte && Carga.CargaMedia;
+                    Console.WriteLine($"Nave com capacidade para apenas {transporte}, e carga {Carga.Suprimentos}.");
                     break;
                 case Nave.StarShip:
-                    == exploracao && exploracao && comercial && Carga.CargaGrande;
+                    Console.WriteLine($"Nave com capacidade para apenas {comercial}, e carga {Carga.CargaGrande}.");
                     break;
+
+
+
             }
 
         }
 
+        public static int GetCapacidade(TipoTripulacao tipo)
+        {
+            switch (tipo)
+            {
+                case TipoTripulacao.Solo:
+                    return 1;
+                case TipoTripulacao.Transporte:
+                    return 2;
+                case TipoTripulacao.Comercial:
+                    return 5;
+                case TipoTripulacao.Exploracao:
+                    return 6;
+                default:
+                    return 0;
+            }
+        }
+
+        public static int NaveCapacidade(Nave nave)
+        {
+            switch (nave)
+            {
+                case Nave.Vostok1:
+                    return 1;
+                case Nave.OnibusEspacial:
+                    return 2;
+                case Nave.SpaceDragon:
+                    return 5;
+                case Nave.StarShip:
+                    return 6;
+                default:
+                    return 0;
+            }
+        }
     }
 
 }
+
+

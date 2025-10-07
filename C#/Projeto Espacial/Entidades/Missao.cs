@@ -9,6 +9,8 @@ namespace Projeto_espacial.Entidades
 {
     public class Missao
     {
+
+        private static int _Index = 1;
         public static List<Missao> _Missoes = new List<Missao>()
         {
             new Missao("Populando a Lua", Nave.OnibusEspacial, 365, "Lua", "Povuar a lua"),
@@ -16,7 +18,7 @@ namespace Projeto_espacial.Entidades
             new Missao("Colheita Marte", Nave.SpaceDragon, 120, "Marte", "Colheita e análise das plantações"),
             new Missao("Redescobrindo Plutão", Nave.Vostok1, 240, "Plutão", "Analisando o solo de Plutão")
         };
-
+        public int Id { get; private set; }
         public string Nome { get; set; }
         public Nave Nave { get; set; }
         public int Duracao { get; set; }
@@ -25,13 +27,14 @@ namespace Projeto_espacial.Entidades
         public StatusMissao StatusMissao { get; set; }
 
         public Missao(string nome, Nave nave, int duracao, string destinoMissao, string detalhes)
-        {
+        {   
+            Id = _Index;
             Nome = nome;
             Nave = nave;
             Duracao = duracao;
             DestinoMissao = destinoMissao;
             Detalhes = detalhes;
-
+            _Index++;
         }
 
         //public void CreateMissao()

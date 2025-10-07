@@ -19,8 +19,8 @@ namespace Projeto_espacial
                               "2 - Cadastro de Nova Missão\n" +
                               "3 - Lista de Astronautas\n" +
                               "4 - Apresentar Missões\n" +
-                              "4 - Atualização de lançamentos\n" +
-                              "5 - Atualizar Resultado da Missão");
+                              "5 - Recrutar Astroutas para a missão \n" +
+                              "6 - Atualizar Resultado da Missão");
 
             try
             {
@@ -39,10 +39,10 @@ namespace Projeto_espacial
                     case "4":
                         ApresentarMIssoes.ApresentarMissão();
                         break;
-                        /* case "5":
-                         NaveEspacial.NaveAstronautas();
+                         case "5":
+                        RecrutarAstronauta.RecrutaAsrtronauta();
                          break;
-                         case "3":
+                        /* case "3":
                          AtualizarMIssao.AtualizarResultadoMissao();
                          break;*/
 

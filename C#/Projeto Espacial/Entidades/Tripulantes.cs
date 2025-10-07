@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Projeto_espacial.Entidades
 {
-    internal class Tripulantes
+    public class Tripulantes
     {
+        public Tripulantes[] TripulantesVostok1 { get; set; }
+        public Tripulantes[] TripulanteOnibusEspacial { get; set; }
+        public Tripulantes[] TripulantesEspaceDragon { get; set; }
+        public Tripulantes[] TripulantesStarShip { get; set; }
     }
 }
