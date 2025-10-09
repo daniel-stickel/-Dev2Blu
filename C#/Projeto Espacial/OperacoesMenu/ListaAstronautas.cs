@@ -20,7 +20,7 @@ namespace Projeto_espacial.OperacoesMenu
                 Thread.Sleep(100);
 
             }
-                Console.WriteLine("Para voltar ao Menu clique enter");
+                Console.WriteLine("\n\nPara voltar ao Menu clique enter");
 
             if (Console.ReadKey().Key == ConsoleKey.Enter)
             {

@@ -24,7 +24,7 @@ namespace Projeto_espacial.Entidades
             Exploracao
         }
 
-        public enum Nave {
+        public enum TipoNave {
             Vostok1,
             OnibusEspacial,
             SpaceDragon,

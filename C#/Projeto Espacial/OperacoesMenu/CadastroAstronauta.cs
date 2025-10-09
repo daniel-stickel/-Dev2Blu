@@ -15,7 +15,7 @@ namespace Projeto_espacial.CasdastrarAstronauta
         {
             bool continuar = false;
 
-            do //falta terminar o laço*****************************
+            do 
             {
                 try
                 {
@@ -39,8 +39,9 @@ namespace Projeto_espacial.CasdastrarAstronauta
 
                         Console.Clear();
 
-                        Console.WriteLine($"Cadastro do Astronauta {nome} com data de nacimento {dataNascimento} de origem {nacionalidade} cadastrado com sucesso");
+                        Console.WriteLine($"\r\n\tCadastro do Astronauta {nome} com data de nascimento {dataNascimento} de origem {nacionalidade} cadastrado com sucesso\n");
 
+                        Thread.Sleep(4000);
                         Console.WriteLine("\r");
                         Console.WriteLine("Digite Qualquer tecla para cadastrar mais um Astronauta, ou ESC para voltar para o menu principal");
 

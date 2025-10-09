@@ -18,17 +18,17 @@ namespace Projeto_espacial.OperacoesMenu
                 Console.WriteLine("-------Cadastrando Missão-------\n");
                 
 
-                string nome = Util.ConsoleUtil.RecebeString("Informe o nome para a Missão\n");
+                string nome = Util.ConsoleUtil.RecebeString("\r\nInforme o nome para a Missão\n");
 
                 int nave;
 
                 while (true)
                 {
-                    nave = Util.ConsoleUtil.RecebeInt("Escolha a Nave para a Missão\r\n" +
-                                                      "Digite 1 para  Vostok1\n" +
-                                                      "Digite 2 para  Onibus Espacial\n" +
-                                                      "Digite 3 para Space Dragon\n" +
-                                                      "Digite 4 para StarShip\n");
+                    nave = Util.ConsoleUtil.RecebeInt("\r\nEscolha a Nave para a Missão\r\n\n" +
+                                                      "\tDigite 1 para  Vostok1\n" +
+                                                      "\tDigite 2 para  Onibus Espacial\n" +
+                                                      "\tDigite 3 para Space Dragon\n" +
+                                                      "\tDiigte 4 para StarShip\n");
 
                     if (nave >= 1 && nave <= 4)
                     {
@@ -40,19 +40,25 @@ namespace Projeto_espacial.OperacoesMenu
                     }
                 }
 
-                int duracao = Util.ConsoleUtil.RecebeInt("Informe o tempo necessário em dias para a Missão\n");
-                string destino = Util.ConsoleUtil.RecebeString("Informe o Destino da Missão\n");
-                string detalhes = Util.ConsoleUtil.RecebeString("Informe detalhes da Missão\n");
+                int duracao = Util.ConsoleUtil.RecebeInt("\r\nInforme o tempo necessário em dias para a Missão\n");
+                string destino = Util.ConsoleUtil.RecebeString("\r\nInforme o Destino da Missão\n");
+                string detalhes = Util.ConsoleUtil.RecebeString("\r\nInforme detalhes da Missão\n");
 
-                var missao = new Missao(nome, (EnumType.Nave)nave, duracao, destino, detalhes);
+                var missao = new Missao(nome, (EnumType.TipoNave)nave, duracao, destino, detalhes);
                 Missao._Missoes.Add(missao);
 
-                Console.WriteLine($"\nMissão {nome} que vai usar a nave {(EnumType.Nave)nave}" +
-                                  $" com duração de {duracao} dias\n" +
-                                  $" Destino à {destino}\n" +
-                                  $" com os seguintes objetios {detalhes}\n" +
-                                  "" +
-                                  "\n------ CADASTRADA COM SUCESSO ------");
+                Console.Clear();
+                Console.WriteLine($"\r\tNome da Missão: {nome.ToUpper()}");
+                Thread.Sleep(400);
+                Console.WriteLine($"\tDestino: {destino}");
+                Thread.Sleep(400);
+                Console.WriteLine($"\tNave de Operação: {(EnumType.TipoNave)nave}");
+                Thread.Sleep(400);
+                Console.WriteLine($"\tDuração Estimada: {duracao} dias");
+                Thread.Sleep(400);
+                Console.WriteLine($"\tDetalhes: {detalhes}");
+
+
                 Thread.Sleep(3000);
                 Console.WriteLine("\nPressione qualquer tecla para cadastrar uma nova missão ou ESC para sair.");
                 

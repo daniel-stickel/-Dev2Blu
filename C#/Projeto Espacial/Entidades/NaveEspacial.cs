@@ -27,15 +27,15 @@ namespace Projeto_espacial.Entidades
         };
 
         public string Tripulcao { get; set; }
-        public Nave Nave { get; set; }
+        public TipoNave Nave { get; set; }
         public Carga Carga { get; set; }
 
 
 
-        public NaveEspacial(Nave nave, string tripulantes, Carga carga)
+        public NaveEspacial(TipoNave nave, string tripulantes, Carga carga)
         {
             Nave = nave;
-            Tripulantes = tripulantes;
+           // Tripulantes = tripulantes;
             Carga = carga;
         }
 
@@ -46,20 +46,20 @@ namespace Projeto_espacial.Entidades
 
             switch (Nave)
             {
-                case Nave.Vostok1:
+                case TipoNave.Vostok1:
                     for (int i = 0; i < solo; i++)
                     {
 
                     }
                     Console.WriteLine($"Nave com capacidade para apenas {solo}, e carga {Carga.CargaPequena}.");
                     break;
-                case Nave.OnibusEspacial:
+                case TipoNave.OnibusEspacial:
                     Console.WriteLine($"Nave com capacidade para apenas {exploracao}, e carga {Carga.CargaPequena}");
                     break;
-                case Nave.SpaceDragon:
+                case TipoNave.SpaceDragon:
                     Console.WriteLine($"Nave com capacidade para apenas {transporte}, e carga {Carga.Suprimentos}.");
                     break;
-                case Nave.StarShip:
+                case TipoNave.StarShip:
                     Console.WriteLine($"Nave com capacidade para apenas {comercial}, e carga {Carga.CargaGrande}.");
                     break;
 
@@ -86,17 +86,17 @@ namespace Projeto_espacial.Entidades
             }
         }
 
-        public static int NaveCapacidade(Nave nave)
+        public static int NaveCapacidade(TipoNave nave)
         {
             switch (nave)
             {
-                case Nave.Vostok1:
+                case TipoNave.Vostok1:
                     return 1;
-                case Nave.OnibusEspacial:
+                case TipoNave.OnibusEspacial:
                     return 2;
-                case Nave.SpaceDragon:
+                case TipoNave.SpaceDragon:
                     return 5;
-                case Nave.StarShip:
+                case TipoNave.StarShip:
                     return 6;
                 default:
                     return 0;
