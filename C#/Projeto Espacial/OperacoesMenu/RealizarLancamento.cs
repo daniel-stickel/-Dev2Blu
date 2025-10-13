@@ -30,7 +30,8 @@ namespace Projeto_espacial.OperacoesMenu
                 Console.WriteLine("Nenhum Astronauta Cadastrado");
             }
 
-        Projeto_espacial.ProjetoEspacial.ExecutarProjeto();
+            Util.ConsoleUtil.RetornaMenu();
+
         }
     }
 }
