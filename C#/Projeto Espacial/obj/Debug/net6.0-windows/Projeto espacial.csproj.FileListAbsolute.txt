@@ -1,0 +1,26 @@
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\bin\Debug\net6.0-windows\Projeto espacial.exe
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\bin\Debug\net6.0-windows\Projeto espacial.deps.json
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\bin\Debug\net6.0-windows\Projeto espacial.runtimeconfig.json
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\bin\Debug\net6.0-windows\Projeto espacial.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\bin\Debug\net6.0-windows\Projeto espacial.pdb
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\bin\Debug\net6.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\bin\Debug\net6.0-windows\System.Drawing.Common.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\bin\Debug\net6.0-windows\System.Windows.Extensions.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\obj\Debug\net6.0-windows\Projeto espacial.csproj.AssemblyReference.cache
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\obj\Debug\net6.0-windows\Projeto espacial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\obj\Debug\net6.0-windows\Projeto espacial.AssemblyInfoInputs.cache
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\obj\Debug\net6.0-windows\Projeto espacial.AssemblyInfo.cs
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\obj\Debug\net6.0-windows\Projeto espacial.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\obj\Debug\net6.0-windows\Projeto espacial.sourcelink.json
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\obj\Debug\net6.0-windows\Projeto .19BF6EDD.Up2Date
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\obj\Debug\net6.0-windows\Projeto espacial.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\obj\Debug\net6.0-windows\refint\Projeto espacial.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\obj\Debug\net6.0-windows\Projeto espacial.pdb
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\obj\Debug\net6.0-windows\Projeto espacial.genruntimeconfig.cache
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\obj\Debug\net6.0-windows\ref\Projeto espacial.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\obj\Debug\net6.0-windows\Projeto_espacial.Properties.Resources.resources
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\obj\Debug\net6.0-windows\Projeto espacial.csproj.GenerateResource.cache

@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Projeto_espacial.Entidades
+{
+    public class Tripulantes
+    {
+        public Tripulantes[] TripulantesVostok1 { get; set; }
+        public Tripulantes[] TripulanteOnibusEspacial { get; set; }
+        public Tripulantes[] TripulantesEspaceDragon { get; set; }
+        public Tripulantes[] TripulantesStarShip { get; set; }
+        public Tripulantes[] TripulantesNovos { get; set; } 
+    }
+}
