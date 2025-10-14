@@ -12,7 +12,7 @@ namespace Projeto_espacial.OperacoesMenu
 {
     public class RecrutarAstronauta
     {
-        public static void RecrutaAsrtronauta()
+        internal static void RecrutaAsrtronauta()
         {
 
             try

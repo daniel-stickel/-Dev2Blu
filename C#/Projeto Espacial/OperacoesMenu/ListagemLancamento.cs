@@ -5,9 +5,9 @@ using static Projeto_espacial.Entidades.EnumType;
 
 namespace Projeto_espacial.OperacoesMenu
 {
-    public class ListagemLancamento
+    internal class ListagemLancamento
     {
-        public static void MostrarLancamento()
+        internal static void MostrarLancamento()
         {
             Console.Clear();
             Console.WriteLine("==============================================\n" +

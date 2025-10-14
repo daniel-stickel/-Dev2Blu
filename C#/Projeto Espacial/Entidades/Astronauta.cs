@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Projeto_espacial.Entidades
 {
-    public class Astronauta
+    internal class Astronauta
     {
-        public static int _Index = 1;
+        internal static int _Index = 1;
 
-        public static List<Astronauta> _Astronautas = new List<Astronauta>()
+        internal static List<Astronauta> _Astronautas = new List<Astronauta>()
         {
             new Astronauta("Marcos Pontes", new DateOnly(1963,03,11), "Brasileiro"),
             new Astronauta("George Futurama", new DateOnly(1987,11,12), "Americano"),
@@ -21,12 +21,12 @@ namespace Projeto_espacial.Entidades
             new Astronauta("Laika Dog", new DateOnly(1957,11,03), "Soviética"),
             new Astronauta("Joana Almeida", new DateOnly(1885,04,17), "Mexicana")
         };
-        public int Id { get; set; }
-        public string Nome { get; private set; }
-        public DateOnly DataNascimento { get; private set; }
-        public string Nacionalidade { get; private set; }
+        internal int Id { get; set; }
+        internal string Nome { get; private set; }
+        internal DateOnly DataNascimento { get; private set; }
+        internal string Nacionalidade { get; private set; }
 
-        public Astronauta(string nome, DateOnly dataNascimento, string nacionalidade)
+        internal Astronauta(string nome, DateOnly dataNascimento, string nacionalidade)
         {
             Id = _Index;
             Nome = nome;
@@ -36,7 +36,7 @@ namespace Projeto_espacial.Entidades
             _Index++;
         }
 
-        public void Create()
+        internal void Create()
         {
             if (string.IsNullOrEmpty(Nome))
             {

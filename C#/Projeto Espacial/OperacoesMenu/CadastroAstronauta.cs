@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace Projeto_espacial.CasdastrarAstronauta
 {
-    public class CadastroAstronauta
+    internal class CadastroAstronauta
     {
 
-        public static void CadAstronauta()
+        internal static void CadAstronauta()
         {
             bool continuar = false;
 

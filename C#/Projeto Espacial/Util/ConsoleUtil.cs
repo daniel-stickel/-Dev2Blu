@@ -13,7 +13,7 @@ namespace Projeto_espacial.Util
 {
     internal class ConsoleUtil
     {
-        public static string RecebeString(string mensagem)
+        internal static string RecebeString(string mensagem)
         {
 
             Console.WriteLine(mensagem);
@@ -53,7 +53,7 @@ namespace Projeto_espacial.Util
             Projeto_espacial.ProjetoEspacial.ExecutarProjeto();
         }
 
-        public static void SairMenu()
+        internal static void SairMenu()
         {
             Console.WriteLine(" -------- Obrigado Por Usar o PROJETO ESPACIAL -------- ");
             Environment.Exit(0);
@@ -77,16 +77,11 @@ namespace Projeto_espacial.Util
             }
         }
 
-        interna static void Tocar()
+        internal static void Tocar()  
         {
-            SoundPlayer player = new SoundPlayer("C:\\Users\\daniel.stickel\\Desktop\\+Dev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\Util\\Documentos\\musica.wav");
-            player.Load();
+            SoundPlayer player = new SoundPlayer("C:\\Users\\Daniel\\Desktop\\+Dev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\Util\\Documentos\\musica.wav");
             player.Play();
         }
-
-
     }
-
-
 }
 

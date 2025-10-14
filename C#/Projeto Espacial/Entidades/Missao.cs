@@ -7,27 +7,27 @@ using static Projeto_espacial.Entidades.EnumType;
 
 namespace Projeto_espacial.Entidades
 {
-    public class Missao
+    internal class Missao
     {
 
         private static int _Index = 1;
-        public static List<Missao> _Missoes = new List<Missao>()
+        internal static List<Missao> _Missoes = new List<Missao>()
         {
             new Missao("Populando a Lua", TipoNave.OnibusEspacial, 365, "Lua", "Povuar a lua"),
             new Missao("AgroMarte", TipoNave.StarShip, 120, "Marte", "Plantar batatas em Marte"),
             new Missao("Colheita Marte", TipoNave.SpaceDragon, 120, "Marte", "Colheita e análise das plantações"),
             new Missao("Redescobrindo Plutão", TipoNave.Vostok1, 240, "Plutão", "Analisando o solo de Plutão")
         };
-        public List<Astronauta> Tripulacao { get; set; }
-        public int Id { get; private set; }
-        public string Nome { get; set; }
-        public TipoNave Nave { get; set; }
-        public int Duracao { get; set; }
-        public string DestinoMissao { get; set; }
-        public string Detalhes { get; set; }
-        public StatusMissao Status { get; set; }
+        internal List<Astronauta> Tripulacao { get; set; }
+        internal int Id { get; private set; }
+        internal string Nome { get; set; }
+        internal TipoNave Nave { get; set; }
+        internal int Duracao { get; set; }
+        internal string DestinoMissao { get; set; }
+        internal string Detalhes { get; set; }
+        internal StatusMissao Status { get; set; }
 
-        public Missao(string nome, TipoNave nave, int duracao, string destinoMissao, string detalhes)
+        internal Missao(string nome, TipoNave nave, int duracao, string destinoMissao, string detalhes)
         {
             Id = _Index;
             Nome = nome;

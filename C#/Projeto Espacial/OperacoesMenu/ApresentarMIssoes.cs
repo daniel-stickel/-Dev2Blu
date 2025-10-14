@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Projeto_espacial.OperacoesMenu
 {
-    public class ApresentarMIssoes
+    internal class ApresentarMIssoes
     {
-        public static void ApresentarMissão()
+        internal static void ApresentarMissão()
         {
             Console.Clear();
             Console.WriteLine("\t-------- LISTA DE MISSÕES --------\r\n");

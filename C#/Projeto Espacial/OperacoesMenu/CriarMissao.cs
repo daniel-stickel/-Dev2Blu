@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Projeto_espacial.OperacoesMenu
 {
-    public class CriarMissao
+    internal class CriarMissao
     {
-        public static void CadastrandoMIssao()
+        internal static void CadastrandoMIssao()
         {
             bool continuar = true; 
             do

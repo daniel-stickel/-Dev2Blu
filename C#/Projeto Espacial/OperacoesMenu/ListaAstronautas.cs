@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Projeto_espacial.OperacoesMenu
 {
-    public class ListaAstronautas
+    internal class ListaAstronautas
     {
-        public static void ListandoAstronautas() 
+        internal static void ListandoAstronautas() 
         {
             Console.Clear();
             Console.WriteLine("---- Lista de Astronautas ----\r\n");
@@ -20,6 +20,7 @@ namespace Projeto_espacial.OperacoesMenu
                 Thread.Sleep(100);
 
             }
+            Thread.Sleep(100);
             Util.ConsoleUtil.RetornaMenu();
         }
     }

@@ -30,7 +30,6 @@ namespace Projeto_espacial.Entidades
         public NaveEspacial(TipoNave nave, string tripulantes, Carga carga)
         {
             Nave = nave;
-           // Tripulantes = tripulantes;
             Carga = carga;
         }
 

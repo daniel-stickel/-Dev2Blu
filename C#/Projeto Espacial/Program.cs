@@ -3,9 +3,10 @@ using Projeto_espacial;
 
 try
 {
-ProjetoEspacial.ExecutarProjeto();
+     Projeto_espacial.Util.ConsoleUtil.Tocar();
+    ProjetoEspacial.ExecutarProjeto();
 }
-catch(Exception erro)
+catch (Exception erro)
 {
     var mensagem = $"Erro ao executar: {erro.Message}";
     Console.WriteLine(mensagem);

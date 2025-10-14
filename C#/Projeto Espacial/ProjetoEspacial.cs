@@ -11,12 +11,11 @@ using System.Threading.Tasks;
 
 namespace Projeto_espacial
 {
-    public class ProjetoEspacial
+    internal class ProjetoEspacial
     {
 
-        public static void ExecutarProjeto()
+        internal static void ExecutarProjeto()
         {
-            ConsoleUtil.Tocar();
             Console.Clear();
             int menuEntrada = Util.ConsoleUtil.LerNumero("Menu Projeto espacial:\n" +
                               "1 - Cadastrar Astronautas\n" +
