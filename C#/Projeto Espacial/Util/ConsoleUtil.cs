@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Projeto_espacial.Util
 {
-    public class ConsoleUtil
+    internal class ConsoleUtil
     {
         public static string RecebeString(string mensagem)
         {
@@ -20,14 +20,14 @@ namespace Projeto_espacial.Util
             return Console.ReadLine();
         }
 
-        public static int RecebeInt(string mensagem)
+        internal static int RecebeInt(string mensagem)
         {
             int.TryParse(RecebeString(mensagem), out int entrada);
             return entrada;
         }
 
 
-        public static DateOnly RecebeDateOnly(string prompt) // Esse método eu estava usando em mais locais onde fiz alterações, mas dicidi deixar aqui para manter a classe astronauta mais organizada e com o mesmo padrão para chamar os métodos
+        internal static DateOnly RecebeDateOnly(string prompt) // Esse método eu estava usando em mais locais onde fiz alterações, mas dicidi deixar aqui para manter a classe astronauta mais organizada e com o mesmo padrão para chamar os métodos
         {
             Console.WriteLine(prompt);
 
@@ -44,7 +44,7 @@ namespace Projeto_espacial.Util
             }
         }
 
-        public static void RetornaMenu()
+        internal static void RetornaMenu()
         {
             while (Console.ReadKey().Key != ConsoleKey.Enter)
             {
@@ -61,7 +61,7 @@ namespace Projeto_espacial.Util
             Console.ReadLine();
         }
 
-        public static int LerNumero(string mensagem)
+        internal static int LerNumero(string mensagem)
         {
             while (true)
             {
@@ -77,9 +77,10 @@ namespace Projeto_espacial.Util
             }
         }
 
-        public static void Tocar()
+        interna static void Tocar()
         {
-            SoundPlayer player = new SoundPlayer("C:\\Users\\Daniel\\Desktop\\+Dev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\Util\\Documentos\\musica.wav");
+            SoundPlayer player = new SoundPlayer("C:\\Users\\daniel.stickel\\Desktop\\+Dev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\Util\\Documentos\\musica.wav");
+            player.Load();
             player.Play();
         }
 

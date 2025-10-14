@@ -1,6 +1,7 @@
 ﻿using Projeto_espacial.CasdastrarAstronauta;
 using Projeto_espacial.Entidades;
 using Projeto_espacial.OperacoesMenu;
+using Projeto_espacial.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace Projeto_espacial
 
         public static void ExecutarProjeto()
         {
+            ConsoleUtil.Tocar();
             Console.Clear();
             int menuEntrada = Util.ConsoleUtil.LerNumero("Menu Projeto espacial:\n" +
                               "1 - Cadastrar Astronautas\n" +
