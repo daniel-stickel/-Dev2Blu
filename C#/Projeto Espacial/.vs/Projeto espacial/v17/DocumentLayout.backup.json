@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{08C57723-27D4-4C95-88C2-FFC2F889FA2C}|Projeto espacial.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\c#\\projeto espacial\\operacoesmenu\\listagemlancamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08C57723-27D4-4C95-88C2-FFC2F889FA2C}|Projeto espacial.csproj|solutionrelative:operacoesmenu\\listagemlancamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{08C57723-27D4-4C95-88C2-FFC2F889FA2C}|Projeto espacial.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\c#\\projeto espacial\\util\\consoleutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08C57723-27D4-4C95-88C2-FFC2F889FA2C}|Projeto espacial.csproj|solutionrelative:util\\consoleutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08C57723-27D4-4C95-88C2-FFC2F889FA2C}|Projeto espacial.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\c#\\projeto espacial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08C57723-27D4-4C95-88C2-FFC2F889FA2C}|Projeto espacial.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{08C57723-27D4-4C95-88C2-FFC2F889FA2C}|Projeto espacial.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\c#\\projeto espacial\\entidades\\naveespacial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08C57723-27D4-4C95-88C2-FFC2F889FA2C}|Projeto espacial.csproj|solutionrelative:entidades\\naveespacial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08C57723-27D4-4C95-88C2-FFC2F889FA2C}|Projeto espacial.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\c#\\projeto espacial\\operacoesmenu\\realizarlancamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08C57723-27D4-4C95-88C2-FFC2F889FA2C}|Projeto espacial.csproj|solutionrelative:operacoesmenu\\realizarlancamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08C57723-27D4-4C95-88C2-FFC2F889FA2C}|Projeto espacial.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\c#\\projeto espacial\\operacoesmenu\\resultadomiss\u00E3o.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08C57723-27D4-4C95-88C2-FFC2F889FA2C}|Projeto espacial.csproj|solutionrelative:operacoesmenu\\resultadomiss\u00E3o.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08C57723-27D4-4C95-88C2-FFC2F889FA2C}|Projeto espacial.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\c#\\projeto espacial\\projetoespacial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08C57723-27D4-4C95-88C2-FFC2F889FA2C}|Projeto espacial.csproj|solutionrelative:projetoespacial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08C57723-27D4-4C95-88C2-FFC2F889FA2C}|Projeto espacial.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\c#\\projeto espacial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08C57723-27D4-4C95-88C2-FFC2F889FA2C}|Projeto espacial.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08C57723-27D4-4C95-88C2-FFC2F889FA2C}|Projeto espacial.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\c#\\projeto espacial\\entidades\\enumtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,19 +47,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ListagemLancamento.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\OperacoesMenu\\ListagemLancamento.cs",
+              "RelativeDocumentMoniker": "OperacoesMenu\\ListagemLancamento.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\OperacoesMenu\\ListagemLancamento.cs",
+              "RelativeToolTip": "OperacoesMenu\\ListagemLancamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T23:23:20.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProjetoEspacial.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\ProjetoEspacial.cs",
+              "RelativeDocumentMoniker": "ProjetoEspacial.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\ProjetoEspacial.cs",
+              "RelativeToolTip": "ProjetoEspacial.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T23:09:41.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ResultadoMiss\u00E3o.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\OperacoesMenu\\ResultadoMiss\u00E3o.cs",
+              "RelativeDocumentMoniker": "OperacoesMenu\\ResultadoMiss\u00E3o.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\OperacoesMenu\\ResultadoMiss\u00E3o.cs",
+              "RelativeToolTip": "OperacoesMenu\\ResultadoMiss\u00E3o.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAACMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T23:07:51.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RealizarLancamento.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\OperacoesMenu\\RealizarLancamento.cs",
+              "RelativeDocumentMoniker": "OperacoesMenu\\RealizarLancamento.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\OperacoesMenu\\RealizarLancamento.cs",
+              "RelativeToolTip": "OperacoesMenu\\RealizarLancamento.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T22:56:04.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ConsoleUtil.cs",
               "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\Util\\ConsoleUtil.cs",
               "RelativeDocumentMoniker": "Util\\ConsoleUtil.cs",
               "ToolTip": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\Util\\ConsoleUtil.cs",
               "RelativeToolTip": "Util\\ConsoleUtil.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAACXAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwEgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-14T13:50:24.737Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -56,13 +124,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "EnumType.cs",
               "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\Entidades\\EnumType.cs",
               "RelativeDocumentMoniker": "Entidades\\EnumType.cs",
               "ToolTip": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\Entidades\\EnumType.cs",
               "RelativeToolTip": "Entidades\\EnumType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-14T13:47:05.107Z",
               "EditorCaption": ""
@@ -75,7 +143,7 @@
               "RelativeDocumentMoniker": "Entidades\\NaveEspacial.cs",
               "ToolTip": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\Entidades\\NaveEspacial.cs",
               "RelativeToolTip": "Entidades\\NaveEspacial.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAcwBgAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAcwFcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-14T13:39:36.558Z",
               "EditorCaption": ""

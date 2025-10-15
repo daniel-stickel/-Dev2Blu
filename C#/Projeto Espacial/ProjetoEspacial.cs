@@ -23,8 +23,9 @@ namespace Projeto_espacial
                               "3 - Lista de Astronautas\n" +
                               "4 - Apresentar Missões\n" +
                               "5 - Recrutar Astroutas para a missão \n" +
-                              "6 - Atualizar Resultado da Missão\n" +
-                              "7 - Sair do Menu\n");
+                              "6 - Escolher Missão para Lançamentos\n" +
+                              "7 - Atualizar Resultado da Missão\n" +
+                              "8 - Sair do Menu\n");
 
             try
             {
@@ -50,6 +51,9 @@ namespace Projeto_espacial
                         ListagemLancamento.MostrarLancamento();
                         break;
                     case 7:
+                        ResultadoMissão.ContagemLancamento();
+                        break;
+                    case 8:
                         Util.ConsoleUtil.SairMenu();
                         break;
                 }

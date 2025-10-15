@@ -52,7 +52,7 @@ namespace Projeto_espacial.OperacoesMenu
                 Console.WriteLine(" LANÇAMENTO REALIZADO COM SUCESSO \r\n"+
                                  $"A missão '{missaoParaLancar.Nome.ToUpper()}' está oficialmente EM CURSO.\n" +
                                  $"Data e Hora do Lançamento: {DateTime.Now}\n"+
-                                  "\nBoa sorte a todos ");
+                                  "\nBoa Sorte a Todos ");
             }
             Util.ConsoleUtil.RetornaMenu();
         }
