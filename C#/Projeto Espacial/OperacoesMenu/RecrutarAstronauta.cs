@@ -83,7 +83,7 @@ namespace Projeto_espacial.OperacoesMenu
                     Console.WriteLine($"Capacidade da Nave: {capacidadeDaNave} astronautas\n" +
                                        "-------------------------------------------------");
 
-                    if (capacidadeDaNave > 0) // pode ter uma forma muito mais fácil de fazer isso, mas funciona. VOU VIVER 3 ANOS A MENSO POR CAUSA DESSE IF
+                    if (capacidadeDaNave > 0) // pode ter uma forma muito mais fácil de fazer isso, mas funciona. VOU VIVER 3 ANOS A MENOS POR CAUSA DESSE IF
                     {
                         for (int i = 0; i < capacidadeDaNave; i++)
                         {

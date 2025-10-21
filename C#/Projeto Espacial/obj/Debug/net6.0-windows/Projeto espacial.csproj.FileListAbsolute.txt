@@ -49,3 +49,4 @@ C:\Users\daniel.stickel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\obj\Debug\
 C:\Users\daniel.stickel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\obj\Debug\net6.0-windows\Projeto espacial.pdb
 C:\Users\daniel.stickel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\obj\Debug\net6.0-windows\Projeto espacial.genruntimeconfig.cache
 C:\Users\daniel.stickel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\obj\Debug\net6.0-windows\ref\Projeto espacial.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\Projeto Espacial\bin\Debug\net6.0-windows\Util\Documentos\musica.wav

@@ -9,19 +9,26 @@ namespace Projeto_espacial.OperacoesMenu
 {
     internal class ListaAstronautas
     {
-        internal static void ListandoAstronautas() 
+        internal static void ListandoAstronautas()
         {
-            Console.Clear();
-            Console.WriteLine("---- Lista de Astronautas ----\r\n");
-
-            foreach( var item in Entidades.Astronauta._Astronautas)
+            try
             {
-                Console.WriteLine($"\t{item.Id}- Nome: {item.Nome, -23} | Cidadania: {item.Nacionalidade,-15}");
-                Thread.Sleep(100);
+                Console.Clear();
+                Console.WriteLine("---- Lista de Astronautas ----\r\n");
 
+                foreach (var item in Entidades.Astronauta._Astronautas)
+                {
+                    Console.WriteLine($"\t{item.Id}- Nome: {item.Nome,-23} | Cidadania: {item.Nacionalidade,-15}");
+                    Thread.Sleep(100);
+
+                }
+                Thread.Sleep(100);
+                Util.ConsoleUtil.RetornaMenu();
             }
-            Thread.Sleep(100);
-            Util.ConsoleUtil.RetornaMenu();
+            catch (Exception erro)
+            {
+                throw new Exception($"ocorreu um erro na Listagem dos Astronautas. Erro: {erro.Message}");
+            }
         }
     }
 }

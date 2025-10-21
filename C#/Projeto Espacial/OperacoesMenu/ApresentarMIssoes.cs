@@ -10,17 +10,24 @@ namespace Projeto_espacial.OperacoesMenu
     {
         internal static void ApresentarMissão()
         {
-            Console.Clear();
-            Console.WriteLine("\t-------- LISTA DE MISSÕES --------\r\n");
-            foreach (var item in Entidades.Missao._Missoes)
+            try
             {
-                Console.WriteLine($"\tMissão: {item.Nome,5}\n" +
-                                  $"\tDestino da Missão: {item.DestinoMissao,5}\n" +
-                                  $"\tNave de Operação: {item.Nave,5}\n" +
-                                  $"\tTempo para Concluir: {item.Duracao,5} dias\n" +
-                                  $"\tDetalhes da Missão: {item.Detalhes,5}\n");
+                Console.Clear();
+                Console.WriteLine("\t-------- LISTA DE MISSÕES --------\r\n");
+                foreach (var item in Entidades.Missao._Missoes)
+                {
+                    Console.WriteLine($"\tMissão: {item.Nome,5}\n" +
+                                      $"\tDestino da Missão: {item.DestinoMissao,5}\n" +
+                                      $"\tNave de Operação: {item.Nave,5}\n" +
+                                      $"\tTempo para Concluir: {item.Duracao,5} dias\n" +
+                                      $"\tDetalhes da Missão: {item.Detalhes,5}\n");
 
-                Thread.Sleep(200);
+                    Thread.Sleep(200);
+                }
+            }
+            catch (Exception erro)
+            {
+                throw new Exception($"ocorreu um erro na Lista de Missões. Erro: {erro.Message}");
             }
 
             Util.ConsoleUtil.RetornaMenu();

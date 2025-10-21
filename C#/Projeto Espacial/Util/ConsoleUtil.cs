@@ -79,7 +79,7 @@ namespace Projeto_espacial.Util
 
         internal static void Tocar()  
         {
-            SoundPlayer player = new SoundPlayer("C:\\Users\\Daniel\\Desktop\\+Dev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\Util\\Documentos\\musica.wav");
+            SoundPlayer player = new SoundPlayer("Util\\Documentos\\musica.wav");
             player.Play();
         }
     }

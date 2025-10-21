@@ -16,6 +16,12 @@ namespace Projeto_espacial
 
         internal static void ExecutarProjeto()
         {
+
+            // Tentei manter o projeto o mais organizado possível
+            // O projessor pediu para adicionar algo, sendo assim adicionei as naves e a quantidade diferente de astronautas para cada nave
+            // Tentei também usar tudo o que dava para adiconar no projeto, esoero que tenha alcançado o objetivo do projeto
+            
+            
             Console.Clear();
             int menuEntrada = Util.ConsoleUtil.LerNumero("Menu Projeto espacial:\n" +
                               "1 - Cadastrar Astronautas\n" +
@@ -45,7 +51,7 @@ namespace Projeto_espacial
                         ApresentarMIssoes.ApresentarMissão();
                         break;
                     case 5:
-                        RecrutarAstronauta.RecrutaAsrtronauta();
+                        RecrutarAstronauta.RecrutaAsrtronauta(); // Essa classe foi minha redenção 
                         break;
                     case 6:
                         ListagemLancamento.MostrarLancamento();
