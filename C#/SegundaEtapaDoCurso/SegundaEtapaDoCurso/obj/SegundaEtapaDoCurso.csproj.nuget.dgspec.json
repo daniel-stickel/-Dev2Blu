@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SENAC\\SegundaEtapaDoCurso\\SegundaEtapaDoCurso\\SegundaEtapaDoCurso.csproj": {}
+    "C:\\Users\\Daniel\\Desktop\\+Dev2Blu\\-Dev2Blu\\C#\\SegundaEtapaDoCurso\\SegundaEtapaDoCurso\\SegundaEtapaDoCurso.csproj": {}
   },
   "projects": {
-    "D:\\SENAC\\SegundaEtapaDoCurso\\SegundaEtapaDoCurso\\SegundaEtapaDoCurso.csproj": {
+    "C:\\Users\\Daniel\\Desktop\\+Dev2Blu\\-Dev2Blu\\C#\\SegundaEtapaDoCurso\\SegundaEtapaDoCurso\\SegundaEtapaDoCurso.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SENAC\\SegundaEtapaDoCurso\\SegundaEtapaDoCurso\\SegundaEtapaDoCurso.csproj",
+        "projectUniqueName": "C:\\Users\\Daniel\\Desktop\\+Dev2Blu\\-Dev2Blu\\C#\\SegundaEtapaDoCurso\\SegundaEtapaDoCurso\\SegundaEtapaDoCurso.csproj",
         "projectName": "SegundaEtapaDoCurso",
-        "projectPath": "D:\\SENAC\\SegundaEtapaDoCurso\\SegundaEtapaDoCurso\\SegundaEtapaDoCurso.csproj",
-        "packagesPath": "C:\\Users\\daniel.stickel\\.nuget\\packages\\",
-        "outputPath": "D:\\SENAC\\SegundaEtapaDoCurso\\SegundaEtapaDoCurso\\obj\\",
+        "projectPath": "C:\\Users\\Daniel\\Desktop\\+Dev2Blu\\-Dev2Blu\\C#\\SegundaEtapaDoCurso\\SegundaEtapaDoCurso\\SegundaEtapaDoCurso.csproj",
+        "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Daniel\\Desktop\\+Dev2Blu\\-Dev2Blu\\C#\\SegundaEtapaDoCurso\\SegundaEtapaDoCurso\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\daniel.stickel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -38,7 +38,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net6.0": {
@@ -59,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

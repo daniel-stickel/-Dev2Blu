@@ -1,6 +1,6 @@
 ﻿namespace PetShoes.Model.Adotantes
 {
-    public class AdontanteRequestModel
+    public class AdontanteRequestModel // Responsavel por solicitar 
     {
         public Guid Id { get; set; }
         public string Nome { get; set; }
@@ -8,5 +8,6 @@
         public int CPF { get; set; }
         public string IdAnimal { get; set; }
         public string NomeAnimal { get; set; }
+        public bool Ativo { get; set; }
     }
 }

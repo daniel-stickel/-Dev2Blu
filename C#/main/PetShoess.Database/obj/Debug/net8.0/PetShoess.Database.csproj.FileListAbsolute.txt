@@ -1,0 +1,13 @@
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\main\PetShoess.Database\bin\Debug\net8.0\PetShoess.Database.deps.json
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\main\PetShoess.Database\bin\Debug\net8.0\PetShoess.Database.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\main\PetShoess.Database\bin\Debug\net8.0\PetShoess.Database.pdb
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\main\PetShoess.Database\obj\Debug\net8.0\PetShoess.Database.csproj.AssemblyReference.cache
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\main\PetShoess.Database\obj\Debug\net8.0\PetShoess.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\main\PetShoess.Database\obj\Debug\net8.0\PetShoess.Database.AssemblyInfoInputs.cache
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\main\PetShoess.Database\obj\Debug\net8.0\PetShoess.Database.AssemblyInfo.cs
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\main\PetShoess.Database\obj\Debug\net8.0\PetShoess.Database.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\main\PetShoess.Database\obj\Debug\net8.0\PetShoess.Database.sourcelink.json
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\main\PetShoess.Database\obj\Debug\net8.0\PetShoess.Database.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\main\PetShoess.Database\obj\Debug\net8.0\refint\PetShoess.Database.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\main\PetShoess.Database\obj\Debug\net8.0\PetShoess.Database.pdb
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\C#\main\PetShoess.Database\obj\Debug\net8.0\ref\PetShoess.Database.dll

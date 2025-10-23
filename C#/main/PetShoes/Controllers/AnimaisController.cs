@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PetShoes.Model.Animais;
+using PetShoess.Database.Entidades;
 
 namespace PetShoes.Controllers
 {
@@ -7,57 +8,68 @@ namespace PetShoes.Controllers
     [Route("[controller]")]
     public class AnimaisController : Controller
     {
-        public static List<AnimalResponseModel> Animais = new List<AnimalResponseModel>() {
-            new AnimalResponseModel()
-            {
-                Id = Guid.NewGuid(),
-                Nome = "Prateado",
-                Cor = "Cinza",
-                IdadeEmMeses = 6,
-            }
-        };
 
         [HttpGet("")]
         public IEnumerable<AnimalResponseModel> GetAnimais()
         {
-            return Animais;
+            return Animal.GetAll().Select(animal => new AnimalResponseModel(animal));
+        
         }
+        //    var result = new List<AnimalResponseModel>();
+        //    var dadosBanco = Animal.GetAll();
+        //    foreach (var animal in dadosBanco)
+        //    {
+        //        var animalAux = new AnimalResponseModel()
+        //        {
+        //            Nome = animal.Name
+        //        };
 
-        [HttpPost("")]
-        public Guid PostAnimais(AnimalRequestModel animalRequest)
-        {
-            var auxGuid = Guid.NewGuid();
-            Animais.Add(new AnimalResponseModel()
-            {
-                Id = auxGuid,
-                Nome = animalRequest.Nome,
-                Cor = animalRequest.Cor,
-                IdadeEmMeses = animalRequest.IdadeEmMeses
-            });
+        //        result.Add(animalAux);
+        //    }
 
-            return auxGuid;
-        }
+        //    return result;
+        //}
 
-        [HttpPut("{id}")]
-        public AnimalResponseModel PutAnimal(Guid id, AnimalRequestModel animalRequest)
-        {
-            // Substituivel por foreach
-            var animal = Animais.First(animalBusca => animalBusca.Id == id);
+        //[HttpPost("")]
+        //public Guid PostAnimais(AnimalRequestModel animalRequest)
+        //{
+        //    var auxGuid = Guid.NewGuid();
+        //    Animais.Add(new AnimalResponseModel()
+        //    {
+        //        Id = auxGuid,
+        //        Nome = animalRequest.Nome,
+        //        Cor = animalRequest.Cor,
+        //        IdadeEmMeses = animalRequest.IdadeEmMeses,
+        //        TipoDeAnimal = animalRequest.TipoDeAnimal,
+        //        Peso = animalRequest.Peso
 
-            animal.Nome = animalRequest.Nome;
-            animal.Cor = animalRequest.Cor;
-            animal.IdadeEmMeses = animalRequest.IdadeEmMeses;
+        //    });
 
-            return animal;
-        }
+        //    return auxGuid;
+        //}
 
-        [HttpDelete("{id}")]
-        public bool DeleteAnimal(Guid id)
-        {
-            var animal = Animais.First(animalBusca => animalBusca.Id == id);
-            Animais.Remove(animal);
+        //[HttpPut("{id}")]
+        //public AnimalResponseModel PutAnimal(Guid id, AnimalRequestModel animalRequest)
+        //{
+        //    // Substituivel por foreach
+        //    var animal = Animais.First(animalBusca => animalBusca.Id == id);
 
-            return true;
-        }
+        //    animal.Nome = animalRequest.Nome;
+        //    animal.Cor = animalRequest.Cor;
+        //    animal.IdadeEmMeses = animalRequest.IdadeEmMeses;
+        //    animal.TipoDeAnimal= animalRequest.TipoDeAnimal;
+        //    animal.Peso = animal.Peso;
+
+        //    return animal;
+        //}
+
+        //[HttpDelete("{id}")]
+        //public bool DeleteAnimal(Guid id)
+        //{
+        //    var animal = Animais.First(animalBusca => animalBusca.Id == id);
+        //    Animais.Remove(animal);
+
+        //    return true;
+        
     }
 }
