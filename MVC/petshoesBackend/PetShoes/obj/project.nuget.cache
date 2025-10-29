@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "xpT6fM9xreQ=",
-=======
   "dgSpecHash": "kyDc1sVxbg0lcLWpRuoT4pj/ffRgSRBY9Ll9RuH6q/k6MXsoTEWxI6+aNySgyi06wUN7nf2lifvNiFww7U6HPw==",
->>>>>>> d51e098ca98eb14da6e3ceeb9c18a3354aa935bb
   "success": true,
   "projectFilePath": "C:\\Users\\daniel.stickel\\Desktop\\+Dev2Blu\\-Dev2Blu\\MVC\\petshoesBackend\\PetShoes\\PetShoes.csproj",
   "expectedPackageFiles": [
@@ -15,5 +11,12 @@
     "C:\\Users\\daniel.stickel\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
     "C:\\Users\\daniel.stickel\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\daniel.stickel\\Desktop\\+Dev2Blu\\-Dev2Blu\\MVC\\petshoesBackend\\PetShoes\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

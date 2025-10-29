@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PetShoes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9596f880feadb045c1ccc54f75846c5d906290b9")]
-=======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
->>>>>>> d51e098ca98eb14da6e3ceeb9c18a3354aa935bb
 [assembly: System.Reflection.AssemblyProductAttribute("PetShoes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PetShoes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

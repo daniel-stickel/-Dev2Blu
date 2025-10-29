@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PetShoes.Database")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b051eebcc8a5b4e5f107d8374abb62657478ed2b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("PetShoes.Database")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PetShoes.Database")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
