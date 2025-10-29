@@ -81,7 +81,11 @@ namespace PetShoes.Database.Entidades
                 using (var conn = new MySqlConnection(Connection.CONNECTION_STRING))
                 {
                     conn.Open();
-                    string query = $@"INSERT INTO ANIMAIS (
+
+                    //if ( Id == 0)
+                    //{
+                    // alterar para update
+                        string query = $@"INSERT INTO ANIMAIS (
                             NOME, IDADE_ESTIMADA, PORTE, RACA, SEXO, CASTRADO, VACINADO, TEMPERAMENTO,
                             OBSERVACOES_MEDICAS, STATUS_ADOCAO, DATA_CADASTRO)
                             VALUES (@NOME, @IDADE_ESTIMADA, @PORTE, @RACA, @SEXO, @CASTRADO, @VACINADO, @TEMPERAMENTO,
@@ -96,7 +100,7 @@ namespace PetShoes.Database.Entidades
                     cmd.Parameters.AddWithValue("@CASTRADO", Castrado);
                     cmd.Parameters.AddWithValue("@VACINADO", Vacinado);
                     cmd.Parameters.AddWithValue("@TEMPERAMENTO", Temperamento);
-                    cmd.Parameters.AddWithValue("@OBSERVACAO_MEDICAS", ObservacoesMedicas);
+                    cmd.Parameters.AddWithValue("@OBSERVACAOS_MEDICAS", ObservacoesMedicas);
                     cmd.Parameters.AddWithValue("@STATUS_ADOCAO", Status);
 
                     cmd.ExecuteNonQuery();
@@ -104,8 +108,12 @@ namespace PetShoes.Database.Entidades
                     var idCmd = new MySqlCommand("SELECT LAST_INSERT_ID()", conn);
                     var id =  Convert.ToInt32(idCmd.ExecuteScalar());
 
-                    //  DESAFIOOO verificar se tem o daddo na base de dados e se caso tiver inserir na base de dados 
-                }   
+                    //  DESAFIOOO  so insirra os dados na base se realmente tivar dados
+
+                //}
+                //    else
+                //{ passar a query oara cá talvez de para usar o m´todo NomQuery aqui
+                }
             }
             catch (Exception error)
             {
