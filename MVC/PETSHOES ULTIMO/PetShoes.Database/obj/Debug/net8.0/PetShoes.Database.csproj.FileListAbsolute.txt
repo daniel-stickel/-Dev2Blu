@@ -1,0 +1,12 @@
+E:\Programação\Projetos\main\PetShoes.Database\obj\Debug\net8.0\PetShoes.Database.csproj.AssemblyReference.cache
+E:\Programação\Projetos\main\PetShoes.Database\obj\Debug\net8.0\PetShoes.Database.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programação\Projetos\main\PetShoes.Database\obj\Debug\net8.0\PetShoes.Database.AssemblyInfoInputs.cache
+E:\Programação\Projetos\main\PetShoes.Database\obj\Debug\net8.0\PetShoes.Database.AssemblyInfo.cs
+E:\Programação\Projetos\main\PetShoes.Database\obj\Debug\net8.0\PetShoes.Database.csproj.CoreCompileInputs.cache
+E:\Programação\Projetos\main\PetShoes.Database\bin\Debug\net8.0\PetShoes.Database.deps.json
+E:\Programação\Projetos\main\PetShoes.Database\bin\Debug\net8.0\PetShoes.Database.dll
+E:\Programação\Projetos\main\PetShoes.Database\bin\Debug\net8.0\PetShoes.Database.pdb
+E:\Programação\Projetos\main\PetShoes.Database\obj\Debug\net8.0\PetShoes.Database.dll
+E:\Programação\Projetos\main\PetShoes.Database\obj\Debug\net8.0\refint\PetShoes.Database.dll
+E:\Programação\Projetos\main\PetShoes.Database\obj\Debug\net8.0\PetShoes.Database.pdb
+E:\Programação\Projetos\main\PetShoes.Database\obj\Debug\net8.0\ref\PetShoes.Database.dll

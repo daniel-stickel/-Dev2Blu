@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "j8gSD5QIlFo=",
+  "dgSpecHash": "lNmcK/raUxcz0aLXfdybINodnLqxmRbiw58TXnrviObZlKnOu30rlV3qnRI/iM/JIPqHrynFjs4TWIadKFkiFQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Daniel\\Desktop\\+Dev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\Projeto espacial.csproj",
+  "projectFilePath": "C:\\Users\\daniel.stickel\\Desktop\\+Dev2Blu\\-Dev2Blu\\C#\\Projeto Espacial\\Projeto espacial.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Daniel\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
-    "C:\\Users\\Daniel\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
-    "C:\\Users\\Daniel\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+    "C:\\Users\\daniel.stickel\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\daniel.stickel\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\daniel.stickel\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
