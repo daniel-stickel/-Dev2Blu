@@ -18,6 +18,7 @@ ALTER TABLE `locadoraminha`.`carro`
 CHANGE COLUMN `Status_carro` `Status_Carro` ENUM('Ativo', 'Inativo') NOT NULL DEFAULT 'Ativo' ;
 
 
+
 # Modulo Carro
 
 # Post - Create   
