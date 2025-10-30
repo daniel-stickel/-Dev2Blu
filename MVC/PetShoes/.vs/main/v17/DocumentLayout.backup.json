@@ -1,22 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Programa\u00E7\u00E3o\\Projetos\\main\\",
+  "WorkspaceRootPath": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\MVC\\PetShoes\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1BE3EDE0-A2C1-42BC-9C47-E4D1E3F912B9}|PetShoes\\PetShoes.csproj|e:\\programa\u00E7\u00E3o\\projetos\\main\\petshoes\\controllers\\animaiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BE3EDE0-A2C1-42BC-9C47-E4D1E3F912B9}|PetShoes\\PetShoes.csproj|solutionrelative:petshoes\\controllers\\animaiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F6F04157-CFBB-4CC6-8862-6A16E16F9707}|PetShoes.Database\\PetShoes.Database.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\mvc\\petshoes\\petshoes.database\\entidades\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6F04157-CFBB-4CC6-8862-6A16E16F9707}|PetShoes.Database\\PetShoes.Database.csproj|solutionrelative:petshoes.database\\entidades\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6F04157-CFBB-4CC6-8862-6A16E16F9707}|PetShoes.Database\\PetShoes.Database.csproj|e:\\programa\u00E7\u00E3o\\projetos\\main\\petshoes.database\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F6F04157-CFBB-4CC6-8862-6A16E16F9707}|PetShoes.Database\\PetShoes.Database.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\mvc\\petshoes\\petshoes.database\\entidades\\pessoas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6F04157-CFBB-4CC6-8862-6A16E16F9707}|PetShoes.Database\\PetShoes.Database.csproj|solutionrelative:petshoes.database\\entidades\\pessoas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6F04157-CFBB-4CC6-8862-6A16E16F9707}|PetShoes.Database\\PetShoes.Database.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\mvc\\petshoes\\petshoes.database\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F6F04157-CFBB-4CC6-8862-6A16E16F9707}|PetShoes.Database\\PetShoes.Database.csproj|solutionrelative:petshoes.database\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BE3EDE0-A2C1-42BC-9C47-E4D1E3F912B9}|PetShoes\\PetShoes.csproj|e:\\programa\u00E7\u00E3o\\projetos\\main\\petshoes\\model\\animais\\animalresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1BE3EDE0-A2C1-42BC-9C47-E4D1E3F912B9}|PetShoes\\PetShoes.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\mvc\\petshoes\\petshoes\\model\\animais\\animalresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1BE3EDE0-A2C1-42BC-9C47-E4D1E3F912B9}|PetShoes\\PetShoes.csproj|solutionrelative:petshoes\\model\\animais\\animalresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F6F04157-CFBB-4CC6-8862-6A16E16F9707}|PetShoes.Database\\PetShoes.Database.csproj|e:\\programa\u00E7\u00E3o\\projetos\\main\\petshoes.database\\entidades\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F6F04157-CFBB-4CC6-8862-6A16E16F9707}|PetShoes.Database\\PetShoes.Database.csproj|solutionrelative:petshoes.database\\entidades\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1BE3EDE0-A2C1-42BC-9C47-E4D1E3F912B9}|PetShoes\\PetShoes.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\mvc\\petshoes\\petshoes\\model\\pessoas\\pessoaresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE3EDE0-A2C1-42BC-9C47-E4D1E3F912B9}|PetShoes\\PetShoes.csproj|solutionrelative:petshoes\\model\\pessoas\\pessoaresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE3EDE0-A2C1-42BC-9C47-E4D1E3F912B9}|PetShoes\\PetShoes.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\mvc\\petshoes\\petshoes\\controllers\\animaiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE3EDE0-A2C1-42BC-9C47-E4D1E3F912B9}|PetShoes\\PetShoes.csproj|solutionrelative:petshoes\\controllers\\animaiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE3EDE0-A2C1-42BC-9C47-E4D1E3F912B9}|PetShoes\\PetShoes.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\mvc\\petshoes\\petshoes\\model\\pessoas\\pessoarequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE3EDE0-A2C1-42BC-9C47-E4D1E3F912B9}|PetShoes\\PetShoes.csproj|solutionrelative:petshoes\\model\\pessoas\\pessoarequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE3EDE0-A2C1-42BC-9C47-E4D1E3F912B9}|PetShoes\\PetShoes.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\mvc\\petshoes\\petshoes\\model\\animais\\animalrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE3EDE0-A2C1-42BC-9C47-E4D1E3F912B9}|PetShoes\\PetShoes.csproj|solutionrelative:petshoes\\model\\animais\\animalrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BE3EDE0-A2C1-42BC-9C47-E4D1E3F912B9}|PetShoes\\PetShoes.csproj|c:\\users\\daniel\\desktop\\\u002Bdev2blu\\-dev2blu\\mvc\\petshoes\\petshoes\\controllers\\pessoacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BE3EDE0-A2C1-42BC-9C47-E4D1E3F912B9}|PetShoes\\PetShoes.csproj|solutionrelative:petshoes\\controllers\\pessoacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +46,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Connection.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\MVC\\PetShoes\\PetShoes.Database\\Connection.cs",
+              "RelativeDocumentMoniker": "PetShoes.Database\\Connection.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\MVC\\PetShoes\\PetShoes.Database\\Connection.cs",
+              "RelativeToolTip": "PetShoes.Database\\Connection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T12:38:53.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AnimalRequestModel.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\MVC\\PetShoes\\PetShoes\\Model\\Animais\\AnimalRequestModel.cs",
+              "RelativeDocumentMoniker": "PetShoes\\Model\\Animais\\AnimalRequestModel.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\MVC\\PetShoes\\PetShoes\\Model\\Animais\\AnimalRequestModel.cs",
+              "RelativeToolTip": "PetShoes\\Model\\Animais\\AnimalRequestModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T12:11:33.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PessoaRequestModel.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\MVC\\PetShoes\\PetShoes\\Model\\Pessoas\\PessoaRequestModel.cs",
+              "RelativeDocumentMoniker": "PetShoes\\Model\\Pessoas\\PessoaRequestModel.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\MVC\\PetShoes\\PetShoes\\Model\\Pessoas\\PessoaRequestModel.cs",
+              "RelativeToolTip": "PetShoes\\Model\\Pessoas\\PessoaRequestModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T12:11:21.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AnimaisController.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\MVC\\PetShoes\\PetShoes\\Controllers\\AnimaisController.cs",
+              "RelativeDocumentMoniker": "PetShoes\\Controllers\\AnimaisController.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\MVC\\PetShoes\\PetShoes\\Controllers\\AnimaisController.cs",
+              "RelativeToolTip": "PetShoes\\Controllers\\AnimaisController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T12:06:42.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PessoaController.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\MVC\\PetShoes\\PetShoes\\Controllers\\PessoaController.cs",
+              "RelativeDocumentMoniker": "PetShoes\\Controllers\\PessoaController.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\MVC\\PetShoes\\PetShoes\\Controllers\\PessoaController.cs",
+              "RelativeToolTip": "PetShoes\\Controllers\\PessoaController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAswEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T11:38:34.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PessoaResponseModel.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\MVC\\PetShoes\\PetShoes\\Model\\Pessoas\\PessoaResponseModel.cs",
+              "RelativeDocumentMoniker": "PetShoes\\Model\\Pessoas\\PessoaResponseModel.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\MVC\\PetShoes\\PetShoes\\Model\\Pessoas\\PessoaResponseModel.cs",
+              "RelativeToolTip": "PetShoes\\Model\\Pessoas\\PessoaResponseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T11:49:42.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "AnimalResponseModel.cs",
-              "DocumentMoniker": "E:\\Programa\u00E7\u00E3o\\Projetos\\main\\PetShoes\\Model\\Animais\\AnimalResponseModel.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\MVC\\PetShoes\\PetShoes\\Model\\Animais\\AnimalResponseModel.cs",
               "RelativeDocumentMoniker": "PetShoes\\Model\\Animais\\AnimalResponseModel.cs",
-              "ToolTip": "E:\\Programa\u00E7\u00E3o\\Projetos\\main\\PetShoes\\Model\\Animais\\AnimalResponseModel.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\MVC\\PetShoes\\PetShoes\\Model\\Animais\\AnimalResponseModel.cs",
               "RelativeToolTip": "PetShoes\\Model\\Animais\\AnimalResponseModel.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAwBgAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-23T00:31:45.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Animal.cs",
-              "DocumentMoniker": "E:\\Programa\u00E7\u00E3o\\Projetos\\main\\PetShoes.Database\\Entidades\\Animal.cs",
-              "RelativeDocumentMoniker": "PetShoes.Database\\Entidades\\Animal.cs",
-              "ToolTip": "E:\\Programa\u00E7\u00E3o\\Projetos\\main\\PetShoes.Database\\Entidades\\Animal.cs",
-              "RelativeToolTip": "PetShoes.Database\\Entidades\\Animal.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T23:34:02.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Connection.cs",
-              "DocumentMoniker": "E:\\Programa\u00E7\u00E3o\\Projetos\\main\\PetShoes.Database\\Connection.cs",
-              "RelativeDocumentMoniker": "PetShoes.Database\\Connection.cs",
-              "ToolTip": "E:\\Programa\u00E7\u00E3o\\Projetos\\main\\PetShoes.Database\\Connection.cs",
-              "RelativeToolTip": "PetShoes.Database\\Connection.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Title": "Pessoas.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\MVC\\PetShoes\\PetShoes.Database\\Entidades\\Pessoas.cs",
+              "RelativeDocumentMoniker": "PetShoes.Database\\Entidades\\Pessoas.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\MVC\\PetShoes\\PetShoes.Database\\Entidades\\Pessoas.cs",
+              "RelativeToolTip": "PetShoes.Database\\Entidades\\Pessoas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T23:26:59.195Z",
+              "WhenOpened": "2025-10-30T11:46:12.946Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AnimaisController.cs",
-              "DocumentMoniker": "E:\\Programa\u00E7\u00E3o\\Projetos\\main\\PetShoes\\Controllers\\AnimaisController.cs",
-              "RelativeDocumentMoniker": "PetShoes\\Controllers\\AnimaisController.cs",
-              "ToolTip": "E:\\Programa\u00E7\u00E3o\\Projetos\\main\\PetShoes\\Controllers\\AnimaisController.cs*",
-              "RelativeToolTip": "PetShoes\\Controllers\\AnimaisController.cs*",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAgwA8AAAAAAAAAAAAAAA==",
+              "Title": "Animal.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\MVC\\PetShoes\\PetShoes.Database\\Entidades\\Animal.cs",
+              "RelativeDocumentMoniker": "PetShoes.Database\\Entidades\\Animal.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Desktop\\\u002BDev2Blu\\-Dev2Blu\\MVC\\PetShoes\\PetShoes.Database\\Entidades\\Animal.cs",
+              "RelativeToolTip": "PetShoes.Database\\Entidades\\Animal.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAiwBQAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T23:01:01Z",
+              "WhenOpened": "2025-10-22T23:34:02.435Z",
               "EditorCaption": ""
             }
           ]

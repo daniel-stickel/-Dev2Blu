@@ -10,7 +10,7 @@ namespace PetShoes.Database.Entidades
 {
     public class Pessoa
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public string Nome { get; set; }
         public string CPF { get; set; }
         public DateTime DataNascimento { get; set; }
@@ -101,81 +101,78 @@ namespace PetShoes.Database.Entidades
             return result;
         }
 
-        //    public void Save()
-        //    {
-        //        try
-        //        {
-        //            using (var conn = new MySqlConnection(Connection.CONNECTION_STRING))
-        //            {
-        //                conn.Open();
-        //                string query = string.Empty;
-        //                if (Id.HasValue)
-        //                {
-        //                    query = @"UPDATE ANIMAIS SET NOME = @NOME, IDADE_ESTIMADA = @IDADE_ESTIMADA, PORTE = @PORTE, 
-        //                            RACA = @RACA, SEXO = @SEXO, CASTRADO = @CASTRADO, VACINADO = @VACINADO, TEMPERAMENTO = @TEMPERAMENTO,
-        //                            OBSERVACOES_MEDICAS = @OBSERVACOES_MEDICAS, STATUS_ADOCAO = @STATUS_ADOCAO
-        //                            WHERE ID_ANIMAL = @ID_ANIMAL";
-        //                }
-        //                else
-        //                {
-        //                    query = @"INSERT INTO PESSOAS (
-        //                             ID_PESSOA, 
-        //                             NOME, CPF, DATANASCIMENTO,
-        //                             EMAIL, TELEFONE, TIPOUSUARIO;"" NOW())";
-        //                }
+        public void Save()
+        {
+            try
+            {
+                using (var conn = new MySqlConnection(Connection.CONNECTION_STRING))
+                {
+                    conn.Open();
+                    string query = string.Empty;
+                    if (Id.HasValue)
+                    {
 
 
-        //                var cmd = new MySqlCommand(query, conn);
-        //                cmd.Parameters.AddWithValue("@ID_ANIMAL", Id);
-        //                cmd.Parameters.AddWithValue("@NOME", Nome);
-        //                cmd.Parameters.AddWithValue("@IDADE_ESTIMADA", Idade);
-        //                cmd.Parameters.AddWithValue("@PORTE", Porte);
-        //                cmd.Parameters.AddWithValue("@RACA", Raca);
-        //                cmd.Parameters.AddWithValue("@SEXO", Sexo);
-        //                cmd.Parameters.AddWithValue("@CASTRADO", Castrado);
-        //                cmd.Parameters.AddWithValue("@VACINADO", Vacinado);
-        //                cmd.Parameters.AddWithValue("@TEMPERAMENTO", Temperamento);
-        //                cmd.Parameters.AddWithValue("@OBSERVACOES_MEDICAS", ObservacoesMedicas);
-        //                cmd.Parameters.AddWithValue("@STATUS_ADOCAO", Status);
+                        query = @"UPDATE PESSOA SET NOME = NOME, NOME, CPF = CPF, DATANASCIMENTO = DATANASCIMENTO,
+                                     EMAIL = EMAIL, TELEFONE = TELEFONE, ENDERECO = ENDERECO, TIPOUSUARIO = TIPOUSUARIO";
+                    }
+                    else
+                    {
+                        query = @"INSERT INTO PESSOAS (
+                                     ID_PESSOA, 
+                                     NOME, CPF, DATANASCIMENTO,
+                                     EMAIL, TELEFONE, ENDERECO, TIPOUSUARIO;"" NOW())";
+                    }
 
-        //                cmd.ExecuteNonQuery();
 
-        //                if (!Id.HasValue)
-        //                {
-        //                    var idCmd = new MySqlCommand("SELECT LAST_INSERT_ID()", conn);
-        //                    Id = Convert.ToInt32(idCmd.ExecuteScalar());
-        //                }
-        //            }
-        //        }
-        //        catch (Exception error)
-        //        {
-        //            throw new Exception($"Erro ao buscar animais na base de dados. Mensagem: {error.Message}");
-        //        }
-        //    }
+                    var cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@ID_PESSOA", Id);
+                    cmd.Parameters.AddWithValue("@NOME", Nome);
+                    cmd.Parameters.AddWithValue("@CPF", CPF);
+                    cmd.Parameters.AddWithValue("@DATANASCIMENTO", DataNascimento);
+                    cmd.Parameters.AddWithValue("@EMAIL", Email);
+                    cmd.Parameters.AddWithValue("@TELEFONE", Telefone);
+                    cmd.Parameters.AddWithValue("@ENDERECO", Endereco);
+                    cmd.Parameters.AddWithValue("@TIPOUSUSARIO", TipoUsuario);
 
-        //    public void Delete()
-        //    {
-        //        try
-        //        {
-        //            using (var conn = new MySqlConnection(Connection.CONNECTION_STRING))
-        //            {
-        //                conn.Open();
-        //                string query = @$"DELETE FROM ANIMAIS WHERE ID_ANIMAL = @ID_ANIMAL";
+                    cmd.ExecuteNonQuery();
 
-        //                var cmd = new MySqlCommand(query, conn);
-        //                cmd.Parameters.AddWithValue("@ID_ANIMAL", Id);
+                    if (!Id.HasValue)
+                    {
+                        var idCmd = new MySqlCommand("SELECT LAST_INSERT_ID()", conn);
+                        Id = Convert.ToInt32(idCmd.ExecuteScalar());
+                    }
+                }
+            }
+            catch (Exception error)
+            {
+                throw new Exception($"Erro ao buscar pessoas na base de dados. Mensagem: {error.Message}");
+            }
+        }
 
-        //                cmd.ExecuteNonQuery();
-        //            }
-        //        }
-        //        catch (Exception error)
-        //        {
-        //            throw new Exception($"Erro ao buscar animais na base de dados. Mensagem: {error.Message}");
-        //        }
-        //    }
+        public void Delete()
+        {
+            try
+            {
+                using (var conn = new MySqlConnection(Connection.CONNECTION_STRING))
+                {
+                    conn.Open();
+                    string query = @$"DELETE FROM PESSOAS WHERE IDPESSOA = @IDPESSOA";
 
-        //}
+                    var cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@IDPESSOA", Id);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception error)
+            {
+                throw new Exception($"Erro ao buscar pessoas na base de dados. Mensagem: {error.Message}");
+            }
+        }
 
     }
+
 }
+
 

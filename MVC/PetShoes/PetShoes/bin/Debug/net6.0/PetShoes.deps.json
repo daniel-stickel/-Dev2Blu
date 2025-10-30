@@ -217,7 +217,10 @@
           "MySql.Data": "9.5.0"
         },
         "runtime": {
-          "PetShoes.Database.dll": {}
+          "PetShoes.Database.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

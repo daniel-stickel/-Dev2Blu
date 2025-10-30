@@ -1,4 +1,6 @@
-﻿using PetShoes.Database.Entidades;
+﻿using Microsoft.AspNetCore.Routing;
+using PetShoes.Database.Entidades;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace PetShoes.Model.Pessoas
 {
@@ -14,18 +16,18 @@ namespace PetShoes.Model.Pessoas
         public string TipoUsuario { get; set; }
 
 
-        public PessoaRequestModel(Pessoa pessoa)
+        public Pessoa GetEntidadePessoa()
         {
-            Nome = Nome;
-            CPF = CPF;
-            DataNascimento = new DateTime();
-            Email = Email;
-            Telefone = Telefone;
-            Endereco = Endereco;
-            TipoUsuario = TipoUsuario;
+            return new Pessoa
+            {
+                Nome = Nome,
+                CPF = CPF,
+                DataNascimento = new DateTime(),
+                Email = Email,
+                Telefone = Telefone,
+                Endereco = Endereco,
+                TipoUsuario = TipoUsuario,
+            };
         }
-
-
-
     }
 }
