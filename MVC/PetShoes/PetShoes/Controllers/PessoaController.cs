@@ -3,10 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using PetShoes.Database.Entidades;
 using PetShoes.Model.Pessoas;
 
-
-
-
-
 namespace PetShoes.Controllers
 {
     [ApiController]
@@ -46,11 +42,11 @@ namespace PetShoes.Controllers
             {
                 pessoa.Nome = pessoaRequest.Nome;
                 pessoa.CPF = pessoaRequest.CPF;
-                pessoa.DataNascimento = pessoaRequest.DataNascimento;
+                pessoa.Data_Nascimento = pessoaRequest.DataNascimento;
                 pessoa.Email = pessoaRequest.Email;
                 pessoa.Telefone = pessoaRequest.Telefone;
                 pessoa.Endereco = pessoaRequest.Endereco;
-                pessoa.TipoUsuario = pessoaRequest.TipoUsuario;
+                pessoa.Tipo_Usuario = pessoaRequest.TipoUsuario;
 
                 pessoa.Save();
                 return new PessoaResponseModel(pessoa);

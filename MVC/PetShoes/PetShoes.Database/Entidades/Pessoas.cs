@@ -13,11 +13,11 @@ namespace PetShoes.Database.Entidades
         public int? Id { get; set; }
         public string Nome { get; set; }
         public string CPF { get; set; }
-        public DateTime DataNascimento { get; set; }
+        public DateTime Data_Nascimento { get; set; }
         public string Email { get; set; }
         public string Telefone { get; set; }
         public string Endereco { get; set; }
-        public string TipoUsuario { get; set; }
+        public string Tipo_Usuario { get; set; }
 
         public static List<Pessoa> GetAllPessoa()
         {
@@ -28,9 +28,10 @@ namespace PetShoes.Database.Entidades
                 using (var conn = new MySqlConnection(Connection.CONNECTION_STRING))
                 {
                     conn.Open();
-                    string query = @"SELECT ID_PESSOA, 
-                                    NOME, CPF, DATANASCIMENTO,
-                                    EMAIL, TELEFONE, ENDERECO, TIPOUSUARIO;";
+                    string query = @"SELECT ID_PESSOA, NOME, CPF, DATA_NASCIMENTO, 
+                                     EMAIL, TELEFONE, ENDERECO, TIPO_USUARIO
+                                     FROM PESSOAS;
+";
 
                     var cmd = new MySqlCommand(query, conn);
                     using (var reader = cmd.ExecuteReader())
@@ -42,10 +43,11 @@ namespace PetShoes.Database.Entidades
                             pessoa.Id = reader.GetInt32(0);
                             pessoa.Nome = reader.GetString(1);
                             pessoa.CPF = reader.GetString(2);
-                            pessoa.DataNascimento = reader.GetDateTime(3);
+                            pessoa.Data_Nascimento = reader.GetDateTime(3);
                             pessoa.Email = reader.GetString(4);
                             pessoa.Telefone = reader.GetString(5);
-                            pessoa.TipoUsuario = reader.GetString(6);
+                            pessoa.Endereco = reader.GetString(6);
+                            pessoa.Tipo_Usuario = reader.GetString(7);
 
                             result.Add(pessoa);
                         }
@@ -70,8 +72,8 @@ namespace PetShoes.Database.Entidades
                 {
                     conn.Open();
                     string query = @"SELECT ID_PESSOA, 
-                                    NOME, CPF, DATANASCIMENTO,
-                                    EMAIL, TELEFONE, TIPOUSUARIO;";
+                                    NOME, CPF, DATA_NASCIMENTO,
+                                    EMAIL, TELEFONE, ENDERECO, TIPO_USUARIO;";
 
                     var cmd = new MySqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@ID_ANIMAL", id);
@@ -85,10 +87,11 @@ namespace PetShoes.Database.Entidades
                             result.Id = reader.GetInt32(0);
                             result.Nome = reader.GetString(1);
                             result.CPF = reader.GetString(2);
-                            result.DataNascimento = reader.GetDateTime(3);
+                            result.Data_Nascimento = reader.GetDateTime(3);
                             result.Email = reader.GetString(4);
                             result.Telefone = reader.GetString(5);
-                            result.TipoUsuario = reader.GetString(6);
+                            result.Endereco = reader.GetString(6);
+                            result.Tipo_Usuario = reader.GetString(7);
                         }
                     }
                 }
@@ -113,15 +116,15 @@ namespace PetShoes.Database.Entidades
                     {
 
 
-                        query = @"UPDATE PESSOA SET NOME = NOME, NOME, CPF = CPF, DATANASCIMENTO = DATANASCIMENTO,
-                                     EMAIL = EMAIL, TELEFONE = TELEFONE, ENDERECO = ENDERECO, TIPOUSUARIO = TIPOUSUARIO";
+                        query = @"UPDATE PESSOA SET NOME = NOME, CPF = CPF, DATA_NASCIMENTO = DATA_NASCIMENTO,
+                                     EMAIL = EMAIL, TELEFONE = TELEFONE, ENDERECO = ENDERECO, TIPO_USUARIO = TIPO_USUARIO";
                     }
                     else
                     {
-                        query = @"INSERT INTO PESSOAS (
-                                     ID_PESSOA, 
-                                     NOME, CPF, DATANASCIMENTO,
-                                     EMAIL, TELEFONE, ENDERECO, TIPOUSUARIO;"" NOW())";
+                        query = @"INSERT INTO PESSOAS ( 
+                                     NOME, CPF, DATA_NASCIMENTO,
+                                     EMAIL, TELEFONE, ENDERECO, TIPO_USUARIO)
+                                     VALUES (@NOME, @CPF, DATA_NASCIMENTO, @EMAIL, @TELEFONE, @ENDERECO, @TIPO_USUARIO, NOW())";
                     }
 
 
@@ -129,11 +132,11 @@ namespace PetShoes.Database.Entidades
                     cmd.Parameters.AddWithValue("@ID_PESSOA", Id);
                     cmd.Parameters.AddWithValue("@NOME", Nome);
                     cmd.Parameters.AddWithValue("@CPF", CPF);
-                    cmd.Parameters.AddWithValue("@DATANASCIMENTO", DataNascimento);
+                    cmd.Parameters.AddWithValue("@DATA_NASCIMENTO", Data_Nascimento);
                     cmd.Parameters.AddWithValue("@EMAIL", Email);
                     cmd.Parameters.AddWithValue("@TELEFONE", Telefone);
                     cmd.Parameters.AddWithValue("@ENDERECO", Endereco);
-                    cmd.Parameters.AddWithValue("@TIPOUSUSARIO", TipoUsuario);
+                    cmd.Parameters.AddWithValue("@TIPO_USUSARIO", Tipo_Usuario);
 
                     cmd.ExecuteNonQuery();
 

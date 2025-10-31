@@ -22,11 +22,11 @@ namespace PetShoes.Model.Pessoas
             {
                 Nome = Nome,
                 CPF = CPF,
-                DataNascimento = new DateTime(),
+                Data_Nascimento = new DateTime(),
                 Email = Email,
                 Telefone = Telefone,
                 Endereco = Endereco,
-                TipoUsuario = TipoUsuario,
+                Tipo_Usuario = TipoUsuario,
             };
         }
     }

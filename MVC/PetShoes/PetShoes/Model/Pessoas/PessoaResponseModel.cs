@@ -10,23 +10,22 @@ namespace PetShoes.Model.Pessoas
         public int Id { get; set; }
         public string Nome { get; set; }
         public string CPF { get; set; }
-        public DateTime DataNascimento { get; set; }
+        public DateTime Data_Nascimento { get; set; }
         public string Email { get; set; }
         public string Telefone { get; set; }
         public string Endereco { get; set; }
-        public string TipoUsuario { get; set; }
+        public string Tipo_Usuario { get; set; }
 
 
         public PessoaResponseModel(Pessoa pessoa)
         {
-
             Nome = pessoa.Nome;
             CPF = pessoa.CPF;
-            DataNascimento = new DateTime();
+            Data_Nascimento = new DateTime();
             Email = pessoa.Email;
             Telefone = pessoa.Telefone;
             Endereco = pessoa.Endereco;
-            TipoUsuario = pessoa.TipoUsuario;
+            Tipo_Usuario = pessoa.Tipo_Usuario;
         }
     }
 }
