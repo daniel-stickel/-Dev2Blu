@@ -528,23 +528,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Daniel\\.nuget\\packages\\": {},
+    "C:\\Users\\daniel.stickel\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daniel\\Desktop\\+Dev2Blu\\-Dev2Blu\\MVC\\main 1\\PetShoes.Database\\PetShoes.Database.csproj",
+      "projectUniqueName": "C:\\Users\\daniel.stickel\\Desktop\\+Dev2Blu\\-Dev2Blu\\MVC\\main 1\\PetShoes.Database\\PetShoes.Database.csproj",
       "projectName": "PetShoes.Database",
-      "projectPath": "C:\\Users\\Daniel\\Desktop\\+Dev2Blu\\-Dev2Blu\\MVC\\main 1\\PetShoes.Database\\PetShoes.Database.csproj",
-      "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daniel\\Desktop\\+Dev2Blu\\-Dev2Blu\\MVC\\main 1\\PetShoes.Database\\obj\\",
+      "projectPath": "C:\\Users\\daniel.stickel\\Desktop\\+Dev2Blu\\-Dev2Blu\\MVC\\main 1\\PetShoes.Database\\PetShoes.Database.csproj",
+      "packagesPath": "C:\\Users\\daniel.stickel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\daniel.stickel\\Desktop\\+Dev2Blu\\-Dev2Blu\\MVC\\main 1\\PetShoes.Database\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\daniel.stickel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -565,13 +565,7 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+      }
     },
     "frameworks": {
       "net6.0": {
@@ -598,7 +592,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

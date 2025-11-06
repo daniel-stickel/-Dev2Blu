@@ -1,0 +1,23 @@
+﻿@model Petshoes.Models.Animais.AnimaisResponseModel;
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var animal in Model.Animais)
+        {
+            <tr>
+                <th scope="row">@animal.Id</th>
+                <td>@animal.Nome</td>
+                <td>@animal.Sexo</td>
+                <td>@animal.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>
