@@ -61,3 +61,16 @@ C:\Users\daniel.stickel\Desktop\+Dev2Blu\-Dev2Blu\MVC\petshoes.mvc\Petshoes.MVC\
 C:\Users\daniel.stickel\Desktop\+Dev2Blu\-Dev2Blu\MVC\petshoes.mvc\Petshoes.MVC\obj\Debug\net6.0\Petshoes.MVC.dll
 C:\Users\daniel.stickel\Desktop\+Dev2Blu\-Dev2Blu\MVC\petshoes.mvc\Petshoes.MVC\obj\Debug\net6.0\refint\Petshoes.MVC.dll
 C:\Users\daniel.stickel\Desktop\+Dev2Blu\-Dev2Blu\MVC\petshoes.mvc\Petshoes.MVC\obj\Debug\net6.0\Petshoes.MVC.pdb
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\MVC\petshoes.mvc\Petshoes.MVC\obj\Debug\net6.0\Petshoes.MVC.csproj.AssemblyReference.cache
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\MVC\petshoes.mvc\Petshoes.MVC\obj\Debug\net6.0\rpswa.dswa.cache.json
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\MVC\petshoes.mvc\Petshoes.MVC\obj\Debug\net6.0\Petshoes.MVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\MVC\petshoes.mvc\Petshoes.MVC\obj\Debug\net6.0\Petshoes.MVC.AssemblyInfoInputs.cache
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\MVC\petshoes.mvc\Petshoes.MVC\obj\Debug\net6.0\Petshoes.MVC.AssemblyInfo.cs
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\MVC\petshoes.mvc\Petshoes.MVC\obj\Debug\net6.0\Petshoes.MVC.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\MVC\petshoes.mvc\Petshoes.MVC\obj\Debug\net6.0\Petshoes.MVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\MVC\petshoes.mvc\Petshoes.MVC\obj\Debug\net6.0\Petshoes.MVC.RazorAssemblyInfo.cache
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\MVC\petshoes.mvc\Petshoes.MVC\obj\Debug\net6.0\Petshoes.MVC.RazorAssemblyInfo.cs
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\MVC\petshoes.mvc\Petshoes.MVC\obj\Debug\net6.0\Petshoes.MVC.sourcelink.json
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\MVC\petshoes.mvc\Petshoes.MVC\obj\Debug\net6.0\Petshoes.MVC.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\MVC\petshoes.mvc\Petshoes.MVC\obj\Debug\net6.0\refint\Petshoes.MVC.dll
+C:\Users\Daniel\Desktop\+Dev2Blu\-Dev2Blu\MVC\petshoes.mvc\Petshoes.MVC\obj\Debug\net6.0\Petshoes.MVC.pdb
