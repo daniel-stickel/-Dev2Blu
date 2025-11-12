@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Petshoes.MVC.props" />
+</Project>
