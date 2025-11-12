@@ -1,33 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "J:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\",
+  "WorkspaceRootPath": "E:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|j:\\senac\\orienta\u00E7\u00E3o.objeto\\praticaclasse\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|solutionrelative:praticaclasse\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|j:\\senac\\orienta\u00E7\u00E3o.objeto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|j:\\senac\\orienta\u00E7\u00E3o.objeto\\praticaclasse\\praticaclasses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|solutionrelative:praticaclasse\\praticaclasses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|j:\\senac\\orienta\u00E7\u00E3o.objeto\\praticaclasse\\livros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|solutionrelative:praticaclasse\\livros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|j:\\senac\\orienta\u00E7\u00E3o.objeto\\praticaclasse\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|solutionrelative:praticaclasse\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|j:\\senac\\orienta\u00E7\u00E3o.objeto\\praticaclasse\\contabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|e:\\senac\\orienta\u00E7\u00E3o.objeto\\praticaclasse\\contabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|solutionrelative:praticaclasse\\contabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|j:\\senac\\orienta\u00E7\u00E3o.objeto\\classes\\carro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|e:\\senac\\orienta\u00E7\u00E3o.objeto\\praticaclasse\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|solutionrelative:praticaclasse\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|e:\\senac\\orienta\u00E7\u00E3o.objeto\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|e:\\senac\\orienta\u00E7\u00E3o.objeto\\praticaclasse\\praticaclasses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|solutionrelative:praticaclasse\\praticaclasses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|e:\\senac\\orienta\u00E7\u00E3o.objeto\\praticaclasse\\livros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|solutionrelative:praticaclasse\\livros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|e:\\senac\\orienta\u00E7\u00E3o.objeto\\praticaclasse\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|solutionrelative:praticaclasse\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|e:\\senac\\orienta\u00E7\u00E3o.objeto\\classes\\carro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC425D70-3B72-4DD1-80C3-BD156E9BB152}|OrientacaoObjeto.csproj|solutionrelative:classes\\carro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -38,98 +38,93 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Carro.cs",
-              "DocumentMoniker": "J:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\Classes\\Carro.cs",
+              "DocumentMoniker": "E:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\Classes\\Carro.cs",
               "RelativeDocumentMoniker": "Classes\\Carro.cs",
-              "ToolTip": "J:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\Classes\\Carro.cs",
+              "ToolTip": "E:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\Classes\\Carro.cs",
               "RelativeToolTip": "Classes\\Carro.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T03:47:27.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T03:47:27.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Produto.cs",
-              "DocumentMoniker": "J:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\PraticaClasse\\Produto.cs",
+              "DocumentMoniker": "E:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\PraticaClasse\\Produto.cs",
               "RelativeDocumentMoniker": "PraticaClasse\\Produto.cs",
-              "ToolTip": "J:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\PraticaClasse\\Produto.cs",
+              "ToolTip": "E:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\PraticaClasse\\Produto.cs",
               "RelativeToolTip": "PraticaClasse\\Produto.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwCAAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-05T14:33:13.695Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "ContaBancaria.cs",
-              "DocumentMoniker": "J:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\PraticaClasse\\ContaBancaria.cs",
+              "DocumentMoniker": "E:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\PraticaClasse\\ContaBancaria.cs",
               "RelativeDocumentMoniker": "PraticaClasse\\ContaBancaria.cs",
-              "ToolTip": "J:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\PraticaClasse\\ContaBancaria.cs",
+              "ToolTip": "E:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\PraticaClasse\\ContaBancaria.cs",
               "RelativeToolTip": "PraticaClasse\\ContaBancaria.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-05T14:33:14.187Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Aluno.cs",
-              "DocumentMoniker": "J:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\PraticaClasse\\Aluno.cs",
+              "DocumentMoniker": "E:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\PraticaClasse\\Aluno.cs",
               "RelativeDocumentMoniker": "PraticaClasse\\Aluno.cs",
-              "ToolTip": "J:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\PraticaClasse\\Aluno.cs",
+              "ToolTip": "E:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\PraticaClasse\\Aluno.cs",
               "RelativeToolTip": "PraticaClasse\\Aluno.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T14:33:14.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T14:33:14.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Livros.cs",
+              "DocumentMoniker": "E:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\PraticaClasse\\Livros.cs",
+              "RelativeDocumentMoniker": "PraticaClasse\\Livros.cs",
+              "ToolTip": "E:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\PraticaClasse\\Livros.cs",
+              "RelativeToolTip": "PraticaClasse\\Livros.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAowBsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T14:33:14.2Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Livros.cs",
-              "DocumentMoniker": "J:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\PraticaClasse\\Livros.cs",
-              "RelativeDocumentMoniker": "PraticaClasse\\Livros.cs",
-              "ToolTip": "J:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\PraticaClasse\\Livros.cs",
-              "RelativeToolTip": "PraticaClasse\\Livros.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAowBsAAAAWAAAAAAAAAA==",
+              "Title": "PraticaClasses.cs",
+              "DocumentMoniker": "E:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\PraticaClasse\\PraticaClasses.cs",
+              "RelativeDocumentMoniker": "PraticaClasse\\PraticaClasses.cs",
+              "ToolTip": "E:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\PraticaClasse\\PraticaClasses.cs",
+              "RelativeToolTip": "PraticaClasse\\PraticaClasses.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T14:33:14.2Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T14:33:14.203Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PraticaClasses.cs",
-              "DocumentMoniker": "J:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\PraticaClasse\\PraticaClasses.cs",
-              "RelativeDocumentMoniker": "PraticaClasse\\PraticaClasses.cs",
-              "ToolTip": "J:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\PraticaClasse\\PraticaClasses.cs",
-              "RelativeToolTip": "PraticaClasse\\PraticaClasses.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T14:33:14.203Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "J:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\Program.cs",
+              "DocumentMoniker": "E:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "J:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\Program.cs",
+              "ToolTip": "E:\\SENAC\\Orienta\u00E7\u00E3o.Objeto\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAACwAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T14:33:14.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T14:33:14.208Z"
             }
           ]
         }
